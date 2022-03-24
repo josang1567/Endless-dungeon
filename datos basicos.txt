@@ -99,5 +99,14 @@ si se mueren los 3 heroes empiezas desde el nivel 1
 los personajes ganan exp al terminar cada fase
 al subir de nivel los heroes mejoran su vida, ataque y defensa en 10
 
+las cartas de habilidad se dividen en 3 tipos, ataque, defensa y especial.
+
+-las cartas de ataque se enfocan en mejorar el atributo basico de ataque, algunas mejoran tmb la defensa y/o dan efectos de estado al enemigo
+
+-las cartas de defensa se enfocan en mejorar el atributo de defensa, curar vida y/o atacar
+
+-cartas especiales: hacen ataques especiales muy potentes que pueden desde dañar a varios enemigos, ponerles efectos de estado, o ayudar a aliados. algunas cartas hacen que pierdas un turno
+
+
 
   
