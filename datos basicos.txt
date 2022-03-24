@@ -1,0 +1,103 @@
+la demo consistira en 3 niveles 
+cada nivel esta dividido en 3 etapas
+nivel 1: 
+  etapa 1:
+   -1 esqueletos nv1
+  etapa 2:
+   -2 zombies nv1 
+  etapa 3:
+   -2 esqueletos nv1
+   -1 zombie nv1
+
+nivel 2: 
+  etapa 1:
+   -3 esqueletos nv2
+  etapa 2:
+   -2 zombies nv2 
+   -1 esqueleto
+  etapa 3:
+   -1 mago oscuro nv1
+   -2 zombie nv2
+
+nivel 3: 
+  etapa 1:
+   -3 esqueletos nv2
+  etapa 2:
+   -3 zombies nv3 
+  etapa 3:
+   -2 mago oscuro nv2
+   -1 demonio nv1
+
+
+
+esquelto nv1:
+   vida: 50
+   ataque: 10
+   defensa:10
+   velocidad: 10
+
+esquelto nv2:
+   vida: 80
+   ataque: 20
+   defensa:30
+   velocidad: 15
+
+zombie nv1:
+   vida: 30
+   ataque: 20
+   defensa: 30
+   velocidad: 10
+
+
+zombie nv2:
+   vida: 60
+   ataque: 30
+   defensa:60
+   velocidad: 20
+
+
+ mago oscuro nv1:
+   vida: 80
+   ataque: 30
+   defensa:20
+   velocidad: 30
+
+ mago oscuro nv2:
+   vida: 160
+   ataque: 50
+   defensa:40
+   velocidad: 50
+
+ demonio nv1:
+   vida: 400
+   ataque: 30
+   defensa:50
+   velocidad: 30
+
+heroes:
+
+  caballero:
+   vida: 150
+   ataque: 30
+   defensa:80
+   velocidad: 30
+ 
+  mago:
+   vida: 80
+   ataque: 100
+   defensa:60
+   velocidad: 30
+  
+ cazadora:
+   vida: 100
+   ataque: 80
+   defensa:50
+   velocidad: 100
+
+ para pasar de etapa debes matar todos los enemigos
+si se mueren los 3 heroes empiezas desde el nivel 1
+los personajes ganan exp al terminar cada fase
+al subir de nivel los heroes mejoran su vida, ataque y defensa en 10
+
+
+  
