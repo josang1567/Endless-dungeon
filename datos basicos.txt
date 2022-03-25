@@ -107,6 +107,7 @@ las cartas de habilidad se dividen en 3 tipos, ataque, defensa y especial.
 
 -cartas especiales: hacen ataques especiales muy potentes que pueden desde dañar a varios enemigos, ponerles efectos de estado, o ayudar a aliados. algunas cartas hacen que pierdas un turno
 
+- los enemigos normales tienen una barra de vida verde como los personajes jugables y los bosses la tienen morada
 
 
   
