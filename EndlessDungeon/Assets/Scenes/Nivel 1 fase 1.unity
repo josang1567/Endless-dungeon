@@ -200,6 +200,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: level
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: statusPanel
       value: 
       objectReference: {fileID: 1866867809}
@@ -361,6 +365,10 @@ PrefabInstance:
       value: knight
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
+      propertyPath: level
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: skillPanel
       value: 
       objectReference: {fileID: 1575644557}
@@ -440,6 +448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1231520068}
     m_Modifications:
+    - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: level
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: skillPanel
       value: 
@@ -621,6 +633,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1231520068}
     m_Modifications:
+    - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: level
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: skillPanel
       value: 

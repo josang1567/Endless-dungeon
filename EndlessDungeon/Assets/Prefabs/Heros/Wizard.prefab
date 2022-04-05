@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 437259756376690367}
   - component: {fileID: 437259756376690364}
   m_Layer: 0
-  m_Name: Curse_StatusCondition
+  m_Name: Heal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb52f7f462513a46892845e5af1f87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrfb: {fileID: 5741858245129032032, guid: ad67e8428930baa40a6e26ad474a44c9, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
   animationDuration: 1
   receptionMessage: '{receiver} ha sido bendecido'
   applyMessage: '{receiver} cura sus heridas'
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 437259756557534210}
   - component: {fileID: 437259756557534211}
   m_Layer: 0
-  m_Name: Curse_StatusCondition
+  m_Name: Heal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb52f7f462513a46892845e5af1f87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrfb: {fileID: 5741858245129032032, guid: ad67e8428930baa40a6e26ad474a44c9, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
   animationDuration: 1
   receptionMessage: '{receiver} ha sido bendecido'
   applyMessage: '{receiver} cura sus heridas'
@@ -251,7 +251,7 @@ MonoBehaviour:
   skillDescription: Cura vida 3 turnos
   animationDuration: 2
   targeting: 0
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
 --- !u!1 &437259757023008258
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 437259757023008259}
   - component: {fileID: 437259757023008256}
   m_Layer: 0
-  m_Name: Curse_StatusCondition
+  m_Name: Curse_paralisis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481e1735e607a3a43beb362322236b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  effectPrfb: {fileID: 5548533807391102318, guid: bc837f362e5a1e849befffde07b0c985, type: 3}
   animationDuration: 2
   receptionMessage: '{receiver} ha sido paralizado'
   applyMessage: '{receiver} Esta paralizado'
@@ -488,7 +488,7 @@ MonoBehaviour:
   skillDescription: Cura a todos 3 turnos
   animationDuration: 2
   targeting: 1
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
 --- !u!1 &437259758187671733
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 437259758187671730}
   - component: {fileID: 437259758187671731}
   m_Layer: 0
-  m_Name: Curse_StatusCondition
+  m_Name: Curse_Paralisis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481e1735e607a3a43beb362322236b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  effectPrfb: {fileID: 5548533807391102318, guid: bc837f362e5a1e849befffde07b0c985, type: 3}
   animationDuration: 2
   receptionMessage: '{receiver} ha sido paralizado'
   applyMessage: '{receiver} Esta paralizado'
@@ -637,7 +637,7 @@ MonoBehaviour:
   skillDescription: "+50 da\xF1o"
   animationDuration: 1
   targeting: 4
-  effectPrfb: {fileID: 6926911833556170271, guid: def5c4103f7c5664e9663e1ae7851006, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
   amount: -40
   modType: 0
   critChance: 0.86
@@ -689,7 +689,7 @@ MonoBehaviour:
   skillDescription: "80 de da\xF1o fijo"
   animationDuration: 1
   targeting: 4
-  effectPrfb: {fileID: 6926911833556170271, guid: def5c4103f7c5664e9663e1ae7851006, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
   amount: -80
   modType: 1
   critChance: 0.76

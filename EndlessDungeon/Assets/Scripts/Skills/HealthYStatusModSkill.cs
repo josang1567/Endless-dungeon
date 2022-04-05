@@ -33,7 +33,7 @@ public class HealthYStatusModSkill : Skill
         if (dice <= this.critChance)
         {
             amount *= 2f;
-            this.messages.Enqueue("Critical hit!");
+            this.messages.Enqueue("Golpe Critico!");
         }
 
         receiver.ModifyHealth(amount);

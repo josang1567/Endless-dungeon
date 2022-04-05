@@ -49,7 +49,7 @@ MonoBehaviour:
   skillDescription: Paraliza al enemigo 1 turno
   animationDuration: 2
   targeting: 4
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
 --- !u!1 &5867211822636155390
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb52f7f462513a46892845e5af1f87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrfb: {fileID: 5741858245129032032, guid: ad67e8428930baa40a6e26ad474a44c9, type: 3}
+  effectPrfb: {fileID: 2530754296400339780, guid: b51663b5a1fcb374d9e987fac33a5b08, type: 3}
   animationDuration: 1
   receptionMessage: '{receiver} ha sido envenenado'
   applyMessage: "{receiver} sufre da\xF1o por el veneno"

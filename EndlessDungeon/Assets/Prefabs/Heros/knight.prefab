@@ -48,7 +48,7 @@ MonoBehaviour:
   skillDescription: Cura 2%
   animationDuration: 1
   targeting: 0
-  effectPrfb: {fileID: 6121421475228809642, guid: 60b107ee372f6164db85ed1e05e3dceb, type: 3}
+  effectPrfb: {fileID: 5741858245129032032, guid: ad67e8428930baa40a6e26ad474a44c9, type: 3}
   amount: 0.2
   modType: 2
   critChance: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481e1735e607a3a43beb362322236b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  effectPrfb: {fileID: 5548533807391102318, guid: bc837f362e5a1e849befffde07b0c985, type: 3}
   animationDuration: 2
   receptionMessage: '{receiver} ha sido paralizado'
   applyMessage: '{receiver} Esta paralizado'
@@ -150,7 +150,7 @@ MonoBehaviour:
   skillDescription: "+40 de da\xF1o"
   animationDuration: 1.5
   targeting: 4
-  effectPrfb: {fileID: 6926911833556170271, guid: def5c4103f7c5664e9663e1ae7851006, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
   amount: -40
   modType: 0
   critChance: 0.24
@@ -204,7 +204,7 @@ MonoBehaviour:
   animationDuration: 2
   targeting: 0
   effectPrfb: {fileID: 6121421475228809642, guid: 60b107ee372f6164db85ed1e05e3dceb, type: 3}
-  message: '{receiver} gana fuerza'
+  message: '{receiver} gana Defensa'
 --- !u!114 &6696595417147089279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,9 +415,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6696595417631605039}
   - component: {fileID: 6696595417631605037}
-  - component: {fileID: 6696595417631605038}
+  - component: {fileID: 4059580905455721167}
   m_Layer: 0
-  m_Name: Flecha debilitadora
+  m_Name: Espada magica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -454,12 +454,12 @@ MonoBehaviour:
   skillDescription: "+35 de da\xF1o y baja la defensa enemiga"
   animationDuration: 2
   targeting: 2
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
   amount: -35
   modType: 0
   critChance: 0.65
   message: '{receiver} pierde defensa'
---- !u!114 &6696595417631605038
+--- !u!114 &4059580905455721167
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  amount: -40
+  amount: -20
 --- !u!1 &6696595417721509205
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +521,7 @@ MonoBehaviour:
   skillDescription: +20 de Ataque
   animationDuration: 1
   targeting: 4
-  effectPrfb: {fileID: 5741858245129032032, guid: ad67e8428930baa40a6e26ad474a44c9, type: 3}
+  effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
   amount: -30
   modType: 0
   critChance: 0.53

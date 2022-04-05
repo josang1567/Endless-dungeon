@@ -201,7 +201,7 @@ MonoBehaviour:
   skillDescription: -10 defensa rival
   animationDuration: 2
   targeting: 4
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  effectPrfb: {fileID: 4935495943547224871, guid: 4642a3248b4f72f47b2c6eaf1b473471, type: 3}
   message: '{receiver} pierde defensa!'
 --- !u!114 &7929844887483171032
 MonoBehaviour:
@@ -266,7 +266,7 @@ MonoBehaviour:
   skillDescription: "+35 de da\xF1o y baja la defensa enemiga"
   animationDuration: 2
   targeting: 4
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
   amount: -35
   modType: 0
   critChance: 0.3
@@ -333,7 +333,7 @@ MonoBehaviour:
   skillDescription: "+20 de da\xF1o"
   animationDuration: 1
   targeting: 4
-  effectPrfb: {fileID: 5741858245129032032, guid: ad67e8428930baa40a6e26ad474a44c9, type: 3}
+  effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
   amount: -20
   modType: 0
   critChance: 0.53
@@ -386,7 +386,7 @@ MonoBehaviour:
   skillDescription: "Aumenta el da\xF1o en 10"
   animationDuration: 2
   targeting: 0
-  effectPrfb: {fileID: 6121421475228809642, guid: 60b107ee372f6164db85ed1e05e3dceb, type: 3}
+  effectPrfb: {fileID: 4935495943547224871, guid: 9f7a3ae2bf5b48b439f7a877c85603e0, type: 3}
   message: '{receiver} gana fuerza'
 --- !u!114 &7929844888363485290
 MonoBehaviour:
@@ -456,7 +456,7 @@ MonoBehaviour:
   skillDescription: cura 2%
   animationDuration: 1
   targeting: 3
-  effectPrfb: {fileID: 5741858245129032032, guid: ad67e8428930baa40a6e26ad474a44c9, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
   amount: 0.2
   modType: 2
   critChance: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
   skillDescription: "+40 de da\xF1o"
   animationDuration: 1.5
   targeting: 4
-  effectPrfb: {fileID: 6926911833556170271, guid: def5c4103f7c5664e9663e1ae7851006, type: 3}
+  effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
   amount: -40
   modType: 1
   critChance: 0.12

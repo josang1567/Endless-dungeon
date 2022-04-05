@@ -26,9 +26,13 @@ public class StatusPanel : MonoBehaviour
         float percentage = health / maxHealth;
       
         this.healthSlider.value = percentage;
-        if (percentage > 0.33f)
+        if (percentage > 0.50f)
         {
             this.healthSliderBar.color = Color.green;
+        }
+        if (percentage < 0.49f && percentage > 0.33f )
+        {
+            this.healthSliderBar.color = Color.yellow;
         }
         if (percentage < 0.33f)
         {

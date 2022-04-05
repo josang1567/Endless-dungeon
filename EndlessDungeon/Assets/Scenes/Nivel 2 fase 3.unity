@@ -131,6 +131,26 @@ PrefabInstance:
     m_TransformParent: {fileID: 1824302571}
     m_Modifications:
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: level
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: attack
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: deffense
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: maxHealth
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: skillPanel
       value: 
       objectReference: {fileID: 812445152}
@@ -716,6 +736,22 @@ PrefabInstance:
       value: knight
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
+      propertyPath: level
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
+      propertyPath: attack
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
+      propertyPath: deffense
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
+      propertyPath: maxHealth
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: skillPanel
       value: 
       objectReference: {fileID: 812445152}
@@ -920,10 +956,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1426769839327411936, guid: c4e1fa4199efcd84cab9de9b5aa9d156, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: db38cee4637763c4ca4b6618001d80fc, type: 3}
     - target: {fileID: 4727717541295638094, guid: c4e1fa4199efcd84cab9de9b5aa9d156, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 326c777606a53264aa22225c60926f36, type: 3}
+      objectReference: {fileID: 8300000, guid: 2fd64687071dac541ac7bfa94afe2ca7, type: 3}
     - target: {fileID: 4727717541295638095, guid: c4e1fa4199efcd84cab9de9b5aa9d156, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1088,6 +1128,26 @@ PrefabInstance:
     m_TransformParent: {fileID: 1824302571}
     m_Modifications:
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: level
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: speed
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: attack
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: deffense
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: maxHealth
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: skillPanel
       value: 
       objectReference: {fileID: 812445152}
@@ -1165,6 +1225,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1842273991}
     m_Modifications:
+    - target: {fileID: 2972025774529986410, guid: 24f520f4b5173264dbf990b94bf777b8, type: 3}
+      propertyPath: amount
+      value: -70
+      objectReference: {fileID: 0}
     - target: {fileID: 2972025776139658466, guid: 24f520f4b5173264dbf990b94bf777b8, type: 3}
       propertyPath: critChance
       value: 0.77
@@ -1172,6 +1236,10 @@ PrefabInstance:
     - target: {fileID: 2972025776358090784, guid: 24f520f4b5173264dbf990b94bf777b8, type: 3}
       propertyPath: m_Name
       value: Evil Wizard
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972025776358090798, guid: 24f520f4b5173264dbf990b94bf777b8, type: 3}
+      propertyPath: attack
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2972025776358090798, guid: 24f520f4b5173264dbf990b94bf777b8, type: 3}
       propertyPath: statusPanel
