@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 1
-  idName: skeleton
+  idName: Esqueleto
   statusPanel: {fileID: 0}
   combatManager: {fileID: 0}
   statusMods: []
@@ -281,6 +281,7 @@ MonoBehaviour:
   deffense: 30
   spirit: 60
   speed: 16
+  startPosition: {fileID: 0}
 --- !u!95 &3189909209420251670
 Animator:
   serializedVersion: 3

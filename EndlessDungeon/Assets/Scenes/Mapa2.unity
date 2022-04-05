@@ -754,7 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22f08f76814388844964ed4175446708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: Nivel 3 fase 1
+  NextScene: Nivel 2 fase 1
 --- !u!114 &1494647747
 MonoBehaviour:
   m_ObjectHideFlags: 0
