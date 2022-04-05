@@ -16,7 +16,7 @@ public class StatusPanel : MonoBehaviour
          this.nameLabel.text = name;
 
         this.levelLabel.text = $"N. {stats.level}";
-        Debug.Log("Vida1: "+stats.health);
+       
         this.SetHealth(stats.health, stats.maxHealth);
     }
 
@@ -24,11 +24,12 @@ public class StatusPanel : MonoBehaviour
     {
         this.healthLabel.text = $"{Mathf.RoundToInt(health)} / {Mathf.RoundToInt(maxHealth)}";
         float percentage = health / maxHealth;
-        Debug.Log("Vida: "+health);
-        Debug.Log("Vida maxima: "+maxHealth);
-        Debug.Log(health / maxHealth);
+      
         this.healthSlider.value = percentage;
-
+        if (percentage > 0.33f)
+        {
+            this.healthSliderBar.color = Color.green;
+        }
         if (percentage < 0.33f)
         {
             this.healthSliderBar.color = Color.red;

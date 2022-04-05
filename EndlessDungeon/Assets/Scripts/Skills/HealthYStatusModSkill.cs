@@ -1,21 +1,28 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-
-
-public enum HealthModType
+public enum HealthModTypeB
 {
     STAT_BASED, FIXED, PERCENTAGE
 }
 
-public class HealthModSkill : Skill
+public class HealthYStatusModSkill : Skill
 {
     [Header("Health Mod")]
+
     public float amount;
 
     public HealthModType modType;
 
     [Range(0f, 1f)]
     public float critChance = 0;
+
+     [Header("status Mod")]
+    public string message;
+
+    protected StatusMod mod;
+
 
     protected override void OnRun(Fighter receiver)
     {
@@ -30,6 +37,16 @@ public class HealthModSkill : Skill
         }
 
         receiver.ModifyHealth(amount);
+
+        if (this.mod == null)
+        {
+            this.mod = this.GetComponent<StatusMod>();
+        }
+
+        this.messages.Enqueue(this.message.Replace("{receiver}", receiver.idName));
+
+        receiver.statusMods.Add(this.mod);
+
     }
 
     public float GetModification(Fighter receiver)
@@ -41,7 +58,7 @@ public class HealthModSkill : Skill
                 Stats receiverStats = receiver.GetCurrentStats();
 
                 float rawDamage = (((2 * emitterStats.level) / 5) + 2) * this.amount * (emitterStats.attack / receiverStats.deffense);
-       
+
                 return (rawDamage / 50) + 2;
             case HealthModType.FIXED:
                 return this.amount;
