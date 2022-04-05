@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 556
+  controlID: 8640
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 557
+  controlID: 8743
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -375,9 +375,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: bc4b0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: d6f5ffff
+      m_SelectedIDs: 34eeffff
+      m_LastClickedID: -4556
+      m_ExpandedIDs: 56ccffff70d4ffffdce3ffff2aeeffffe4eeffffa85c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
-  m_OverrideSceneCullingMask: 6917529027641081856
+  m_OverrideSceneCullingMask: 4611686018427387906
   m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 1
@@ -437,9 +437,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 497.23743, y: 170.91614, z: -177.93004}
+    m_Target: {x: 663.9117, y: 368.73132, z: -24.9891}
     speed: 2
-    m_Value: {x: 497.23743, y: 170.91614, z: -177.93004}
+    m_Value: {x: 663.9117, y: 368.73132, z: -24.9891}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -490,9 +490,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 400.13138
+    m_Target: 355.13043
     speed: 2
-    m_Value: 400.13138
+    m_Value: 355.13043
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -544,7 +544,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -153160
+  m_LastSelectedObjectID: -4556
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -746,22 +746,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs/UI
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 39
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs/UI
   m_LastFoldersGridSize: 39
   m_LastProjectPath: C:\Users\Jose Angel\Desktop\Endless-dungeon\Endless-dungeon\EndlessDungeon
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 51.80002}
-    m_SelectedIDs: 824b0000
-    m_LastClickedID: 19330
-    m_ExpandedIDs: 00000000684b00006a4b00006c4b00006e4b0000704b0000724b0000744b0000764b0000784b00007e4b0000
+    scrollPos: {x: 0, y: 35.80002}
+    m_SelectedIDs: 08450000
+    m_LastClickedID: 17672
+    m_ExpandedIDs: 00000000dc440000de440000e0440000e2440000e4440000e6440000e8440000ea440000ec440000f0440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -789,7 +789,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000684b00006a4b00006c4b00006e4b0000704b0000724b0000744b0000764b0000784b0000
+    m_ExpandedIDs: 00000000dc440000de440000e0440000e2440000e4440000e6440000e8440000ea440000ec440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
