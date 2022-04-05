@@ -336,7 +336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2771087461258763287, guid: 8e2da063f00865646a66570adae749d7, type: 3}
       propertyPath: NextScene
-      value: Nivel 2 fase 2
+      value: Mapa3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e2da063f00865646a66570adae749d7, type: 3}

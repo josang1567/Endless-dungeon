@@ -36,6 +36,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Mapa3.unity
     guid: ba3187bbbea56b641b85b5a0d6fe3095
   - enabled: 1
+    path: Assets/Scenes/Nivel 3 fase 1.unity
+    guid: 20e977a2f9054484ea40c9639e29639b
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3 fase 2.unity
+    guid: d48ce018f86ebcf4a988ddd8c11736e9
+  - enabled: 1
     path: Assets/Scenes/Nivel 3 fase 3.unity
     guid: 91680931d3fbabb41b052ca3c19c8e5c
   m_configObjects: {}
