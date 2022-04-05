@@ -5,10 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
-    public string NextScene;
+public string NextScene;
  private Text label;
     public void onclick()
     {
+        Debug.Log("Clicado");
         StartCoroutine(NextLevel());
     }
     IEnumerator NextLevel()
