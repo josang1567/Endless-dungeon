@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 730.8
-  m_MinSize: {x: 706, y: 371}
-  m_MaxSize: {x: 18001, y: 14021}
+  m_MinSize: {x: 705, y: 371}
+  m_MaxSize: {x: 18000, y: 14021}
   vertical: 0
-  controlID: 126
+  controlID: 440
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,8 +134,8 @@ MonoBehaviour:
     y: 0
     width: 262.4
     height: 730.8
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 4}
   m_Panes:
   - {fileID: 4}
@@ -171,7 +171,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 64fbffff
+      m_ExpandedIDs: d6f5ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 230, y: 371}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 88
+  controlID: 441
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -285,9 +285,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.349268, y: 0.7052788, z: -133.51675}
+    m_Target: {x: 497.23743, y: 170.91614, z: -177.93004}
     speed: 2
-    m_Value: {x: 4.349268, y: 0.7052788, z: -133.51675}
+    m_Value: {x: 497.23743, y: 170.91614, z: -177.93004}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -338,9 +338,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 28.657404
+    m_Target: 400.13138
     speed: 2
-    m_Value: 28.657404
+    m_Value: 400.13138
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -621,22 +621,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 39
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: 39
-  m_LastProjectPath: C:\Users\Jose Angel\Desktop\copia proyecto\EndlessDungeon
+  m_LastProjectPath: C:\Users\Jose Angel\Desktop\Endless-dungeon\Endless-dungeon\EndlessDungeon
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f8440000
-    m_LastClickedID: 17656
-    m_ExpandedIDs: 00000000dc440000de440000e0440000e2440000e4440000e6440000e8440000ea440000ec440000
+    scrollPos: {x: 0, y: 51.80002}
+    m_SelectedIDs: 824b0000
+    m_LastClickedID: 19330
+    m_ExpandedIDs: 00000000684b00006a4b00006c4b00006e4b0000704b0000724b0000744b0000764b0000784b00007e4b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -664,7 +664,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc440000de440000e0440000e2440000e4440000e6440000e8440000ea440000ec440000
+    m_ExpandedIDs: 00000000684b00006a4b00006c4b00006e4b0000704b0000724b0000744b0000764b0000784b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -689,8 +689,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: bc4b0000
+    m_LastClickedInstanceID: 19388
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000034430000e2420000384900004c430000964a0000844300009e4d0000384400001e4b0000964e00000a790000f44d0000f84d000028430000148a0000b683000058a0000092430000dc9300004a4300005a54000006440000aa440000be4400002449000020450000124b0000f68c00003ea800002445000030450000b852000086450000524a000028450000a245000002530000026b000076560000b2580000684300006a430000c24f000028490000724300001e540000e89e0000188f00007c4800005c4d00003048000004970000e44400008646000000000000aa570000f855000068510000365100004c480000e84e0000885100002c510000564800008a4d00009a5400008e5500002048000022500000b64d0000c44c0000de510000824900000049000064580000bc5800009e650100c4890100
     m_RenameOverlay:
@@ -803,7 +803,7 @@ MonoBehaviour:
     m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 19388
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
