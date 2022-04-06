@@ -55,12 +55,13 @@
      <Compile Include="Assets\Scripts\UI\EnemiesPanel.cs" />
      <Compile Include="Assets\Scripts\UI\StatusPanel.cs" />
      <Compile Include="Assets\Sprites\enemys\Skeleton\enemy_behaviour.cs" />
+     <Compile Include="Assets\Scripts\UI\TurnPanel.cs" />
      <Compile Include="Assets\Scripts\MinMap\LevelLoader.cs" />
      <Compile Include="Assets\Scripts\Skills\StatusMod.cs" />
      <Compile Include="Assets\Scripts\StatusCondition\HealthModStatusCondition.cs" />
      <Compile Include="Assets\Scripts\Skills\SkillTargeting.cs" />
      <Compile Include="Assets\Scripts\Skills\HealthModSkill.cs" />
-     <Compile Include="Assets\Scripts\UI\TurnPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\PauseControl.cs" />
      <None Include="Assets\Sprites\enemys\Evil Wizard\License.txt" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

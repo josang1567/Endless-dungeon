@@ -28,8 +28,10 @@ public class StatusMod : MonoBehaviour
                 
             case StatusModType.DEFFENSE_MOD:
             //Debug.Log("Defensa a quitar"+modedStats.deffense+=this.amount);
-             if((modedStats.deffense+=this.amount)<=modedStats.Mindeffense){
-                 Debug.Log(modedStats.deffense+"cantidad"+this.amount+"No se baja mas");
+            float modificado=modedStats.deffense;
+            modificado+=this.amount;
+             if(modificado<modedStats.Mindeffense){
+                 Debug.Log("no se puede bajar mas la defensa");
                    
                }else{
                    Debug.Log("Se baja defensa");

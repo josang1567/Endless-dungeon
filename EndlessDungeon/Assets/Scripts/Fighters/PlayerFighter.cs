@@ -7,12 +7,12 @@ public class PlayerFighter : Fighter
     [Header("UI")]
     public PlayerSkillPanel skillPanel;
     public EnemiesPanel enemiesPanel;
-    private Skill[] baraja= new Skill[4];
+    private Skill[] baraja = new Skill[4];
     private Skill skillToBeExecuted;
-    
+
     [Header("stats")]
     public int level;
-     public float maxHealth;
+    public float maxHealth;
     public float attack;
     public float deffense;
     public float spirit;
@@ -33,13 +33,9 @@ public class PlayerFighter : Fighter
             {
                 this.skillPanel.ConfigureButton(i, this.skills[i].skillName, this.skills[i].skillDescription, this.skills[i].FondoCarta);
             }
-            baraja=skills;
+            baraja = skills;
         }
-        else 
-        
-        
-        
-        if (skills.Length >= 5)
+        else if (skills.Length >= 5)
         {
             int Rand;
             int[] LastRand;
@@ -60,26 +56,26 @@ public class PlayerFighter : Fighter
                 }
 
                 LastRand[u] = Rand;
-                
+
             }
             for (int i = 0; i < 4; i++)
-                {
-                    this.skillPanel.ConfigureButton(i, this.skills[LastRand[i]].skillName, this.skills[LastRand[i]].skillDescription, this.skills[LastRand[i]].FondoCarta);
-                }
-                for (int i = 0; i < 4; i++)
-                {
-                    baraja[i] = skills[LastRand[i]];
-                 //  Debug.Log( baraja[i] = skills[LastRand[i]]);
-                }
+            {
+                this.skillPanel.ConfigureButton(i, this.skills[LastRand[i]].skillName, this.skills[LastRand[i]].skillDescription, this.skills[LastRand[i]].FondoCarta);
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                baraja[i] = skills[LastRand[i]];
+                //  Debug.Log( baraja[i] = skills[LastRand[i]]);
+            }
         }
     }
 
 
     public void ExecuteSkill(int index)
     {
-       
-            this.skillToBeExecuted = this.baraja[index];
-        
+
+        this.skillToBeExecuted = this.baraja[index];
+
 
 
         this.skillToBeExecuted.SetEmitter(this);
