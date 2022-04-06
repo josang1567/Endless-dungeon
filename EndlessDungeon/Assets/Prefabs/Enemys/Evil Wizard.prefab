@@ -1,57 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2972025774529986412
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2972025774529986411}
-  - component: {fileID: 2972025774529986410}
-  m_Layer: 0
-  m_Name: Llamarada
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2972025774529986411
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2972025774529986412}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.716763, y: -1.6896628, z: 0.7866137}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2972025776358090799}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2972025774529986410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2972025774529986412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b99e3b27e627ad469f6d07c32343e1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skillName: Llamarada
-  FondoCarta: {fileID: 21300000, guid: 5d1b53453aae76b48a0560edca542e7b, type: 3}
-  skillDescription: "80 de da\xF1o fijo"
-  animationDuration: 1
-  targeting: 4
-  effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
-  amount: -80
-  modType: 1
-  critChance: 0.76
 --- !u!1 &2972025774612541322
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,56 +100,6 @@ MonoBehaviour:
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
---- !u!1 &2972025775138263451
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2972025775138263450}
-  - component: {fileID: 2972025775138263449}
-  m_Layer: 0
-  m_Name: Revivificacion Grupal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2972025775138263450
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2972025775138263451}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.036709, y: -1.6187834, z: 0.7866137}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2972025775813447827}
-  m_Father: {fileID: 2972025776358090799}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2972025775138263449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2972025775138263451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 477faffd7a847304a8106973b76318f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skillName: Revivificacion Grupal
-  FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
-  skillDescription: Cura a todos 3 turnos
-  animationDuration: 2
-  targeting: 1
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
 --- !u!1 &2972025775425141998
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,7 +129,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2972025776358090799}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2972025775425141996
 MonoBehaviour:
@@ -251,59 +149,9 @@ MonoBehaviour:
   animationDuration: 1
   targeting: 1
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
-  amount: 30
-  modType: 1
+  amount: 0.1
+  modType: 2
   critChance: 0
---- !u!1 &2972025775813447828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2972025775813447827}
-  - component: {fileID: 2972025775813447826}
-  m_Layer: 0
-  m_Name: Curse_StatusCondition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2972025775813447827
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2972025775813447828}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2972025775138263450}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2972025775813447826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2972025775813447828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bb52f7f462513a46892845e5af1f87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
-  animationDuration: 1
-  receptionMessage: '{receiver} ha sido bendecido'
-  applyMessage: '{receiver} cura sus heridas'
-  expireMessage: '{receiver} ha dejado de curarse'
-  turnDuration: 3
-  percentage: 0.1
 --- !u!1 &2972025776139658468
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,9 +236,7 @@ Transform:
   m_Children:
   - {fileID: 2972025776139658467}
   - {fileID: 2972025774738805169}
-  - {fileID: 2972025775138263450}
   - {fileID: 2972025775425141997}
-  - {fileID: 2972025774529986411}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

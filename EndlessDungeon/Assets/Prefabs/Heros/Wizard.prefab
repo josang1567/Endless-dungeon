@@ -538,7 +538,7 @@ MonoBehaviour:
   applyMessage: '{receiver} Esta paralizado'
   expireMessage: '{receiver} se ha librado de la paralisis'
   turnDuration: 1
-  blockChance: 0.15
+  blockChance: 0
 --- !u!1 &437259758336074498
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,5 +691,5 @@ MonoBehaviour:
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
   amount: -80
-  modType: 1
+  modType: 0
   critChance: 0.76

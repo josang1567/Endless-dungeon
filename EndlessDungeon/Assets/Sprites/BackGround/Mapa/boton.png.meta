@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 4232820323457187007
     second: boton_1
+  - first:
+      213: -3132519455478975374
+    second: boton_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,10 +103,10 @@ TextureImporter:
       name: boton_0
       rect:
         serializedVersion: 2
-        x: 150
-        y: 110
-        width: 420
-        height: 373
+        x: 149
+        y: 109
+        width: 422
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +124,10 @@ TextureImporter:
       name: boton_1
       rect:
         serializedVersion: 2
-        x: 815
-        y: 113
-        width: 420
-        height: 373
+        x: 814
+        y: 111
+        width: 423
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,6 +137,27 @@ TextureImporter:
       bones: []
       spriteID: fbc38b168affdba30800000000000000
       internalID: 4232820323457187007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boton_2
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 111
+        width: 423
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274fc2ce62e0784d0800000000000000
+      internalID: -3132519455478975374
       vertices: []
       indices: 
       edges: []

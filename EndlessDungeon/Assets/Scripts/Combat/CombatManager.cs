@@ -45,6 +45,7 @@ public class CombatManager : MonoBehaviour
 
         this.SortFightersBySpeed();
         this.MakeTeams();
+        this.MakeOrder();
 
         LogPanel.Write("Comienza la batalla.");
 
@@ -81,6 +82,32 @@ public class CombatManager : MonoBehaviour
         }
     }
 
+    private void MakeOrder()
+    {
+        string listado = "Orden de batalla:\n";
+        
+        for (int i = 0; i < this.fighters.Length; i++)
+        {
+            if (fighters[i].isAlive)
+            {
+                
+                if (i+1 == this.fighters.Length)
+                {
+                    
+                    listado += fighters[i].idName;
+                }
+                else if (i+1 != this.fighters.Length)
+                {
+                  
+                    listado += fighters[i].idName + "-> ";
+                }
+
+            }
+
+        }
+        TurnPanel.Write(listado);
+        
+    }
     private void MakeTeams()
     {
         List<Fighter> playersBuffer = new List<Fighter>();
@@ -197,7 +224,7 @@ public class CombatManager : MonoBehaviour
                     break;
                 case CombatStatus.NEXT_TURN:
                     yield return new WaitForSeconds(1f);
-
+                    MakeOrder();
                     Fighter current = null;
 
                     do

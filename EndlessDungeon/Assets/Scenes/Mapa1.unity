@@ -207,6 +207,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 208689102, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -549
+      objectReference: {fileID: 0}
+    - target: {fileID: 208689102, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 208
+      objectReference: {fileID: 0}
     - target: {fileID: 1451515389, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -242,6 +250,18 @@ PrefabInstance:
     - target: {fileID: 1494647746, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
       propertyPath: NextScene
       value: Nivel 1 fase 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603478371, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603478371, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603478371, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1607594792, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -345,3 +365,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+--- !u!1 &5351830931085311409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1451515387, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+  m_PrefabInstance: {fileID: 5351830931085311408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5351830931085311410
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5351830931085311409}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce3fe454491099b4b95fbbb5c0518c99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

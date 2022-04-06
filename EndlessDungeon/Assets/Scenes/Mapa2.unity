@@ -196,6 +196,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 208689102, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 208689102, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.00000032782555
+      objectReference: {fileID: 0}
+    - target: {fileID: 208689102, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -506
+      objectReference: {fileID: 0}
+    - target: {fileID: 208689102, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 175
+      objectReference: {fileID: 0}
     - target: {fileID: 853924635316302169, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
       propertyPath: m_Name
       value: Main Camera(MinMap)
@@ -286,3 +302,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+--- !u!1 &1692129697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1607594790, guid: 9a004573d6fe70343b5495229eb5dc58, type: 3}
+  m_PrefabInstance: {fileID: 1692129696}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1692129698
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692129697}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b8903f4969de2884782fc37950366bd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
