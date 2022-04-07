@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Skills\HealthYStatusModSkill.cs" />
      <Compile Include="Assets\Scripts\Fighters\EnemyFighter.cs" />
      <Compile Include="Assets\Scripts\StatusCondition\TurnBlockStatusCondition.cs" />
+     <Compile Include="Assets\Scripts\UI\PauseControl.cs" />
      <Compile Include="Assets\Scripts\UI\EnemiesPanel.cs" />
      <Compile Include="Assets\Scripts\UI\StatusPanel.cs" />
      <Compile Include="Assets\Sprites\enemys\Skeleton\enemy_behaviour.cs" />
@@ -61,7 +62,10 @@
      <Compile Include="Assets\Scripts\StatusCondition\HealthModStatusCondition.cs" />
      <Compile Include="Assets\Scripts\Skills\SkillTargeting.cs" />
      <Compile Include="Assets\Scripts\Skills\HealthModSkill.cs" />
-     <Compile Include="Assets\Scripts\UI\PauseControl.cs" />
+     <Compile Include="Assets\Audio Volume Control System\AudioSettings.cs" />
+     <Compile Include="Assets\Audio Volume Control System\SFXAudioSource.cs" />
+     <Compile Include="Assets\Audio Volume Control System\UIElementInitializer.cs" />
+     <Compile Include="Assets\Audio Volume Control System\MusicAudioSource.cs" />
      <None Include="Assets\Sprites\enemys\Evil Wizard\License.txt" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\Hub\Editor\2020.3.31f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

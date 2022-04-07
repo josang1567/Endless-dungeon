@@ -101,8 +101,8 @@ MonoBehaviour:
   animationDuration: 1.5
   targeting: 2
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
-  amount: -40
-  modType: 0
+  amount: -7
+  modType: 1
   critChance: 0.1
 --- !u!1 &3189909208729912884
 GameObject:
@@ -275,6 +275,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  Foto: {fileID: 6236675656088661469, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 20
   maxHealth: 50
   attack: 40

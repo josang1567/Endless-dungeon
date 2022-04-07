@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 5548533807391102318, guid: bc837f362e5a1e849befffde07b0c985, type: 3}
   animationDuration: 2
+  estado: Hipnotizado
   receptionMessage: '{receiver} ha sido Hipnotizado'
   applyMessage: '{receiver} Esta paralizado por las hipnosis'
   expireMessage: '{receiver} se ha librado de la hipnosis'
@@ -201,9 +202,9 @@ MonoBehaviour:
   animationDuration: 1
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
-  amount: -40
-  modType: 0
-  critChance: 0.86
+  amount: -20
+  modType: 1
+  critChance: 0
 --- !u!1 &2972025776358090784
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,9 +330,10 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  Foto: {fileID: -5285785097126754818, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 25
   maxHealth: 100
-  attack: 80
+  attack: 70
   deffense: 80
   spirit: 80
   speed: 25

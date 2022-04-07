@@ -110,6 +110,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  Foto: {fileID: 3010951858511213517, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   skillPanel: {fileID: 0}
   enemiesPanel: {fileID: 0}
   level: 20
@@ -263,12 +264,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Flecha debilitadora
   FondoCarta: {fileID: 21300000, guid: ec739adee84edc44eb588cfa1e3bdbe2, type: 3}
-  skillDescription: "+35 de da\xF1o y baja la defensa enemiga"
+  skillDescription: "Aplica 15 de da\xF1o y baja la defensa enemiga"
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
-  amount: -35
-  modType: 0
+  amount: -15
+  modType: 1
   critChance: 0.3
   message: '{receiver} pierde defensa'
 --- !u!114 &7929844887918949144
@@ -330,12 +331,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Flecha
   FondoCarta: {fileID: 21300000, guid: 21f507d0faf77b846a39165619934d15, type: 3}
-  skillDescription: "+20 de da\xF1o"
+  skillDescription: "Aplica 20 de da\xF1o"
   animationDuration: 1
   targeting: 4
   effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
   amount: -20
-  modType: 0
+  modType: 1
   critChance: 0.53
 --- !u!1 &7929844888363485292
 GameObject:
@@ -453,7 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: curar
   FondoCarta: {fileID: 21300000, guid: ec739adee84edc44eb588cfa1e3bdbe2, type: 3}
-  skillDescription: cura 2%
+  skillDescription: cura un 20% de la vida  a un aliado
   animationDuration: 1
   targeting: 3
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
@@ -513,7 +514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: flecha de hierro
   FondoCarta: {fileID: 21300000, guid: 21f507d0faf77b846a39165619934d15, type: 3}
-  skillDescription: "+40 de da\xF1o"
+  skillDescription: "Aplica 40 de da\xF1o"
   animationDuration: 1.5
   targeting: 4
   effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}

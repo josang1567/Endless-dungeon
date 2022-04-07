@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: curar
   FondoCarta: {fileID: 21300000, guid: fceb0904fed781e40b1d2b256e7aa16c, type: 3}
-  skillDescription: Cura 2%
+  skillDescription: Cura 20% a si mismo
   animationDuration: 1
   targeting: 0
   effectPrfb: {fileID: 5741858245129032032, guid: ad67e8428930baa40a6e26ad474a44c9, type: 3}
@@ -147,12 +147,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Corte Rapido
   FondoCarta: {fileID: 21300000, guid: 21f507d0faf77b846a39165619934d15, type: 3}
-  skillDescription: "+40 de da\xF1o"
+  skillDescription: "Aplica 30 de da\xF1o"
   animationDuration: 1.5
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
-  amount: -40
-  modType: 0
+  amount: -30
+  modType: 1
   critChance: 0.24
 --- !u!1 &6696595417147089273
 GameObject:
@@ -397,6 +397,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  Foto: {fileID: -8999417144695169524, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   skillPanel: {fileID: 0}
   enemiesPanel: {fileID: 0}
   level: 20
@@ -451,12 +452,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Espada Magica
   FondoCarta: {fileID: 21300000, guid: ec739adee84edc44eb588cfa1e3bdbe2, type: 3}
-  skillDescription: "+35 de da\xF1o y baja la defensa enemiga"
+  skillDescription: "Aplica 35 de da\xF1o y baja la defensa enemiga"
   animationDuration: 2
   targeting: 2
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
   amount: -35
-  modType: 0
+  modType: 1
   critChance: 0.65
   message: '{receiver} pierde defensa'
 --- !u!114 &4059580905455721167
@@ -518,10 +519,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Espada
   FondoCarta: {fileID: 21300000, guid: 67d5ad9930c6da34b862a38c8f3f048b, type: 3}
-  skillDescription: +20 de Ataque
+  skillDescription: "Aplica 20 de da\xF1o"
   animationDuration: 1
   targeting: 4
   effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
-  amount: -30
-  modType: 0
+  amount: -20
+  modType: 1
   critChance: 0.53

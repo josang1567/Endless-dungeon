@@ -6,7 +6,7 @@ public abstract class StatusCondition : MonoBehaviour
     [Header("Base Status Condition")]
     public GameObject effectPrfb;
     public float animationDuration;
-
+    public string estado;
     public string receptionMessage;
     public string applyMessage;
     public string expireMessage;

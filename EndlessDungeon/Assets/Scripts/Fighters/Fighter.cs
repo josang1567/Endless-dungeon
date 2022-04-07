@@ -18,6 +18,8 @@ public abstract class Fighter : MonoBehaviour
     public StatusCondition statusCondition;
     public bool isAttacking;
     private Animator anim;
+     [Header("FavIcon")]
+    public Sprite Foto;
     public bool isAlive
     {
         get => this.stats.health > 0;
@@ -129,6 +131,9 @@ void FixedUpdate(){
     public void EndAttack()
     {
         isAttacking = false;
+    }
+    public Stats GetStats(){
+        return this.stats;
     }
     public abstract void InitTurn();
 }

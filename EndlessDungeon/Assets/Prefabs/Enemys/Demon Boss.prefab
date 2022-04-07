@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
   animationDuration: 1
+  estado: Quemado
   receptionMessage: '{receiver} ha sido quemado'
   applyMessage: '{receiver} se quema'
   expireMessage: '{receiver} ha apagado el fuego'
@@ -99,8 +100,8 @@ MonoBehaviour:
   animationDuration: 2
   targeting: 2
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
-  amount: -30
-  modType: 0
+  amount: -10
+  modType: 1
   critChance: 0
 --- !u!1 &1875696084
 GameObject:
@@ -247,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 2530754296400339780, guid: b51663b5a1fcb374d9e987fac33a5b08, type: 3}
   animationDuration: 0
+  estado: Intimidado
   receptionMessage: '{receiver} ha sido intimidado por el demonio'
   applyMessage: '{receiver} no puede actuar por culpa de la intimidacion'
   expireMessage: '{receiver} ha superado la intimidacion'
@@ -347,6 +349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 5741858245129032032, guid: ad67e8428930baa40a6e26ad474a44c9, type: 3}
   animationDuration: 1
+  estado: 
   receptionMessage: El {receiver} se esta curando
   applyMessage: 'El {receiver} esta regenerandose '
   expireMessage: El {receiver} ha dejado de regenerarse
@@ -401,8 +404,8 @@ MonoBehaviour:
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
-  amount: -40
-  modType: 0
+  amount: -25
+  modType: 1
   critChance: 0.15
 --- !u!1 &9081464588091266819
 GameObject:
@@ -512,6 +515,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  Foto: {fileID: -2352396353401391747, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 20
   maxHealth: 500
   attack: 100

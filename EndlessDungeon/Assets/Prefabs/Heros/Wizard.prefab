@@ -97,11 +97,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
   animationDuration: 1
+  estado: Curandose
   receptionMessage: '{receiver} ha sido bendecido'
   applyMessage: '{receiver} cura sus heridas'
   expireMessage: '{receiver} ha dejado de curarse'
   turnDuration: 3
-  percentage: 0.1
+  percentage: 0.15
 --- !u!1 &437259756496876059
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
   animationDuration: 1
+  estado: Curandose
   receptionMessage: '{receiver} ha sido bendecido'
   applyMessage: '{receiver} cura sus heridas'
   expireMessage: '{receiver} ha dejado de curarse'
@@ -248,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Regeneracion
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
-  skillDescription: Cura vida 3 turnos
+  skillDescription: Cura el 15% de la  vida a si mismo durante 3 turnos
   animationDuration: 2
   targeting: 0
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
@@ -297,6 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 5548533807391102318, guid: bc837f362e5a1e849befffde07b0c985, type: 3}
   animationDuration: 2
+  estado: Paralizado
   receptionMessage: '{receiver} ha sido paralizado'
   applyMessage: '{receiver} Esta paralizado'
   expireMessage: '{receiver} se ha librado de la paralisis'
@@ -431,6 +434,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  Foto: {fileID: -8891590945244770283, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   skillPanel: {fileID: 0}
   enemiesPanel: {fileID: 0}
   level: 20
@@ -485,7 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Regeneracion Grupal
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
-  skillDescription: Cura a todos 3 turnos
+  skillDescription: Cura a todos los aliados un 10% de la vida durante  3 turnos
   animationDuration: 2
   targeting: 1
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
@@ -534,6 +538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 5548533807391102318, guid: bc837f362e5a1e849befffde07b0c985, type: 3}
   animationDuration: 2
+  estado: 
   receptionMessage: '{receiver} ha sido paralizado'
   applyMessage: '{receiver} Esta paralizado'
   expireMessage: '{receiver} se ha librado de la paralisis'
@@ -634,12 +639,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Bola magica
   FondoCarta: {fileID: 21300000, guid: 5d1b53453aae76b48a0560edca542e7b, type: 3}
-  skillDescription: "+50 da\xF1o"
+  skillDescription: "Aplica 20 de da\xF1o"
   animationDuration: 1
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
-  amount: -40
-  modType: 0
+  amount: -20
+  modType: 1
   critChance: 0.86
 --- !u!1 &6331758516557656075
 GameObject:
@@ -686,10 +691,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Llamarada
   FondoCarta: {fileID: 21300000, guid: 5d1b53453aae76b48a0560edca542e7b, type: 3}
-  skillDescription: "80 de da\xF1o fijo"
+  skillDescription: "Aplica 40 de da\xF1o"
   animationDuration: 1
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
-  amount: -80
-  modType: 0
+  amount: -40
+  modType: 1
   critChance: 0.76

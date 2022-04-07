@@ -84,29 +84,18 @@ public class CombatManager : MonoBehaviour
 
     private void MakeOrder()
     {
-        string listado = "Orden de batalla:\n";
-        
+        List<Sprite> listado = new List<Sprite>();
+
         for (int i = 0; i < this.fighters.Length; i++)
         {
             if (fighters[i].isAlive)
             {
-                
-                if (i+1 == this.fighters.Length)
-                {
-                    
-                    listado += fighters[i].idName;
-                }
-                else if (i+1 != this.fighters.Length)
-                {
-                  
-                    listado += fighters[i].idName + "-> ";
-                }
-
+                listado.Add(fighters[i].Foto);
             }
 
         }
-        TurnPanel.Write(listado);
-        
+        TurnPanel.Mostrar(listado);
+
     }
     private void MakeTeams()
     {
@@ -266,7 +255,41 @@ public class CombatManager : MonoBehaviour
                         }
                     }
 
-                    LogPanel.Write($"Es el turno de {currentFighter.idName}.");
+                    string mensaje = "";
+
+                    if (currentFighter.team.ToString().Equals("PLAYERS"))
+                    {
+                        if (currentFighter.statusCondition==null)
+                        {
+                            mensaje += $"Es el turno de {currentFighter.idName}.\n"
+                       + $"Ataque:{currentFighter.GetStats().attack}\n"
+                       + $"Defensa:{currentFighter.GetStats().deffense}\n"
+                       + $"Velocidad:{currentFighter.GetStats().speed}\n"
+                       + "Estado:";
+                        }
+                        else if (currentFighter.statusCondition!=null)
+                        {
+                            mensaje += $"Es el turno de {currentFighter.idName}.\n"
+                           + $"Ataque:{currentFighter.GetStats().attack}\n"
+                           + $"Defensa:{currentFighter.GetStats().deffense}\n"
+                           + $"Velocidad:{currentFighter.GetStats().speed}\n"
+                          + $"Estado:{currentFighter.statusCondition.estado}\n";
+                        }
+
+
+
+
+
+
+                    }
+                    else
+                    if (currentFighter.team.ToString().Equals("ENEMIES"))
+                    {
+
+                        mensaje += $"Es el turno de {currentFighter.idName}.";
+                    }
+
+                    LogPanel.Write(mensaje);
                     currentFighter.InitTurn();
 
                     this.combatStatus = CombatStatus.WAITING_FOR_FIGHTER;
