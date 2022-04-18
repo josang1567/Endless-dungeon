@@ -1195,7 +1195,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 890111975}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2012588824}
+        m_TargetAssemblyTypeName: ContinueController, Assembly-CSharp
+        m_MethodName: onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &890111975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2920,6 +2932,7 @@ GameObject:
   - component: {fileID: 2012588821}
   - component: {fileID: 2012588823}
   - component: {fileID: 2012588822}
+  - component: {fileID: 2012588824}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3056,3 +3069,16 @@ MonoBehaviour:
   sfxVolume: 0
   musicAudioSourcesCount: 0
   sfxAudioSourcesCount: 0
+--- !u!114 &2012588824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012588816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc7c1fe064d8b74aab6ea6efd8134f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContinueButton: {fileID: 0}

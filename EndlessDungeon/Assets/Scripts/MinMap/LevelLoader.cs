@@ -5,16 +5,19 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
-public string NextScene;
- private Text label;
+    public string NextScene;
+    private Text label;
     public void onclick()
     {
-        Debug.Log("Clicado");
+
         StartCoroutine(NextLevel());
     }
     IEnumerator NextLevel()
-    {      
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(this.NextScene);               
+    {
+        yield return new WaitForSeconds(0);
+        SceneManager.LoadScene(this.NextScene);
+        Debug.Log("Nueva partida ");
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetString("NivelActual", this.NextScene);
     }
 }

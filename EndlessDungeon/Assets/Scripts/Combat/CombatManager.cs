@@ -367,5 +367,7 @@ public class CombatManager : MonoBehaviour
         LogPanel.Write("Pasando de nivel...");
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(this.NextScene);
+        Debug.Log("Guardando nivel: "+this.NextScene);
+        PlayerPrefs.SetString("NivelActual",this.NextScene); 
     }
 }
