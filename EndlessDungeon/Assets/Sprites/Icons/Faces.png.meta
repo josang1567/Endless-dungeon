@@ -4,28 +4,31 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -5285785097126754818
-    second: NecromancerIcon
+    second: Faces_0
   - first:
       213: 5219528537255451192
-    second: GoblinIcon
+    second: Faces_1
   - first:
       213: -2352396353401391747
-    second: DemonSlimeIcon
+    second: Faces_2
   - first:
       213: 6236675656088661469
-    second: SkeletonIcon
+    second: Faces_3
   - first:
       213: 3010951858511213517
-    second: HuntressIcon
+    second: Faces_4
   - first:
       213: -8891590945244770283
-    second: WizardIcon
+    second: Faces_5
   - first:
       213: -8999417144695169524
-    second: KnightIcon
+    second: Faces_6
   - first:
       213: 3360697119208892714
-    second: Next
+    second: Faces_7
+  - first:
+      213: 1238325399474471081
+    second: Faces_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NecromancerIcon
+      name: Faces_0
       rect:
         serializedVersion: 2
         x: 15
@@ -123,7 +126,7 @@ TextureImporter:
         width: 34
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,7 +139,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoblinIcon
+      name: Faces_1
       rect:
         serializedVersion: 2
         x: 62
@@ -144,7 +147,7 @@ TextureImporter:
         width: 34
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DemonSlimeIcon
+      name: Faces_2
       rect:
         serializedVersion: 2
         x: 112
@@ -165,7 +168,7 @@ TextureImporter:
         width: 34
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonIcon
+      name: Faces_3
       rect:
         serializedVersion: 2
         x: 171
@@ -186,7 +189,7 @@ TextureImporter:
         width: 34
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HuntressIcon
+      name: Faces_4
       rect:
         serializedVersion: 2
         x: 230
@@ -207,7 +210,7 @@ TextureImporter:
         width: 34
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WizardIcon
+      name: Faces_5
       rect:
         serializedVersion: 2
         x: 285
@@ -228,7 +231,7 @@ TextureImporter:
         width: 34
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,7 +244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KnightIcon
+      name: Faces_6
       rect:
         serializedVersion: 2
         x: 338
@@ -249,7 +252,7 @@ TextureImporter:
         width: 34
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Next
+      name: Faces_7
       rect:
         serializedVersion: 2
         x: 392
@@ -278,6 +281,27 @@ TextureImporter:
       bones: []
       spriteID: a29ef14693893ae20800000000000000
       internalID: 3360697119208892714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faces_8
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 14
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a00500d36a6f2110800000000000000
+      internalID: 1238325399474471081
       vertices: []
       indices: 
       edges: []
