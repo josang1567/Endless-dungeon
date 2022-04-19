@@ -270,7 +270,7 @@ MonoBehaviour:
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
   amount: -15
   modType: 1
-  critChance: 0.3
+  critChance: 0.1
   message: '{receiver} pierde defensa'
 --- !u!114 &7929844887918949144
 MonoBehaviour:
@@ -337,7 +337,7 @@ MonoBehaviour:
   effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
   amount: -20
   modType: 1
-  critChance: 0.53
+  critChance: 0.15
 --- !u!1 &7929844888363485292
 GameObject:
   m_ObjectHideFlags: 0

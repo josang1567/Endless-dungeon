@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 0
-  idName: Mago
+  idName: Wizard
   statusPanel: {fileID: 0}
   combatManager: {fileID: 0}
   statusMods: []
@@ -645,7 +645,7 @@ MonoBehaviour:
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
   amount: -20
   modType: 1
-  critChance: 0.86
+  critChance: 0.09
 --- !u!1 &6331758516557656075
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,4 +697,4 @@ MonoBehaviour:
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
   amount: -40
   modType: 1
-  critChance: 0.76
+  critChance: 0

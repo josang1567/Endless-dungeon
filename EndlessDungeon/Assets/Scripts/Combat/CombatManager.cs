@@ -30,12 +30,7 @@ public class CombatManager : MonoBehaviour
     private List<Fighter> returnBuffer;
 
 
-    void onAwake()
-    {
-        DontDestroyOnLoad(playerTeam[0]);
-        DontDestroyOnLoad(playerTeam[1]);
-        DontDestroyOnLoad(playerTeam[2]);
-    }
+
     void Start()
     {
 
@@ -45,6 +40,8 @@ public class CombatManager : MonoBehaviour
 
         this.SortFightersBySpeed();
         this.MakeTeams();
+
+        this.initStats();
         this.MakeOrder();
 
         LogPanel.Write("Comienza la batalla.");
@@ -183,7 +180,7 @@ public class CombatManager : MonoBehaviour
                         LogPanel.Write("Victoria!");
                         if (!NextScene.Equals(""))
                         {
-
+                           
                             StartCoroutine(NextLevel());
                             this.isCombatActive = false;
                         }
@@ -259,15 +256,16 @@ public class CombatManager : MonoBehaviour
 
                     if (currentFighter.team.ToString().Equals("PLAYERS"))
                     {
-                        if (currentFighter.statusCondition==null)
+                        if (currentFighter.statusCondition == null)
                         {
                             mensaje += $"Es el turno de {currentFighter.idName}.\n"
+                               + $"Vida:{currentFighter.GetStats().health}\n"
                        + $"Ataque:{currentFighter.GetStats().attack}\n"
                        + $"Defensa:{currentFighter.GetStats().deffense}\n"
                        + $"Velocidad:{currentFighter.GetStats().speed}\n"
                        + "Estado:";
                         }
-                        else if (currentFighter.statusCondition!=null)
+                        else if (currentFighter.statusCondition != null)
                         {
                             mensaje += $"Es el turno de {currentFighter.idName}.\n"
                            + $"Ataque:{currentFighter.GetStats().attack}\n"
@@ -367,7 +365,103 @@ public class CombatManager : MonoBehaviour
         LogPanel.Write("Pasando de nivel...");
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(this.NextScene);
-        Debug.Log("Guardando nivel: "+this.NextScene);
-        PlayerPrefs.SetString("NivelActual",this.NextScene); 
+
+        PlayerPrefs.SetString("NivelActual", this.NextScene);
+        PlayerPrefs.SetFloat("HuntressVida", this.playerTeam[0].GetStats().health);
+        PlayerPrefs.SetFloat("MagoVida", this.playerTeam[1].GetStats().health);
+        PlayerPrefs.SetFloat("KnightVida", this.playerTeam[2].GetStats().health);
+    }
+
+    public void initStats()
+    {
+        
+        
+        // en caso de haber datos se comprueban quienes tienen vida mayor que 0
+        if (PlayerPrefs.GetFloat("HuntressVida", 0) <= 0)
+        {
+            for (int i = 0; i < playerTeam.Length; i++)
+            {
+                if (playerTeam[i].idName == "Huntress")
+                {
+                     Debug.Log("vida de huntress <0");
+                    playerTeam[i].GetStats().setHealth( playerTeam[i].GetStats().maxHealth/10);
+                    playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth/10, playerTeam[i].GetStats().maxHealth);
+                }
+            }
+
+
+        }
+        if (PlayerPrefs.GetFloat("MagoVida", 0) <= 0)
+        {
+            for (int i = 0; i < playerTeam.Length; i++)
+            {
+                if (playerTeam[i].idName == "Wizard")
+                {
+                     Debug.Log("Vida de wizard< 0");
+                    playerTeam[i].GetStats().setHealth(playerTeam[i].GetStats().maxHealth/10);
+                    playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth/10, playerTeam[i].GetStats().maxHealth);
+                }
+            }
+
+        }
+        if (PlayerPrefs.GetFloat("KnightVida", 0) <= 0)
+        {
+            for (int i = 0; i < playerTeam.Length; i++)
+            {
+                if (playerTeam[i].idName == "Knight")
+                {
+                     Debug.Log("Vida de Knight <0");
+                    playerTeam[i].GetStats().setHealth(playerTeam[i].GetStats().maxHealth/10);
+                    playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth/10, playerTeam[i].GetStats().maxHealth);
+                }
+            }
+
+        }
+
+
+        // en caso de estar alguno vivo se actualiza la tablas de vida
+
+        if (PlayerPrefs.GetFloat("HuntressVida", 0) >= 1)
+        {
+            for (int i = 0; i < playerTeam.Length; i++)
+            {
+                if (playerTeam[i].idName == "Huntress")
+                {
+                    Debug.Log("vida de huntres >1");
+                    playerTeam[i].GetStats().setHealth(PlayerPrefs.GetFloat("HuntressVida", 0));
+                    playerTeam[i].statusPanel.SetHealth(PlayerPrefs.GetFloat("HuntressVida", 0), playerTeam[i].GetStats().maxHealth);
+                }
+            }
+        }
+        if (PlayerPrefs.GetFloat("MagoVida", 0) >= 1)
+        {
+            for (int i = 0; i < playerTeam.Length; i++)
+            {
+                if (playerTeam[i].idName == "Wizard")
+                {
+                     Debug.Log("Vida de wizard >1");
+                    playerTeam[i].GetStats().setHealth(PlayerPrefs.GetFloat("MagoVida", 0));
+                    playerTeam[i].statusPanel.SetHealth(PlayerPrefs.GetFloat("MagoVida", 0), playerTeam[i].GetStats().maxHealth);
+                }
+            }
+        }
+        if (PlayerPrefs.GetFloat("KnightVida", 0) >= 1)
+        {
+            for (int i = 0; i < playerTeam.Length; i++)
+            {
+                if (playerTeam[i].idName == "Knight")
+                {
+                     Debug.Log("Vida de knight >1");
+                    playerTeam[i].GetStats().setHealth(PlayerPrefs.GetFloat("KnightVida", 0));
+                    playerTeam[i].statusPanel.SetHealth(PlayerPrefs.GetFloat("KnightVida", 0), playerTeam[i].GetStats().maxHealth);
+
+                }
+            }
+        }
+
+
+        Debug.Log("DAtos: " + PlayerPrefs.GetFloat("HuntressVida", 0) +"/"+ PlayerPrefs.GetFloat("MagoVida", 0) +"/" + PlayerPrefs.GetFloat("KnightVida", 0) + "");
+
+
     }
 }

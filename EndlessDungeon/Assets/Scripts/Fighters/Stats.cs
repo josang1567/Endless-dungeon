@@ -32,5 +32,7 @@ public class Stats : MonoBehaviour
     {
         return new Stats(this.level, this.maxHealth, this.attack, this.deffense, this.spirit, this.speed);
     }
-
+    public void setHealth(float vida){
+        this.health=vida;
+    }
 }

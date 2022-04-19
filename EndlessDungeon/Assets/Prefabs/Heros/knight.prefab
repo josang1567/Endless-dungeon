@@ -97,6 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 5548533807391102318, guid: bc837f362e5a1e849befffde07b0c985, type: 3}
   animationDuration: 2
+  estado: 
   receptionMessage: '{receiver} ha sido paralizado'
   applyMessage: '{receiver} Esta paralizado'
   expireMessage: '{receiver} se ha librado de la paralisis'
@@ -153,7 +154,7 @@ MonoBehaviour:
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
   amount: -30
   modType: 1
-  critChance: 0.24
+  critChance: 0.11
 --- !u!1 &6696595417147089273
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +459,7 @@ MonoBehaviour:
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
   amount: -35
   modType: 1
-  critChance: 0.65
+  critChance: 0.14
   message: '{receiver} pierde defensa'
 --- !u!114 &4059580905455721167
 MonoBehaviour:
@@ -525,4 +526,4 @@ MonoBehaviour:
   effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
   amount: -20
   modType: 1
-  critChance: 0.53
+  critChance: 0.13

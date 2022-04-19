@@ -135,5 +135,8 @@ void FixedUpdate(){
     public Stats GetStats(){
         return this.stats;
     }
+   
     public abstract void InitTurn();
+
+    
 }

@@ -12,12 +12,12 @@ public class LevelLoader : MonoBehaviour
 
         StartCoroutine(NextLevel());
     }
+    
     IEnumerator NextLevel()
     {
         yield return new WaitForSeconds(0);
         SceneManager.LoadScene(this.NextScene);
-        Debug.Log("Nueva partida ");
-        PlayerPrefs.DeleteAll();
         PlayerPrefs.SetString("NivelActual", this.NextScene);
+        Time.timeScale = 1f;    
     }
 }
