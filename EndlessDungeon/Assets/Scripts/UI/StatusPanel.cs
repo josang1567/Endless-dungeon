@@ -10,6 +10,8 @@ public class StatusPanel : MonoBehaviour
     public Slider healthSlider;
     public Image healthSliderBar;
     public Text healthLabel;
+    
+    public Image statuscondition;
 
     public void SetStats(string name, Stats stats)
     {

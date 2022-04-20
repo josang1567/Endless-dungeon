@@ -17,10 +17,12 @@ public abstract class StatusCondition : MonoBehaviour
 
     protected Queue<string> messages;
     protected Fighter receiver;
+    public Sprite efecto;
 
     public void Awake()
     {
         this.messages = new Queue<string>();
+        
     }
 
     public void SetReceiver(Fighter recv)
@@ -30,6 +32,9 @@ public abstract class StatusCondition : MonoBehaviour
 
     private void Animate()
     {
+
+      
+
         var go = Instantiate(this.effectPrfb, this.receiver.transform.position, Quaternion.identity);
         Destroy(go, this.animationDuration);
     }
@@ -43,6 +48,7 @@ public abstract class StatusCondition : MonoBehaviour
 
         if (this.OnApply())
         {
+            
             this.Animate();
         }
 
@@ -51,6 +57,7 @@ public abstract class StatusCondition : MonoBehaviour
         if (this.hasExpired)
         {
             this.messages.Enqueue(this.expireMessage.Replace("{receiver}", this.receiver.idName));
+            this.receiver.statusPanel.statuscondition.gameObject.SetActive(false);
         }
     }
 
@@ -64,6 +71,8 @@ public abstract class StatusCondition : MonoBehaviour
 
     public string GetReceptionMessage()
     {
+         this.receiver.statusPanel.statuscondition.gameObject.SetActive(true);
+            this.receiver.statusPanel.statuscondition.sprite=this.efecto;
         return this.receptionMessage.Replace("{receiver}", this.receiver.idName);
     }
 

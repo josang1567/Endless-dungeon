@@ -219,6 +219,7 @@ MonoBehaviour:
   applyMessage: '{receiver} Esta paralizado'
   expireMessage: '{receiver} se ha librado de la paralisis'
   turnDuration: 2
+  efecto: {fileID: 5496771705419483318, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
   blockChance: 0.17
 --- !u!1 &6696595416804943928
 GameObject:
@@ -265,13 +266,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Corte Rapido
   FondoCarta: {fileID: 21300000, guid: 67d5ad9930c6da34b862a38c8f3f048b, type: 3}
-  skillDescription: "Aplica 30 de da\xF1o a un enemigo"
+  skillDescription: "Aplica 30 de da\xF1o a un enemigo Mas prob de critico"
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
-  amount: -30
+  amount: -22
   modType: 1
-  critChance: 0.11
+  critChance: 0.23
 --- !u!1 &6696595417147089273
 GameObject:
   m_ObjectHideFlags: 0

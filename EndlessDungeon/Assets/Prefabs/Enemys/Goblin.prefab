@@ -284,4 +284,5 @@ MonoBehaviour:
   applyMessage: "{receiver} sufre da\xF1o por el veneno"
   expireMessage: '{receiver} ha superado el veneno'
   turnDuration: 2
+  efecto: {fileID: 5588949773041185165, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
   percentage: -0.03

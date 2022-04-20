@@ -5,7 +5,7 @@ using UnityEngine;
 /// </summary>
 public class ApplySCSkill : Skill
 {
-    public Sprite efecto;
+    
     private StatusCondition condition;
 
     protected override void OnRun(Fighter receiver)

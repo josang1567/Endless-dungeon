@@ -20,6 +20,8 @@ public abstract class Fighter : MonoBehaviour
     private Animator anim;
      [Header("FavIcon")]
     public Sprite Foto;
+    
+    
     public bool isAlive
     {
         get => this.stats.health > 0;

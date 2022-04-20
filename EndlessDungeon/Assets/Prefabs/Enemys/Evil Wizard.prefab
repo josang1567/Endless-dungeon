@@ -50,6 +50,7 @@ MonoBehaviour:
   applyMessage: '{receiver} Esta paralizado, quiza no pueda atacar'
   expireMessage: '{receiver} se ha librado de la paralizis'
   turnDuration: 2
+  efecto: {fileID: 5496771705419483318, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
   blockChance: 0.15
 --- !u!1 &2972025774738805170
 GameObject:
