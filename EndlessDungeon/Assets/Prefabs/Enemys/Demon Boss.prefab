@@ -49,8 +49,8 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido quemado'
   applyMessage: '{receiver} se quema'
   expireMessage: '{receiver} ha apagado el fuego'
-  turnDuration: 2
-  percentage: -0.05
+  turnDuration: 3
+  percentage: -0.08
 --- !u!1 &1142449042
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
   amount: -10
   modType: 1
-  critChance: 0
+  critChance: 0.164
 --- !u!1 &1875696084
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
   skillDescription: quema 3 turnos
   animationDuration: 2
   targeting: 4
-  effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
 --- !u!1 &676252203864489902
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
   applyMessage: '{receiver} no puede actuar por culpa de la intimidacion'
   expireMessage: '{receiver} ha superado la intimidacion'
   turnDuration: 2
-  blockChance: 0.5
+  blockChance: 0.25
 --- !u!1 &2794033085340133666
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   skillDescription: Cura vida 3 turnos
   animationDuration: 2
   targeting: 0
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
 --- !u!1 &2919560668671325454
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,12 +349,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 5741858245129032032, guid: ad67e8428930baa40a6e26ad474a44c9, type: 3}
   animationDuration: 1
-  estado: 
+  estado: Curandose
   receptionMessage: El {receiver} se esta curando
   applyMessage: 'El {receiver} esta regenerandose '
-  expireMessage: El {receiver} ha dejado de regenerarse
-  turnDuration: 2
-  percentage: 0.05
+  expireMessage: El {receiver} se ha curado por completo
+  turnDuration: 3
+  percentage: 0.09
 --- !u!1 &6413182661459561930
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
   skillDescription: 
   animationDuration: 2
   targeting: 4
-  effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: 153e218eab33ce44aa0ee5a30959daa2, type: 3}
   amount: -25
   modType: 1
   critChance: 0.15

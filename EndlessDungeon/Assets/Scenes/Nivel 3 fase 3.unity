@@ -132,15 +132,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: level
-      value: 22
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: attack
-      value: 55
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: maxHealth
-      value: 65
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: skillPanel
@@ -300,19 +300,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: level
-      value: 22
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: attack
-      value: 60
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: deffense
-      value: 60
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: maxHealth
-      value: 80
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: skillPanel
@@ -564,6 +564,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 491012512}
     m_Modifications:
+    - target: {fileID: 5433233691105140271, guid: b8c985fc066fb524e8bc6a6743303886, type: 3}
+      propertyPath: level
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5433233691105140271, guid: b8c985fc066fb524e8bc6a6743303886, type: 3}
       propertyPath: statusPanel
       value: 
@@ -917,7 +921,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: level
-      value: 22
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: speed
@@ -925,15 +929,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: attack
-      value: 90
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: deffense
-      value: 40
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: maxHealth
-      value: 55
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: skillPanel

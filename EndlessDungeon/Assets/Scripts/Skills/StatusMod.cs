@@ -30,31 +30,7 @@ public class StatusMod : MonoBehaviour
       
       
       
-       /* switch (this.type)
-        {
-            case StatusModType.ATTACK_MOD:
-               if((modedStats.attack+=this.amount)<modedStats.Minattack){
-                   break;
-               }else{
-                   modedStats.attack += this.amount;
-                break;
-               }
-                
-            case StatusModType.DEFFENSE_MOD:
-            //Debug.Log("Defensa a quitar"+modedStats.deffense+=this.amount);
-            float modificado=modedStats.deffense;
-            modificado+=this.amount;
-             if(modificado<modedStats.Mindeffense){
-                 Debug.Log("no se puede bajar mas la defensa");
-                   
-               }else{
-                   Debug.Log("Se baja defensa");
-                   modedStats.deffense += this.amount;
-                
-               }
-               break;
-                
-        }*/
+     
 
         return modedStats;
     }

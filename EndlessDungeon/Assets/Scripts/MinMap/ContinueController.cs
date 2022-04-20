@@ -17,12 +17,12 @@ public class ContinueController : MonoBehaviour
     }
   public void onclick()
     {
-        Debug.Log("clickado"+this.nivel);
-          Debug.Log(""+PlayerPrefs.GetString("NivelActual","Nivel"));
+        
+       
         if(this.nivel=="0"){
             return;
         }
-        Debug.Log("cambiando");
+     
         StartCoroutine(Continue());
     }
    

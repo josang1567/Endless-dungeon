@@ -137,7 +137,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: level
-      value: 22
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: speed
@@ -230,7 +230,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: level
-      value: 22
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: speed
@@ -449,7 +449,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: level
-      value: 25
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: speed
@@ -469,7 +469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: maxHealth
-      value: 55
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: statusPanel
@@ -826,7 +826,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: level
-      value: 25
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: speed
@@ -846,7 +846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: maxHealth
-      value: 55
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: statusPanel
@@ -919,7 +919,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: level
-      value: 25
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: speed
@@ -939,7 +939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: maxHealth
-      value: 55
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: statusPanel
@@ -1282,7 +1282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: level
-      value: 22
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: attack

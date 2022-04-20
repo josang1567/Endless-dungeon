@@ -31,7 +31,7 @@ public class PlayerFighter : Fighter
         {
             for (int i = 0; i < this.skills.Length; i++)
             {
-                this.skillPanel.ConfigureButton(i, this.skills[i].skillName, this.skills[i].skillDescription, this.skills[i].FondoCarta);
+                this.skillPanel.ConfigureButton(i, this.skills[i].skillName, this.skills[i].skillDescription, this.skills[i].FondoCarta, this.skills[i].objetivos);
             }
             baraja = skills;
         }
@@ -60,12 +60,12 @@ public class PlayerFighter : Fighter
             }
             for (int i = 0; i < 4; i++)
             {
-                this.skillPanel.ConfigureButton(i, this.skills[LastRand[i]].skillName, this.skills[LastRand[i]].skillDescription, this.skills[LastRand[i]].FondoCarta);
+                this.skillPanel.ConfigureButton(i, this.skills[LastRand[i]].skillName, this.skills[LastRand[i]].skillDescription, this.skills[LastRand[i]].FondoCarta, this.skills[LastRand[i]].objetivos);
             }
             for (int i = 0; i < 4; i++)
             {
                 baraja[i] = skills[LastRand[i]];
-                //  Debug.Log( baraja[i] = skills[LastRand[i]]);
+
             }
         }
     }

@@ -180,7 +180,7 @@ public class CombatManager : MonoBehaviour
                         LogPanel.Write("Victoria!");
                         if (!NextScene.Equals(""))
                         {
-                           
+
                             StartCoroutine(NextLevel());
                             this.isCombatActive = false;
                         }
@@ -359,33 +359,47 @@ public class CombatManager : MonoBehaviour
     }
     IEnumerator NextLevel()
     {
-        yield return new WaitForSeconds(1);
-        LogPanel.Write("El equipo se cura sus heridas");
+
         yield return new WaitForSeconds(1);
         LogPanel.Write("Pasando de nivel...");
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(this.NextScene);
 
         PlayerPrefs.SetString("NivelActual", this.NextScene);
-        PlayerPrefs.SetFloat("HuntressVida", this.playerTeam[0].GetStats().health);
-        PlayerPrefs.SetFloat("MagoVida", this.playerTeam[1].GetStats().health);
-        PlayerPrefs.SetFloat("KnightVida", this.playerTeam[2].GetStats().health);
+
+
+        for (int i = 0; i < playerTeam.Length; i++)
+        {
+            if (playerTeam[i].idName == "Cazadora")
+            {
+                PlayerPrefs.SetFloat("HuntressVida", this.playerTeam[i].GetStats().health);
+            }
+            if (playerTeam[i].idName == "Mago")
+            {
+                PlayerPrefs.SetFloat("MagoVida", this.playerTeam[i].GetStats().health);
+            }
+            if (playerTeam[i].idName == "Caballero")
+            {
+                PlayerPrefs.SetFloat("KnightVida", this.playerTeam[i].GetStats().health);
+            }
+        }
+
     }
 
     public void initStats()
     {
-        
-        
+
+
         // en caso de haber datos se comprueban quienes tienen vida mayor que 0
         if (PlayerPrefs.GetFloat("HuntressVida", 0) <= 0)
         {
             for (int i = 0; i < playerTeam.Length; i++)
             {
-                if (playerTeam[i].idName == "Huntress")
+                if (playerTeam[i].idName == "Cazadora")
                 {
-                     Debug.Log("vida de huntress <0");
-                    playerTeam[i].GetStats().setHealth( playerTeam[i].GetStats().maxHealth/10);
-                    playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth/10, playerTeam[i].GetStats().maxHealth);
+                  
+                    playerTeam[i].GetStats().setHealth(playerTeam[i].GetStats().maxHealth / 10);
+                    playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth / 10, playerTeam[i].GetStats().maxHealth);
                 }
             }
 
@@ -395,11 +409,11 @@ public class CombatManager : MonoBehaviour
         {
             for (int i = 0; i < playerTeam.Length; i++)
             {
-                if (playerTeam[i].idName == "Wizard")
+                if (playerTeam[i].idName == "Mago")
                 {
-                     Debug.Log("Vida de wizard< 0");
-                    playerTeam[i].GetStats().setHealth(playerTeam[i].GetStats().maxHealth/10);
-                    playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth/10, playerTeam[i].GetStats().maxHealth);
+                   
+                    playerTeam[i].GetStats().setHealth(playerTeam[i].GetStats().maxHealth / 10);
+                    playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth / 10, playerTeam[i].GetStats().maxHealth);
                 }
             }
 
@@ -408,11 +422,11 @@ public class CombatManager : MonoBehaviour
         {
             for (int i = 0; i < playerTeam.Length; i++)
             {
-                if (playerTeam[i].idName == "Knight")
+                if (playerTeam[i].idName == "Caballero")
                 {
-                     Debug.Log("Vida de Knight <0");
-                    playerTeam[i].GetStats().setHealth(playerTeam[i].GetStats().maxHealth/10);
-                    playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth/10, playerTeam[i].GetStats().maxHealth);
+                    
+                    playerTeam[i].GetStats().setHealth(playerTeam[i].GetStats().maxHealth / 10);
+                    playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth / 10, playerTeam[i].GetStats().maxHealth);
                 }
             }
 
@@ -425,9 +439,8 @@ public class CombatManager : MonoBehaviour
         {
             for (int i = 0; i < playerTeam.Length; i++)
             {
-                if (playerTeam[i].idName == "Huntress")
+                if (playerTeam[i].idName == "Cazadora")
                 {
-                    Debug.Log("vida de huntres >1");
                     playerTeam[i].GetStats().setHealth(PlayerPrefs.GetFloat("HuntressVida", 0));
                     playerTeam[i].statusPanel.SetHealth(PlayerPrefs.GetFloat("HuntressVida", 0), playerTeam[i].GetStats().maxHealth);
                 }
@@ -437,9 +450,8 @@ public class CombatManager : MonoBehaviour
         {
             for (int i = 0; i < playerTeam.Length; i++)
             {
-                if (playerTeam[i].idName == "Wizard")
+                if (playerTeam[i].idName == "Mago")
                 {
-                     Debug.Log("Vida de wizard >1");
                     playerTeam[i].GetStats().setHealth(PlayerPrefs.GetFloat("MagoVida", 0));
                     playerTeam[i].statusPanel.SetHealth(PlayerPrefs.GetFloat("MagoVida", 0), playerTeam[i].GetStats().maxHealth);
                 }
@@ -449,9 +461,9 @@ public class CombatManager : MonoBehaviour
         {
             for (int i = 0; i < playerTeam.Length; i++)
             {
-                if (playerTeam[i].idName == "Knight")
+                if (playerTeam[i].idName == "Caballero")
                 {
-                     Debug.Log("Vida de knight >1");
+
                     playerTeam[i].GetStats().setHealth(PlayerPrefs.GetFloat("KnightVida", 0));
                     playerTeam[i].statusPanel.SetHealth(PlayerPrefs.GetFloat("KnightVida", 0), playerTeam[i].GetStats().maxHealth);
 
@@ -460,7 +472,7 @@ public class CombatManager : MonoBehaviour
         }
 
 
-        Debug.Log("DAtos: " + PlayerPrefs.GetFloat("HuntressVida", 0) +"/"+ PlayerPrefs.GetFloat("MagoVida", 0) +"/" + PlayerPrefs.GetFloat("KnightVida", 0) + "");
+     //  Debug.Log("DAtos: " + PlayerPrefs.GetFloat("HuntressVida", 0) + "/" + PlayerPrefs.GetFloat("MagoVida", 0) + "/" + PlayerPrefs.GetFloat("KnightVida", 0) + "");
 
 
     }

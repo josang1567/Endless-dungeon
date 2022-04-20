@@ -179,8 +179,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: level
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: attack
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: idName
       value: Esqueleto
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: deffense
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: maxHealth
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: statusPanel
@@ -453,7 +469,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: level
-      value: 21
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: maxHealth
@@ -664,8 +680,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 972507237}
     m_Modifications:
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
+      propertyPath: level
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: idName
       value: Goblin 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
+      propertyPath: maxHealth
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: statusPanel
@@ -772,8 +796,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 972507237}
     m_Modifications:
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
+      propertyPath: level
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: idName
       value: Goblin 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
+      propertyPath: maxHealth
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: statusPanel
@@ -855,7 +887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: level
-      value: 21
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: deffense
@@ -941,7 +973,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: level
-      value: 21
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: maxHealth

@@ -175,6 +175,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1752571245}
     m_Modifications:
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: skillPanel
       value: 
       objectReference: {fileID: 1890832166}
@@ -412,6 +416,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1752571245}
     m_Modifications:
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: skillPanel
       value: 
       objectReference: {fileID: 1890832166}
@@ -489,6 +497,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 188368124}
     m_Modifications:
+    - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: idName
       value: Goblin 2
@@ -914,6 +926,10 @@ PrefabInstance:
       value: knight
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: skillPanel
       value: 
       objectReference: {fileID: 1890832166}
@@ -982,9 +998,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 188368124}
     m_Modifications:
+    - target: {fileID: 3189909208125254610, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: amount
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909208125254610, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: targeting
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909208125254610, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: critChance
+      value: 0.156
+      objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251666, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: m_Name
       value: 'Skeleton '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251667, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: m_Color.b
+      value: 0.43574223
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251667, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: m_Color.g
+      value: 0.43574223
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251667, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8490566
       objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251668, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: m_RootOrder
@@ -1031,8 +1071,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: level
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: speed
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: attack
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: idName
-      value: Esqueleto
+      value: Esqueleto Rojo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: deffense
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: maxHealth
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: statusPanel
@@ -1099,6 +1159,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 188368124}
     m_Modifications:
+    - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: idName
       value: Goblin 1
@@ -1221,7 +1285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126100509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.65, y: -1.8199999, z: -3.7694445}
+  m_LocalPosition: {x: 9.65, y: -1.06, z: -3.7694445}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

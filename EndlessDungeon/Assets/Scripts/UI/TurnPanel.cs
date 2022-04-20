@@ -18,7 +18,7 @@ public class TurnPanel : MonoBehaviour
         switch (iconos.Count)
         {
             case 0:
-              Debug.Log(iconos.Count);
+              
                 for (int i = 0; i < 5; i++)
                 {
                     current.Icon[i].gameObject.SetActive(false);
@@ -26,7 +26,7 @@ public class TurnPanel : MonoBehaviour
                 }
                 break;
             case 1:
-              Debug.Log(iconos.Count);
+              
                 current.Icon[1].gameObject.SetActive(false);
                 current.Icon[2].gameObject.SetActive(false);
                 current.Icon[3].gameObject.SetActive(false);
@@ -40,7 +40,7 @@ public class TurnPanel : MonoBehaviour
                 }
                 break;
             case 2:
-              Debug.Log(iconos.Count);
+              
                 current.Marcs[2].gameObject.SetActive(false);
                 current.Marcs[3].gameObject.SetActive(false);
                 current.Marcs[4].gameObject.SetActive(false);
@@ -55,7 +55,7 @@ public class TurnPanel : MonoBehaviour
                 }
                 break;
             case 3:
-              Debug.Log(iconos.Count);
+           
                 current.Marcs[2].gameObject.SetActive(false);
                 current.Marcs[3].gameObject.SetActive(false);
                 current.Marcs[4].gameObject.SetActive(false);

@@ -1,11 +1,13 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+
 public abstract class Skill : MonoBehaviour
 {
     [Header("Base Skill")]
     public string skillName;
     public Sprite FondoCarta;
+    public string objetivos;
     public string skillDescription;
     public float animationDuration;
 

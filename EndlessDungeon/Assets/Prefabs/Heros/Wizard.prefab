@@ -1,5 +1,56 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &341899200579055341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2598039681856672127}
+  - component: {fileID: 3205652450114299599}
+  m_Layer: 0
+  m_Name: Veneno
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2598039681856672127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341899200579055341}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 437259758336074499}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3205652450114299599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341899200579055341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb52f7f462513a46892845e5af1f87e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectPrfb: {fileID: 2530754296400339780, guid: b51663b5a1fcb374d9e987fac33a5b08, type: 3}
+  animationDuration: 1
+  estado: Envenenado
+  receptionMessage: '{receiver} ha sido envenenado'
+  applyMessage: '{receiver} Esta envenenado'
+  expireMessage: '{receiver} se ha curado del veneno'
+  turnDuration: 3
+  percentage: -0.08
 --- !u!1 &437259756312302883
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,10 +96,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Bendicion de luz
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
-  skillDescription: Cura 30 puntos a todos los aliados
+  objetivos: Todos los aliados
+  skillDescription: Cura 30 puntos de salud
   animationDuration: 1
   targeting: 1
-  effectPrfb: {fileID: 6121421475228809642, guid: 60b107ee372f6164db85ed1e05e3dceb, type: 3}
+  effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
   amount: 30
   modType: 1
   critChance: 0
@@ -149,7 +201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Hipnosis
   FondoCarta: {fileID: 21300000, guid: 49fedee658be6e341a99ecfd2e0c108c, type: 3}
-  skillDescription: Paraliza al enemigo 1 turno
+  objetivos: Un enemigo
+  skillDescription: Paraliza 2 turno
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
@@ -250,61 +303,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Regeneracion
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
-  skillDescription: Cura el 15% de la  vida a si mismo durante 3 turnos
+  objetivos: A si mismo
+  skillDescription: Cura el 15% de la  vida  durante 3 turnos
   animationDuration: 2
   targeting: 0
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
---- !u!1 &437259757023008258
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 437259757023008259}
-  - component: {fileID: 437259757023008256}
-  m_Layer: 0
-  m_Name: Curse_paralisis
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &437259757023008259
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437259757023008258}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 437259758336074499}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &437259757023008256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437259757023008258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 481e1735e607a3a43beb362322236b6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrfb: {fileID: 5548533807391102318, guid: bc837f362e5a1e849befffde07b0c985, type: 3}
-  animationDuration: 2
-  estado: Paralizado
-  receptionMessage: '{receiver} ha sido paralizado'
-  applyMessage: '{receiver} Esta paralizado'
-  expireMessage: '{receiver} se ha librado de la paralisis'
-  turnDuration: 1
-  blockChance: 0.18
 --- !u!1 &437259757141941395
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 0
-  idName: Wizard
+  idName: Mago
   statusPanel: {fileID: 0}
   combatManager: {fileID: 0}
   statusMods: []
@@ -489,7 +492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Regeneracion Grupal
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
-  skillDescription: Cura a todos los aliados un 10% de la vida durante  3 turnos
+  objetivos: Todos los aliados
+  skillDescription: Cura un 10% de la vida durante  3 turnos
   animationDuration: 2
   targeting: 1
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
@@ -538,11 +542,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrfb: {fileID: 5548533807391102318, guid: bc837f362e5a1e849befffde07b0c985, type: 3}
   animationDuration: 2
-  estado: 
+  estado: Paralizado
   receptionMessage: '{receiver} ha sido paralizado'
   applyMessage: '{receiver} Esta paralizado'
   expireMessage: '{receiver} se ha librado de la paralisis'
-  turnDuration: 1
+  turnDuration: 2
   blockChance: 0
 --- !u!1 &437259758336074498
 GameObject:
@@ -555,7 +559,7 @@ GameObject:
   - component: {fileID: 437259758336074499}
   - component: {fileID: 437259758336074496}
   m_Layer: 0
-  m_Name: Hipnosis en Masa
+  m_Name: Nube toxica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -572,7 +576,7 @@ Transform:
   m_LocalPosition: {x: -3.3199453, y: 0.07087958, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 437259757023008259}
+  - {fileID: 2598039681856672127}
   m_Father: {fileID: 437259757141941407}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -588,12 +592,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477faffd7a847304a8106973b76318f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillName: Hipnosis masiva
+  skillName: Nube toxica
   FondoCarta: {fileID: 21300000, guid: 49fedee658be6e341a99ecfd2e0c108c, type: 3}
-  skillDescription: Paraliza a todos los {\n} enemigos un turno
+  objetivos: Un enemigo
+  skillDescription: Envenena 3 turnos
   animationDuration: 2
-  targeting: 2
-  effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
+  targeting: 4
+  effectPrfb: {fileID: 2530754296400339780, guid: b51663b5a1fcb374d9e987fac33a5b08, type: 3}
 --- !u!1 &437259758367566131
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +644,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Bola magica
   FondoCarta: {fileID: 21300000, guid: 5d1b53453aae76b48a0560edca542e7b, type: 3}
-  skillDescription: "Aplica 20 de da\xF1o"
+  objetivos: Un enemigo
+  skillDescription: "Hace 20 de da\xF1o"
   animationDuration: 1
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
@@ -691,10 +697,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Llamarada
   FondoCarta: {fileID: 21300000, guid: 5d1b53453aae76b48a0560edca542e7b, type: 3}
-  skillDescription: "Aplica 40 de da\xF1o"
+  objetivos: Un enemigo
+  skillDescription: "Aplica 35 de da\xF1o"
   animationDuration: 1
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
-  amount: -40
+  amount: -35
   modType: 1
   critChance: 0

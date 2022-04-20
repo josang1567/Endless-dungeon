@@ -7,6 +7,7 @@ public class PlayerSkillPanel : MonoBehaviour
     public GameObject[] skillButtons;
     public Text[] SkillTitleLabels;
     public Text[] SkillDescriptionLabels;
+    public Text[] SkillObjetivosLabels;
     public Button[] Fondos;
     private PlayerFighter targetFigther;
 
@@ -15,12 +16,13 @@ public class PlayerSkillPanel : MonoBehaviour
         this.Hide();
     }
 
-    public void ConfigureButton(int index, string skillName, string skillDescription, Sprite fondoCarta)
+    public void ConfigureButton(int index, string skillName, string skillDescription, Sprite fondoCarta, string objetivos)
     {
         this.skillButtons[index].SetActive(true);
         this.SkillTitleLabels[index].text = skillName;
         this.SkillDescriptionLabels[index].text=skillDescription;
         this.Fondos[index].image.sprite=fondoCarta;
+        this.SkillObjetivosLabels[index].text=objetivos;
     }
 
     public void OnSkillButtonClick(int index)

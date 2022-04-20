@@ -1,23 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class PauseControl : MonoBehaviour
 {
-    [SerializeField] private GameObject botonPausa;
+    [SerializeField] private Button botonPausa;
     [SerializeField] private GameObject menuPausa;
-
+[SerializeField] private Button botonGlosario;
     public void pause()
     {
         Time.timeScale = 0f;
-        botonPausa.SetActive(false);
+        botonPausa.interactable =false;
         menuPausa.SetActive(true);
+        botonGlosario.interactable =false;
     }
     public void Continue()
     {
         Time.timeScale = 1f;
-        botonPausa.SetActive(true);
+        botonPausa.interactable =true;
         menuPausa.SetActive(false);
+         botonGlosario.interactable =true;
     }
     public void Restart()
     {

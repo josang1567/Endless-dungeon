@@ -9,7 +9,6 @@ public class LoadFile : MonoBehaviour
 
      public void onclick()
     {
-        Debug.Log("Clicado");
         StartCoroutine(NextLevel());
     }
      IEnumerator NextLevel()

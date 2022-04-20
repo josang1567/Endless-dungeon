@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 0
-  idName: Huntress
+  idName: Cazadora
   statusPanel: {fileID: 0}
   combatManager: {fileID: 0}
   statusMods: []
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Debilitar
   FondoCarta: {fileID: 21300000, guid: ec739adee84edc44eb588cfa1e3bdbe2, type: 3}
-  skillDescription: -10 defensa rival
+  skillDescription: Quita 10 de defensa
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 4935495943547224871, guid: 4642a3248b4f72f47b2c6eaf1b473471, type: 3}
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Flecha debilitadora
   FondoCarta: {fileID: 21300000, guid: ec739adee84edc44eb588cfa1e3bdbe2, type: 3}
-  skillDescription: "Aplica 15 de da\xF1o y baja la defensa enemiga"
+  skillDescription: "Hace 15 de da\xF1o y baja la defensa "
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
@@ -297,12 +297,12 @@ GameObject:
   - component: {fileID: 7929844888000073986}
   - component: {fileID: 7929844888000073985}
   m_Layer: 0
-  m_Name: Flecha
+  m_Name: Lluvia de flechas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7929844888000073986
 Transform:
   m_ObjectHideFlags: 0
@@ -329,12 +329,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99e3b27e627ad469f6d07c32343e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillName: Flecha
+  skillName: Lluvia de flechas
   FondoCarta: {fileID: 21300000, guid: 21f507d0faf77b846a39165619934d15, type: 3}
-  skillDescription: "Aplica 20 de da\xF1o"
+  skillDescription: "Hace 20 de da\xF1o "
   animationDuration: 1
-  targeting: 4
-  effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
+  targeting: 2
+  effectPrfb: {fileID: 4935495943547224871, guid: 189f34a6a4e421541825c7a5adf319d8, type: 3}
   amount: -20
   modType: 1
   critChance: 0.15
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: curar
   FondoCarta: {fileID: 21300000, guid: ec739adee84edc44eb588cfa1e3bdbe2, type: 3}
-  skillDescription: cura un 20% de la vida  a un aliado
+  skillDescription: Cura  un 20% de salud
   animationDuration: 1
   targeting: 3
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
@@ -514,10 +514,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: flecha de hierro
   FondoCarta: {fileID: 21300000, guid: 21f507d0faf77b846a39165619934d15, type: 3}
-  skillDescription: "Aplica 40 de da\xF1o"
+  skillDescription: "Hace 40 de da\xF1o"
   animationDuration: 1.5
   targeting: 4
   effectPrfb: {fileID: 2809820756799570848, guid: 4b6c94cc7678c3746bfb7da671ef6a88, type: 3}
-  amount: -40
+  amount: -30
   modType: 1
   critChance: 0.12
