@@ -96,6 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Barrido
   FondoCarta: {fileID: 0}
+  objetivos: 
   skillDescription: 
   animationDuration: 2
   targeting: 2
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Quemadura
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  objetivos: 
   skillDescription: quema 3 turnos
   animationDuration: 2
   targeting: 4
@@ -199,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Intimidacion del demonio
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  objetivos: 
   skillDescription: pierde 1 turno
   animationDuration: 2
   targeting: 4
@@ -300,6 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Regeneracion
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  objetivos: 
   skillDescription: Cura vida 3 turnos
   animationDuration: 2
   targeting: 0
@@ -400,6 +404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Hachazo
   FondoCarta: {fileID: 0}
+  objetivos: 
   skillDescription: 
   animationDuration: 2
   targeting: 4
@@ -517,7 +522,7 @@ MonoBehaviour:
   isAttacking: 0
   Foto: {fileID: -2352396353401391747, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 20
-  maxHealth: 500
+  maxHealth: 350
   attack: 100
   deffense: 100
   spirit: 232

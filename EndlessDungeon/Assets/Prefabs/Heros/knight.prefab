@@ -46,8 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Escudo Magico
   FondoCarta: {fileID: 21300000, guid: fa51ede296e5f8845bdbf0ca096b8fc0, type: 3}
-  objetivos: Todos los aliados
-  skillDescription: 'Aumenta la defensa ligeramente '
+  skillDescription: Aumenta la defensa ligeramente a todos los heroes
   animationDuration: 2
   targeting: 1
   effectPrfb: {fileID: 4935495943547224871, guid: 9f7a3ae2bf5b48b439f7a877c85603e0, type: 3}
@@ -111,7 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Espada Magica
   FondoCarta: {fileID: 21300000, guid: fceb0904fed781e40b1d2b256e7aa16c, type: 3}
-  objetivos: Todos los enemigos
   skillDescription: "Aplica 15 de da\xF1o a todos los enemigos"
   animationDuration: 2
   targeting: 2
@@ -164,8 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: curar
   FondoCarta: {fileID: 21300000, guid: fceb0904fed781e40b1d2b256e7aa16c, type: 3}
-  objetivos: A si mismo
-  skillDescription: Cura un 20% de salud
+  skillDescription: Cura un 20% de salud a si mismo
   animationDuration: 1
   targeting: 0
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
@@ -268,8 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Corte Rapido
   FondoCarta: {fileID: 21300000, guid: 67d5ad9930c6da34b862a38c8f3f048b, type: 3}
-  objetivos: Un enemigo
-  skillDescription: "Aplica 30 de da\xF1o"
+  skillDescription: "Aplica 30 de da\xF1o a un enemigo"
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
@@ -322,8 +318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Escudo
   FondoCarta: {fileID: 21300000, guid: fa51ede296e5f8845bdbf0ca096b8fc0, type: 3}
-  objetivos: A si mismo
-  skillDescription: Aumenta la defensa ligeramente
+  skillDescription: Se aumenta  la defensa ligeramente
   animationDuration: 2
   targeting: 0
   effectPrfb: {fileID: 6121421475228809642, guid: 60b107ee372f6164db85ed1e05e3dceb, type: 3}
@@ -388,8 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Paralizar
   FondoCarta: {fileID: 21300000, guid: fceb0904fed781e40b1d2b256e7aa16c, type: 3}
-  objetivos: Un enemigo
-  skillDescription: Paraliza 2 turno
+  skillDescription: Paraliza 2  turnos a un enemigo
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
@@ -576,8 +570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Espada
   FondoCarta: {fileID: 21300000, guid: 67d5ad9930c6da34b862a38c8f3f048b, type: 3}
-  objetivos: Un enemigo
-  skillDescription: "Hace 20 de da\xF1o"
+  skillDescription: "Hace 20 de da\xF1o a un enemigo"
   animationDuration: 1
   targeting: 4
   effectPrfb: {fileID: 4935495943547224871, guid: 189f34a6a4e421541825c7a5adf319d8, type: 3}

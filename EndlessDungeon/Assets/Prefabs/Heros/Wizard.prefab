@@ -96,7 +96,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Bendicion de luz
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
-  objetivos: Todos los aliados
   skillDescription: Cura 30 puntos de salud
   animationDuration: 1
   targeting: 1
@@ -201,8 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Hipnosis
   FondoCarta: {fileID: 21300000, guid: 49fedee658be6e341a99ecfd2e0c108c, type: 3}
-  objetivos: Un enemigo
-  skillDescription: Paraliza 2 turno
+  skillDescription: Paraliza 2 turnos a un enemigo
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 5901646032596391637, guid: a5ca0fc9ad9ad1f49a3acab8d16287aa, type: 3}
@@ -268,7 +266,7 @@ GameObject:
   - component: {fileID: 437259756858406685}
   - component: {fileID: 437259756858406682}
   m_Layer: 0
-  m_Name: Regeneracion
+  m_Name: Aura Sagrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,10 +299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477faffd7a847304a8106973b76318f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillName: Regeneracion
+  skillName: Aura Sagrada
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
-  objetivos: A si mismo
-  skillDescription: Cura el 15% de la  vida  durante 3 turnos
+  skillDescription: Cura el 15% de la  vida  durante 3 turnos a si mismo
   animationDuration: 2
   targeting: 0
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
@@ -492,8 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Regeneracion Grupal
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
-  objetivos: Todos los aliados
-  skillDescription: Cura un 10% de la vida durante  3 turnos
+  skillDescription: Cura un 10% de la vida durante 3 turnosa los heroes
   animationDuration: 2
   targeting: 1
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}
@@ -594,8 +590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Nube toxica
   FondoCarta: {fileID: 21300000, guid: 49fedee658be6e341a99ecfd2e0c108c, type: 3}
-  objetivos: Un enemigo
-  skillDescription: Envenena 3 turnos
+  skillDescription: Envenena 3 turnos a un enemigo
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 2530754296400339780, guid: b51663b5a1fcb374d9e987fac33a5b08, type: 3}
@@ -644,8 +639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Bola magica
   FondoCarta: {fileID: 21300000, guid: 5d1b53453aae76b48a0560edca542e7b, type: 3}
-  objetivos: Un enemigo
-  skillDescription: "Hace 20 de da\xF1o"
+  skillDescription: "Hace 20 de da\xF1o a un enemigo"
   animationDuration: 1
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
@@ -697,8 +691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Llamarada
   FondoCarta: {fileID: 21300000, guid: 5d1b53453aae76b48a0560edca542e7b, type: 3}
-  objetivos: Un enemigo
-  skillDescription: "Aplica 35 de da\xF1o"
+  skillDescription: "Hace 35 de da\xF1o a un enemigo"
   animationDuration: 1
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: a0ac3c1cd12b0b146850da4cc37fb779, type: 3}
