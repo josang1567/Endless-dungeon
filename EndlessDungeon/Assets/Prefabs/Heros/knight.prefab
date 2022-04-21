@@ -322,7 +322,7 @@ MonoBehaviour:
   skillDescription: Se aumenta  la defensa ligeramente
   animationDuration: 2
   targeting: 0
-  effectPrfb: {fileID: 6121421475228809642, guid: 60b107ee372f6164db85ed1e05e3dceb, type: 3}
+  effectPrfb: {fileID: 4935495943547224871, guid: 9f7a3ae2bf5b48b439f7a877c85603e0, type: 3}
   message: '{receiver} gana Defensa'
 --- !u!114 &6696595417147089279
 MonoBehaviour:

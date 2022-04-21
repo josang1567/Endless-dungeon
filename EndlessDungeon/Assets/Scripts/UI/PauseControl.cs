@@ -7,7 +7,7 @@ public class PauseControl : MonoBehaviour
 {
     [SerializeField] private Button botonPausa;
     [SerializeField] private GameObject menuPausa;
-[SerializeField] private Button botonGlosario;
+    [SerializeField] private Button botonGlosario;
     public void pause()
     {
         Time.timeScale = 0f;

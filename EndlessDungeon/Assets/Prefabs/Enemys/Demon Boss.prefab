@@ -251,7 +251,7 @@ MonoBehaviour:
   animationDuration: 0
   estado: Intimidado
   receptionMessage: '{receiver} ha sido intimidado por el demonio'
-  applyMessage: '{receiver} no puede actuar por culpa de la intimidacion'
+  applyMessage: '{receiver} puede que no pueda  actuar por culpa de la intimidacion'
   expireMessage: '{receiver} ha superado la intimidacion'
   turnDuration: 2
   efecto: {fileID: 2409756819314735386, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
@@ -354,10 +354,10 @@ MonoBehaviour:
   estado: Curandose
   receptionMessage: El {receiver} se esta curando
   applyMessage: 'El {receiver} esta regenerandose '
-  expireMessage: El {receiver} se ha curado por completo
+  expireMessage: El {receiver} ha finalizado su regeneracion
   turnDuration: 3
   efecto: {fileID: 455369222770000106, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
-  percentage: 0.09
+  percentage: 0.13
 --- !u!1 &6413182661459561930
 GameObject:
   m_ObjectHideFlags: 0

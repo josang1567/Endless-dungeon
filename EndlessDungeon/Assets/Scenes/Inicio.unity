@@ -1105,7 +1105,7 @@ GameObject:
   - component: {fileID: 620680334}
   - component: {fileID: 620680333}
   m_Layer: 5
-  m_Name: Ayuda
+  m_Name: Glosario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3662,9 +3662,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a566d6dedaef843a8c6c5dfae3be9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  botonPausa: {fileID: 1457886946}
+  botonPausa: {fileID: 1457886947}
   menuPausa: {fileID: 236935263}
-  botonGlosario: {fileID: 0}
+  botonGlosario: {fileID: 620680333}
 --- !u!114 &2012588823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3740,7 +3740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4602786187766988788, guid: 2dbd830353f2e604cb91c961ff111099, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4602786187766988788, guid: 2dbd830353f2e604cb91c961ff111099, type: 3}
       propertyPath: m_AnchorMax.x
