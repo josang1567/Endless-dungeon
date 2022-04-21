@@ -226,6 +226,8 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  isHited: 0
+  isDead: 0
   Foto: {fileID: 5219528537255451192, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 20
   maxHealth: 50
@@ -284,5 +286,5 @@ MonoBehaviour:
   applyMessage: "{receiver} sufre da\xF1o por el veneno"
   expireMessage: '{receiver} ha superado el veneno'
   turnDuration: 2
-  efecto: {fileID: 5588949773041185165, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
+  efecto: {fileID: -6062168761353031166, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: -0.03

@@ -50,7 +50,7 @@ MonoBehaviour:
   applyMessage: '{receiver} se quema'
   expireMessage: '{receiver} ha apagado el fuego'
   turnDuration: 3
-  efecto: {fileID: -6317141591426226998, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
+  efecto: {fileID: -6774237412147299964, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: -0.08
 --- !u!1 &1142449042
 GameObject:
@@ -254,7 +254,7 @@ MonoBehaviour:
   applyMessage: '{receiver} no puede actuar por culpa de la intimidacion'
   expireMessage: '{receiver} ha superado la intimidacion'
   turnDuration: 2
-  efecto: {fileID: 5496771705419483318, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
+  efecto: {fileID: 2409756819314735386, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   blockChance: 0.25
 --- !u!1 &2794033085340133666
 GameObject:
@@ -356,7 +356,7 @@ MonoBehaviour:
   applyMessage: 'El {receiver} esta regenerandose '
   expireMessage: El {receiver} se ha curado por completo
   turnDuration: 3
-  efecto: {fileID: -6383763045072196882, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
+  efecto: {fileID: 455369222770000106, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: 0.09
 --- !u!1 &6413182661459561930
 GameObject:
@@ -518,6 +518,8 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  isHited: 0
+  isDead: 0
   Foto: {fileID: -2352396353401391747, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 20
   maxHealth: 350

@@ -17,6 +17,8 @@ public abstract class Fighter : MonoBehaviour
     protected Skill[] skills;
     public StatusCondition statusCondition;
     public bool isAttacking;
+    public bool isHited;
+     public bool isDead;
     private Animator anim;
      [Header("FavIcon")]
     public Sprite Foto;
@@ -30,6 +32,8 @@ public abstract class Fighter : MonoBehaviour
     protected virtual void Start()
     {
         isAttacking = false;
+        isHited=false;
+        isDead=false;
         anim = GetComponent<Animator>();
         this.statusPanel.SetStats(this.idName, this.stats);
         this.skills = this.GetComponentsInChildren<Skill>();
@@ -38,6 +42,8 @@ public abstract class Fighter : MonoBehaviour
     }
 void FixedUpdate(){
      anim.SetBool("isAttacking",isAttacking);
+     anim.SetBool("isHited",isHited);
+      anim.SetBool("isDead",isDead);
 }
     protected void AutoConfigureSkillTargeting(Skill skill)
     {
@@ -103,7 +109,9 @@ void FixedUpdate(){
 
         if (this.isAlive == false)
         {
-            Invoke("Die", 0.75f);
+            isDead=true;
+           StartCoroutine(this.death());
+             Invoke("Die", 0.75f);
         }
 
     }
@@ -140,5 +148,7 @@ void FixedUpdate(){
    
     public abstract void InitTurn();
 
-    
+   IEnumerator death(){
+       yield return new WaitForSeconds(3f);
+    }
 }

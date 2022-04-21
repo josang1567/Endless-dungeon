@@ -361,7 +361,7 @@ public class CombatManager : MonoBehaviour
     {
 
         yield return new WaitForSeconds(1);
-        LogPanel.Write("Pasando de nivel...");
+        LogPanel.Write("Adentrandose en la mazmorra...");
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(this.NextScene);
 

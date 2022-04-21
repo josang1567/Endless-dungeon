@@ -91,6 +91,7 @@ public class PlayerFighter : Fighter
 
             this.combatManager.OnFighterSkill(this.skillToBeExecuted);
             this.skillPanel.Hide();
+             this.enemiesPanel.Hide();
         }
     }
 

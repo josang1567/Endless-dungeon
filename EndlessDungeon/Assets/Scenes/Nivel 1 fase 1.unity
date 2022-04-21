@@ -151,6 +151,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1775161090}
     m_Modifications:
+    - target: {fileID: 3189909207668455579, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909208125254610, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: amount
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909208125254610, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: targeting
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251666, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: m_Name
       value: 'Skeleton '
@@ -202,6 +214,14 @@ PrefabInstance:
     - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: level
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: speed
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: maxHealth
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: statusPanel
@@ -481,6 +501,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: skillPanel
       value: 
       objectReference: {fileID: 1575644557}
@@ -543,6 +567,10 @@ PrefabInstance:
     - target: {fileID: 7929844886566069498, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: m_Name
       value: huntress
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844886566069498, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7929844887483171034, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: m_IsActive
@@ -685,6 +713,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1231520068}
     m_Modifications:
+    - target: {fileID: 437259756312302883, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259756496876059, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259756858406684, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 437259757141941392, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: level
       value: 1
@@ -752,6 +792,26 @@ PrefabInstance:
     - target: {fileID: 437259757141941407, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259758149846127, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259758367566129, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: amount
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259758367566129, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: modType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 437259758367566131, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331758516557656075, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}

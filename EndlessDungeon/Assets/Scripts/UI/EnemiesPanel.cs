@@ -41,7 +41,7 @@ public class EnemiesPanel : MonoBehaviour
         this.targetFigther = playerTarget;
 
         int btnIndex = 0;
-        foreach (var enemy in enemies)
+       foreach (var enemy in enemies)
         {
             if (enemy.isAlive)
             {
@@ -49,6 +49,8 @@ public class EnemiesPanel : MonoBehaviour
                 btnIndex ++;
             }
         }
+        
+      
     }
 
     public void Hide()

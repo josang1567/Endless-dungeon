@@ -117,10 +117,10 @@ TextureImporter:
         serializedVersion: 2
         x: 76
         y: 49
-        width: 65
-        height: 93
+        width: 102
+        height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,10 +138,10 @@ TextureImporter:
         serializedVersion: 2
         x: 304
         y: 49
-        width: 81
-        height: 96
+        width: 102
+        height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,10 +159,10 @@ TextureImporter:
         serializedVersion: 2
         x: 534
         y: 49
-        width: 84
-        height: 99
+        width: 102
+        height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,11 +179,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 763
-        y: 49
+        y: 50
         width: 102
         height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,12 +199,12 @@ TextureImporter:
       name: Death_7
       rect:
         serializedVersion: 2
-        x: 1012
-        y: 49
-        width: 88
-        height: 52
+        x: 1018
+        y: 50
+        width: 102
+        height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,11 +221,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1243
-        y: 49
-        width: 84
-        height: 51
+        y: 50
+        width: 102
+        height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -243,10 +243,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1474
         y: 49
-        width: 88
-        height: 53
+        width: 102
+        height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

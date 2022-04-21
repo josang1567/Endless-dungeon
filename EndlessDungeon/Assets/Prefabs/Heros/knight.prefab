@@ -219,7 +219,7 @@ MonoBehaviour:
   applyMessage: '{receiver} Esta paralizado'
   expireMessage: '{receiver} se ha librado de la paralisis'
   turnDuration: 2
-  efecto: {fileID: 5496771705419483318, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
+  efecto: {fileID: -7683140835982611127, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   blockChance: 0.17
 --- !u!1 &6696595416804943928
 GameObject:
@@ -517,6 +517,8 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  isHited: 0
+  isDead: 0
   Foto: {fileID: -8999417144695169524, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   skillPanel: {fileID: 0}
   enemiesPanel: {fileID: 0}
