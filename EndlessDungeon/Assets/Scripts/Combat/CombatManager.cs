@@ -29,10 +29,16 @@ public class CombatManager : MonoBehaviour
 
     private List<Fighter> returnBuffer;
 
+    public transiciones panel;
+
+
+
 
 
     void Start()
     {
+       
+
 
         this.returnBuffer = new List<Fighter>();
 
@@ -178,9 +184,10 @@ public class CombatManager : MonoBehaviour
                     if (victory)
                     {
                         LogPanel.Write("Victoria!");
+                         this.panel.StartAnim();
                         if (!NextScene.Equals(""))
                         {
-
+                          
                             StartCoroutine(NextLevel());
                             this.isCombatActive = false;
                         }
@@ -195,6 +202,7 @@ public class CombatManager : MonoBehaviour
                     if (defeat)
                     {
                         LogPanel.Write("Derrota!");
+                       this.panel.StartAnim();
                         this.isCombatActive = false;
                         StartCoroutine(waitToLoad());
 
@@ -347,6 +355,7 @@ public class CombatManager : MonoBehaviour
 
     public void OnFighterSkill(Skill skill)
     {
+        
         this.currentFighterSkill = skill;
         this.combatStatus = CombatStatus.FIGHTER_ACTION;
     }
@@ -354,7 +363,8 @@ public class CombatManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         LogPanel.Write("Reiniciando nivel...");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
+        this.panel.StartAnim();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     IEnumerator NextLevel()
@@ -397,7 +407,7 @@ public class CombatManager : MonoBehaviour
             {
                 if (playerTeam[i].idName == "Cazadora")
                 {
-                  
+
                     playerTeam[i].GetStats().setHealth(playerTeam[i].GetStats().maxHealth / 10);
                     playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth / 10, playerTeam[i].GetStats().maxHealth);
                 }
@@ -411,7 +421,7 @@ public class CombatManager : MonoBehaviour
             {
                 if (playerTeam[i].idName == "Mago")
                 {
-                   
+
                     playerTeam[i].GetStats().setHealth(playerTeam[i].GetStats().maxHealth / 10);
                     playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth / 10, playerTeam[i].GetStats().maxHealth);
                 }
@@ -424,7 +434,7 @@ public class CombatManager : MonoBehaviour
             {
                 if (playerTeam[i].idName == "Caballero")
                 {
-                    
+
                     playerTeam[i].GetStats().setHealth(playerTeam[i].GetStats().maxHealth / 10);
                     playerTeam[i].statusPanel.SetHealth(playerTeam[i].GetStats().maxHealth / 10, playerTeam[i].GetStats().maxHealth);
                 }
@@ -472,11 +482,9 @@ public class CombatManager : MonoBehaviour
         }
 
 
-     //  Debug.Log("DAtos: " + PlayerPrefs.GetFloat("HuntressVida", 0) + "/" + PlayerPrefs.GetFloat("MagoVida", 0) + "/" + PlayerPrefs.GetFloat("KnightVida", 0) + "");
-
 
     }
 
 
-   
+
 }

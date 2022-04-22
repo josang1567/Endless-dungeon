@@ -448,6 +448,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 963768943}
     m_Modifications:
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
+      propertyPath: Foto
+      value: 
+      objectReference: {fileID: -1484705323956593315, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
+    - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: level
       value: 3
       objectReference: {fileID: 0}
@@ -825,6 +829,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 963768943}
     m_Modifications:
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
+      propertyPath: Foto
+      value: 
+      objectReference: {fileID: -478054922161449255, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
+    - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: level
       value: 3
       objectReference: {fileID: 0}
@@ -917,6 +925,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963768943}
     m_Modifications:
+    - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
+      propertyPath: Foto
+      value: 
+      objectReference: {fileID: 5755430995237285898, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
     - target: {fileID: 5867211823825749330, guid: e76ae433c585a944abd7bf03b46af274, type: 3}
       propertyPath: level
       value: 3

@@ -1,22 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class HealthModStatusCondition : StatusCondition
 {
     [Header("Health mod")]
     public float percentage;
 
+     IEnumerator pausa()
+    {
+        yield return new WaitForSeconds(1.2f);
+    }
     public override bool OnApply()
     {
         Stats rStats = receiver.GetCurrentStats();
 
-       
-        if (rStats.health-Mathf.Abs(rStats.maxHealth * this.percentage) < 0)
+            Debug.Log("Salud base:" +rStats.health+" - "+Mathf.Abs(rStats.maxHealth * this.percentage)+"= "+(rStats.health - Mathf.Abs(rStats.maxHealth * this.percentage)));
+
+        if (rStats.health - Mathf.Abs(rStats.maxHealth * this.percentage) <= 0.9f)
         {
-            this.messages.Enqueue(this.receiver.idName+" no puede perder mas vida");
-           
+            Debug.Log("no se muere");
+            this.messages.Enqueue(this.receiver.idName + " no puede perder mas vida");
+            StartCoroutine(pausa());
+
         }
-        else if (rStats.maxHealth-(rStats.maxHealth * this.percentage) > 0)
+        else if (rStats.health - (rStats.maxHealth * this.percentage) != 0 || rStats.maxHealth - (rStats.maxHealth * this.percentage) > 0)
         {
+            Debug.Log("pierde vida");
             this.receiver.ModifyHealth(rStats.maxHealth * this.percentage);
         }
 
@@ -25,6 +35,8 @@ public class HealthModStatusCondition : StatusCondition
 
         return true;
     }
+
+
 
     public override bool BlocksTurn() => false;
 }

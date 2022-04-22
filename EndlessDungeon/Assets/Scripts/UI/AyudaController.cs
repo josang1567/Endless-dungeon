@@ -117,7 +117,7 @@ public class AyudaController : MonoBehaviour
 
     public void volverPag3()
     {
-        Debug.Log("click volver pag3");
+        
         Pag4.SetActive(false);
         Pag3.SetActive(true);
     }

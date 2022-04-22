@@ -46,9 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Flecha de red
   FondoCarta: {fileID: 21300000, guid: fceb0904fed781e40b1d2b256e7aa16c, type: 3}
-  skillDescription: Paraliza 2 turnos a todos los enemigos
+  skillDescription: Paraliza 2 turnos a un enemigo
   animationDuration: 2
-  targeting: 2
+  targeting: 4
   effectPrfb: {fileID: 5548533807391102318, guid: bc837f362e5a1e849befffde07b0c985, type: 3}
 --- !u!1 &5660919628989985703
 GameObject:
@@ -101,7 +101,7 @@ MonoBehaviour:
   expireMessage: '{receiver} se ha librado de la paralisis'
   turnDuration: 2
   efecto: {fileID: -7683140835982611127, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
-  blockChance: 0.26
+  blockChance: 0.5
 --- !u!1 &7929844886566069498
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +212,6 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
-  isHited: 0
   isDead: 0
   Foto: {fileID: 3010951858511213517, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   skillPanel: {fileID: 0}

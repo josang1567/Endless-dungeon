@@ -786,7 +786,6 @@ GameObject:
   - component: {fileID: 5031195351882069885}
   - component: {fileID: 5031195351882069884}
   - component: {fileID: 5031195351882069883}
-  - component: {fileID: 5031195353266887840}
   - component: {fileID: 5031195351882069882}
   - component: {fileID: 5031195351882069881}
   m_Layer: 5
@@ -884,19 +883,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5031195353266887840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5031195351882069880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22f08f76814388844964ed4175446708, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextScene: Nivel 2 fase 1
 --- !u!114 &5031195351882069882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,7 +1111,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5031195353266887840}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
         m_MethodName: onclick
         m_Mode: 1

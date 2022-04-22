@@ -61,5 +61,17 @@ public class EnemiesPanel : MonoBehaviour
         {
             btn.SetActive(false);
         }
+        
+    }
+     public void HidePlayer(Fighter lanzador)
+    {
+        lanzador.isAttacking=true;
+        this.gameObject.SetActive(false);
+
+        foreach (var btn in this.btns)
+        {
+            btn.SetActive(false);
+        }
+        
     }
 }

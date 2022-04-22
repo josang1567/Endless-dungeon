@@ -75,6 +75,7 @@ public abstract class Skill : MonoBehaviour
         else
             return null;
     }
+    
 
     protected abstract void OnRun(Fighter receiver);
 }

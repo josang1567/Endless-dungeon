@@ -76,7 +76,7 @@ public class PlayerFighter : Fighter
 
         this.skillToBeExecuted = this.baraja[index];
 
-
+         
 
         this.skillToBeExecuted.SetEmitter(this);
 
@@ -91,17 +91,18 @@ public class PlayerFighter : Fighter
 
             this.combatManager.OnFighterSkill(this.skillToBeExecuted);
             this.skillPanel.Hide();
-             this.enemiesPanel.Hide();
-        }
+             this.enemiesPanel.HidePlayer(this);
+             this.isAttacking = true;
     }
+        }
+        
 
     public void SetTargetAndAttack(Fighter enemyFigther)
     {
         this.skillToBeExecuted.AddReceiver(enemyFigther);
 
         this.combatManager.OnFighterSkill(this.skillToBeExecuted);
-        this.isAttacking = true;
         this.skillPanel.Hide();
-        this.enemiesPanel.Hide();
+        this.enemiesPanel.HidePlayer(this);
     }
 }

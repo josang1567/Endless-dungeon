@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Skeleton '
       objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251666, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251668, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: m_RootOrder
       value: 0
