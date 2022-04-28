@@ -15,18 +15,17 @@ public class HealthModStatusCondition : StatusCondition
     {
         Stats rStats = receiver.GetCurrentStats();
 
-            Debug.Log("Salud base:" +rStats.health+" - "+Mathf.Abs(rStats.maxHealth * this.percentage)+"= "+(rStats.health - Mathf.Abs(rStats.maxHealth * this.percentage)));
-
+            
         if (rStats.health - Mathf.Abs(rStats.maxHealth * this.percentage) <= 0.9f)
         {
-            Debug.Log("no se muere");
+            
             this.messages.Enqueue(this.receiver.idName + " no puede perder mas vida");
             StartCoroutine(pausa());
 
         }
         else if (rStats.health - (rStats.maxHealth * this.percentage) != 0 || rStats.maxHealth - (rStats.maxHealth * this.percentage) > 0)
         {
-            Debug.Log("pierde vida");
+           
             this.receiver.ModifyHealth(rStats.maxHealth * this.percentage);
         }
 

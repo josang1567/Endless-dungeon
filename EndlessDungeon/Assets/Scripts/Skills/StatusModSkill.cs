@@ -14,12 +14,18 @@ public class StatusModSkill : Skill
     {
         if (this.mod == null)
         {
+          
+           
             this.mod = this.GetComponent<StatusMod>();
+          
+          
         }
 
 
         this.messages.Enqueue(this.message.Replace("{receiver}", receiver.idName));
 
         receiver.statusMods.Add(this.mod);
+
+         
     }
 }

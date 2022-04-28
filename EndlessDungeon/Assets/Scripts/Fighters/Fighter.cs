@@ -17,13 +17,13 @@ public abstract class Fighter : MonoBehaviour
     protected Skill[] skills;
     public StatusCondition statusCondition;
     public bool isAttacking;
-    
-     public bool isDead;
+
+    public bool isDead;
     private Animator anim;
-     [Header("FavIcon")]
+    [Header("FavIcon")]
     public Sprite Foto;
-    
-    
+
+
     public bool isAlive
     {
         get => this.stats.health > 0;
@@ -32,19 +32,20 @@ public abstract class Fighter : MonoBehaviour
     protected virtual void Start()
     {
         isAttacking = false;
-        
-        isDead=false;
+
+        isDead = false;
         anim = GetComponent<Animator>();
         this.statusPanel.SetStats(this.idName, this.stats);
         this.skills = this.GetComponentsInChildren<Skill>();
 
         this.statusMods = new List<StatusMod>();
     }
-void FixedUpdate(){
-     anim.SetBool("isAttacking",isAttacking);
-  
-      anim.SetBool("isDead",isDead);
-}
+    void FixedUpdate()
+    {
+        anim.SetBool("isAttacking", isAttacking);
+
+        anim.SetBool("isDead", isDead);
+    }
     protected void AutoConfigureSkillTargeting(Skill skill)
     {
         skill.SetEmitter(this);
@@ -97,7 +98,7 @@ void FixedUpdate(){
     {
         this.statusPanel.gameObject.SetActive(false);
         this.gameObject.SetActive(false);
-      
+
     }
 
     public void ModifyHealth(float amount)
@@ -109,9 +110,9 @@ void FixedUpdate(){
 
         if (this.isAlive == false)
         {
-            isDead=true;
-           StartCoroutine(this.death());
-             Invoke("Die", 0.75f);
+            isDead = true;
+            StartCoroutine(this.death());
+            Invoke("Die", 0.75f);
         }
 
     }
@@ -122,9 +123,23 @@ void FixedUpdate(){
 
         foreach (var mod in this.statusMods)
         {
-            modedStats = mod.Apply(modedStats);
-        }
+            if (modedStats.deffense >= 10)
+            {
+                if (modedStats.deffense == 10)
+                {
 
+                    
+                }
+                else
+                {
+                    modedStats = mod.Apply(modedStats);
+                    
+                }
+
+            }
+
+        }
+       
         return modedStats;
     }
     public StatusCondition GetCurrentStatusCondition()
@@ -142,13 +157,15 @@ void FixedUpdate(){
     {
         isAttacking = false;
     }
-    public Stats GetStats(){
+    public Stats GetStats()
+    {
         return this.stats;
     }
-   
+
     public abstract void InitTurn();
 
-   IEnumerator death(){
-       yield return new WaitForSeconds(3f);
+    IEnumerator death()
+    {
+        yield return new WaitForSeconds(3f);
     }
 }
