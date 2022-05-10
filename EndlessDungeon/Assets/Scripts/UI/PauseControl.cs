@@ -8,8 +8,25 @@ public class PauseControl : MonoBehaviour
     [SerializeField] private Button botonPausa;
     [SerializeField] private GameObject menuPausa;
     [SerializeField] private Button botonGlosario;
+    
+void Update()
+    {
+      
+         if (Input.GetKeyDown("p")  )
+        {
+          
+          
+            pause();
+        }else 
+        if (Input.GetKeyDown("escape")  )
+        {
+           
+            Continue();
+        }
+    }
     public void pause()
     {
+        
         Time.timeScale = 0f;
         botonPausa.interactable =false;
         menuPausa.SetActive(true);
@@ -17,6 +34,7 @@ public class PauseControl : MonoBehaviour
     }
     public void Continue()
     {
+     
         Time.timeScale = 1f;
         botonPausa.interactable =true;
         menuPausa.SetActive(false);
@@ -24,6 +42,7 @@ public class PauseControl : MonoBehaviour
     }
     public void Restart()
     {
+        
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -33,6 +52,7 @@ public class PauseControl : MonoBehaviour
     }
     public void Menu()
     {
+         
         SceneManager.LoadScene("Inicio");
     }
 }

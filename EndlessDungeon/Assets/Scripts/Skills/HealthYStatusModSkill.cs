@@ -18,9 +18,9 @@ public class HealthYStatusModSkill : Skill
     [Range(0f, 1f)]
     public float critChance = 0;
 
-     [Header("status Mod")]
+    [Header("status Mod")]
     public string message;
-
+    public string message2;
     protected StatusMod mod;
 
 
@@ -43,7 +43,15 @@ public class HealthYStatusModSkill : Skill
             this.mod = this.GetComponent<StatusMod>();
         }
 
-        this.messages.Enqueue(this.message.Replace("{receiver}", receiver.idName));
+        if (receiver.GetCurrentStats().deffense == 10)
+        {
+            this.messages.Enqueue(this.message2.Replace("{receiver}", receiver.idName));
+        }
+        else
+        {
+            this.messages.Enqueue(this.message.Replace("{receiver}", receiver.idName));
+        }
+
 
         receiver.statusMods.Add(this.mod);
 

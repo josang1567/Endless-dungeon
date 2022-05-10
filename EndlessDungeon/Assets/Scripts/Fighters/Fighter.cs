@@ -125,23 +125,35 @@ public abstract class Fighter : MonoBehaviour
         {
             if (modedStats.deffense >= 10)
             {
+                Debug.Log("GetCurrentStats: " + modedStats.deffense);
                 if (modedStats.deffense == 10)
-                {
-
-                    
-                }
+                { }
                 else
                 {
                     modedStats = mod.Apply(modedStats);
-                    
+
+                }
+
+            }
+             if (modedStats.deffense >= 30)
+            {
+                Debug.Log("GetCurrentStats: " + modedStats.deffense);
+                if (modedStats.deffense == 140)
+                { }
+                else
+                {
+                    modedStats = mod.Apply(modedStats);
+
                 }
 
             }
 
         }
-       
+
         return modedStats;
     }
+
+   
     public StatusCondition GetCurrentStatusCondition()
     {
         if (this.statusCondition != null && this.statusCondition.hasExpired)
