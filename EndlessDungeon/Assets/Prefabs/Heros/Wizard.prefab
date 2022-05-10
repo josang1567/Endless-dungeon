@@ -493,7 +493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Bendicion Grupal
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
-  skillDescription: Cura un 10% de la vida durante 3 turnosa los heroes
+  skillDescription: Cura un 10% de la vida durante 3 turnos a los heroes
   animationDuration: 2
   targeting: 1
   effectPrfb: {fileID: 2297502948686414365, guid: 39f9f70045b56d2449f8e848795989d0, type: 3}

@@ -357,7 +357,7 @@ MonoBehaviour:
   expireMessage: El {receiver} ha finalizado su regeneracion
   turnDuration: 3
   efecto: {fileID: 455369222770000106, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
-  percentage: 0.13
+  percentage: 0.08
 --- !u!1 &6413182661459561930
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +518,6 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
-  isHited: 0
   isDead: 0
   Foto: {fileID: -2352396353401391747, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 20

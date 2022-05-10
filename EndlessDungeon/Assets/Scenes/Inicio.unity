@@ -3705,7 +3705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f69d66d47c90224e935d39cfb9226a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: Mapa1
+  NextScene: Tablero 1
   BotonNewGame: {fileID: 1971088607}
   BotonContinue: {fileID: 890111974}
   BotonAyuda: {fileID: 620680333}

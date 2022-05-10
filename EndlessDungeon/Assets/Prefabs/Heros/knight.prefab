@@ -1,70 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2831448426386861734
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4087299237075169101}
-  - component: {fileID: 5889318956228755820}
-  - component: {fileID: 1881763401497885215}
-  m_Layer: 0
-  m_Name: Espada roba vida
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &4087299237075169101
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2831448426386861734}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.740055, y: -0.16087961, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6696595417359632902}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5889318956228755820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2831448426386861734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b99e3b27e627ad469f6d07c32343e1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skillName: Espada
-  FondoCarta: {fileID: 21300000, guid: 67d5ad9930c6da34b862a38c8f3f048b, type: 3}
-  skillDescription: "Hace 20 de da\xF1o a un enemigo"
-  animationDuration: 1
-  targeting: 4
-  effectPrfb: {fileID: 4935495943547224871, guid: 189f34a6a4e421541825c7a5adf319d8, type: 3}
-  amount: -20
-  modType: 1
-  critChance: 0.13
---- !u!114 &1881763401497885215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2831448426386861734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d99bf58818e219c4f82baffffc5c3a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3242079185112661764
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,7 +425,6 @@ Transform:
   - {fileID: 6696595417327955041}
   - {fileID: 3014587137480965678}
   - {fileID: 5634909691780854669}
-  - {fileID: 4087299237075169101}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

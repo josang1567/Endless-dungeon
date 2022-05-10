@@ -23,7 +23,6 @@ ScriptsOnlyBuild:
     - StatusMod
     - StatusModSkill
     - StatusPanel
-    - StealHealtModSkill
     - TurnBlockStatusCondition
     - TurnPanel
     - UIElementInitializer
@@ -51,10 +50,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -114,23 +111,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2710}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
     - Class: 114
       Script: {instanceID: 3494}
     - Class: 114
-      Script: {instanceID: 3496}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4338}
     - Class: 114
-      Script: {instanceID: 4340}
-    - Class: 114
-      Script: {instanceID: 4652}
+      Script: {instanceID: 4650}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -147,7 +144,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Mapa1.unity:
+    Assets/Scenes/Mansion Abandonada/Mapa1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -191,19 +188,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2710}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 5424}
+      Script: {instanceID: 5422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -220,7 +217,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Mapa2.unity:
+    Assets/Scenes/Mansion Abandonada/Mapa2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -264,19 +261,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2710}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 5424}
+      Script: {instanceID: 5422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -293,7 +290,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Mapa3.unity:
+    Assets/Scenes/Mansion Abandonada/Mapa3.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -337,19 +334,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2710}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 5424}
+      Script: {instanceID: 5422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -366,120 +363,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Nivel 1 fase 1.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 111
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1454}
-    - Class: 114
-      Script: {instanceID: 1456}
-    - Class: 114
-      Script: {instanceID: 1466}
-    - Class: 114
-      Script: {instanceID: 1562}
-    - Class: 114
-      Script: {instanceID: 1726}
-    - Class: 114
-      Script: {instanceID: 1732}
-    - Class: 114
-      Script: {instanceID: 1978}
-    - Class: 114
-      Script: {instanceID: 2272}
-    - Class: 114
-      Script: {instanceID: 2288}
-    - Class: 114
-      Script: {instanceID: 2316}
-    - Class: 114
-      Script: {instanceID: 2392}
-    - Class: 114
-      Script: {instanceID: 2520}
-    - Class: 114
-      Script: {instanceID: 2710}
-    - Class: 114
-      Script: {instanceID: 2768}
-    - Class: 114
-      Script: {instanceID: 2862}
-    - Class: 114
-      Script: {instanceID: 2886}
-    - Class: 114
-      Script: {instanceID: 3250}
-    - Class: 114
-      Script: {instanceID: 3372}
-    - Class: 114
-      Script: {instanceID: 3494}
-    - Class: 114
-      Script: {instanceID: 3828}
-    - Class: 114
-      Script: {instanceID: 3864}
-    - Class: 114
-      Script: {instanceID: 3884}
-    - Class: 114
-      Script: {instanceID: 3892}
-    - Class: 114
-      Script: {instanceID: 4050}
-    - Class: 114
-      Script: {instanceID: 4296}
-    - Class: 114
-      Script: {instanceID: 4862}
-    - Class: 114
-      Script: {instanceID: 5056}
-    - Class: 114
-      Script: {instanceID: 5344}
-    - Class: 114
-      Script: {instanceID: 5720}
-    - Class: 114
-      Script: {instanceID: 5754}
-    - Class: 114
-      Script: {instanceID: 5848}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/Nivel 1 fase 2.unity:
+    Assets/Scenes/Mansion Abandonada/Nivel 1 fase 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -537,39 +421,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3826}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3882}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 5054}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5342}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 5754}
-    - Class: 114
-      Script: {instanceID: 5848}
+      Script: {instanceID: 5846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -592,7 +474,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Nivel 1 fase 3.unity:
+    Assets/Scenes/Mansion Abandonada/Nivel 1 fase 2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -650,39 +532,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3826}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3882}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 5054}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5342}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 5754}
-    - Class: 114
-      Script: {instanceID: 5848}
+      Script: {instanceID: 5846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -705,7 +585,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Nivel 2 fase 1.unity:
+    Assets/Scenes/Mansion Abandonada/Nivel 1 fase 3.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -763,39 +643,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3826}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3882}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 5054}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5342}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 5754}
-    - Class: 114
-      Script: {instanceID: 5848}
+      Script: {instanceID: 5846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -818,7 +696,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Nivel 2 fase 2.unity:
+    Assets/Scenes/Mansion Abandonada/Nivel 2 fase 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -876,39 +754,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3826}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3882}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 5054}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5342}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 5754}
-    - Class: 114
-      Script: {instanceID: 5848}
+      Script: {instanceID: 5846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -931,7 +807,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Nivel 2 fase 3.unity:
+    Assets/Scenes/Mansion Abandonada/Nivel 2 fase 2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -989,39 +865,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3826}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3882}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 5054}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5342}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 5754}
-    - Class: 114
-      Script: {instanceID: 5848}
+      Script: {instanceID: 5846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1044,7 +918,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Nivel 3 fase 1.unity:
+    Assets/Scenes/Mansion Abandonada/Nivel 2 fase 3.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -1102,39 +976,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3826}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3882}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 5054}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5342}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 5754}
-    - Class: 114
-      Script: {instanceID: 5848}
+      Script: {instanceID: 5846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1157,7 +1029,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Nivel 3 fase 2.unity:
+    Assets/Scenes/Mansion Abandonada/Nivel 3 fase 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -1215,39 +1087,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3826}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3882}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 5054}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5342}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 5754}
-    - Class: 114
-      Script: {instanceID: 5848}
+      Script: {instanceID: 5846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1270,7 +1140,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Nivel 3 fase 3.unity:
+    Assets/Scenes/Mansion Abandonada/Nivel 3 fase 2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -1328,39 +1198,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2768}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3826}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3882}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 3890}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 4862}
+      Script: {instanceID: 5054}
     - Class: 114
-      Script: {instanceID: 5056}
+      Script: {instanceID: 5342}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5718}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 5754}
-    - Class: 114
-      Script: {instanceID: 5848}
+      Script: {instanceID: 5846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1374,6 +1242,1481 @@ ScriptsOnlyBuild:
     - Class: 199
       Script: {instanceID: 0}
     - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Mansion Abandonada/Nivel 3 fase 3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1466}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2288}
+    - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2768}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 4860}
+    - Class: 114
+      Script: {instanceID: 5054}
+    - Class: 114
+      Script: {instanceID: 5342}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva mapa 1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 5422}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva mapa 2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 5422}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva mapa 3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 5422}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva nivel 1 fase 1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1466}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2288}
+    - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2768}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 4860}
+    - Class: 114
+      Script: {instanceID: 5054}
+    - Class: 114
+      Script: {instanceID: 5342}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva nivel 1 fase 2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1466}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2288}
+    - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2768}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 4860}
+    - Class: 114
+      Script: {instanceID: 5054}
+    - Class: 114
+      Script: {instanceID: 5342}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva nivel 1 fase 3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1466}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2288}
+    - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2768}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 4860}
+    - Class: 114
+      Script: {instanceID: 5054}
+    - Class: 114
+      Script: {instanceID: 5342}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva nivel 2 fase 1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1466}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2288}
+    - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2768}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 4860}
+    - Class: 114
+      Script: {instanceID: 5054}
+    - Class: 114
+      Script: {instanceID: 5342}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva nivel 2 fase 2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1466}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2288}
+    - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2768}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 4860}
+    - Class: 114
+      Script: {instanceID: 5054}
+    - Class: 114
+      Script: {instanceID: 5342}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva nivel 2 fase 3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1466}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2288}
+    - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2768}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 4860}
+    - Class: 114
+      Script: {instanceID: 5054}
+    - Class: 114
+      Script: {instanceID: 5342}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva nivel 3 fase 1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1466}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2288}
+    - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2768}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 4860}
+    - Class: 114
+      Script: {instanceID: 5054}
+    - Class: 114
+      Script: {instanceID: 5342}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva nivel 3 fase 2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1466}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2288}
+    - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2768}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 4860}
+    - Class: 114
+      Script: {instanceID: 5054}
+    - Class: 114
+      Script: {instanceID: 5342}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Selva/Selva nivel 3 fase 3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1466}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2288}
+    - Class: 114
+      Script: {instanceID: 2316}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2768}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 3862}
+    - Class: 114
+      Script: {instanceID: 3882}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 4860}
+    - Class: 114
+      Script: {instanceID: 5054}
+    - Class: 114
+      Script: {instanceID: 5342}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5846}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Tablero 1.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 5422}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Tablero 2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1454}
+    - Class: 114
+      Script: {instanceID: 1456}
+    - Class: 114
+      Script: {instanceID: 1726}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2272}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2520}
+    - Class: 114
+      Script: {instanceID: 2710}
+    - Class: 114
+      Script: {instanceID: 2884}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3370}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3890}
+    - Class: 114
+      Script: {instanceID: 4294}
+    - Class: 114
+      Script: {instanceID: 5422}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1386,16 +2729,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 94f9b3144cb5ceba69a25980ba45e28d
@@ -1416,7 +2759,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: 699285647f6934335b08a51e5dd8fccb
+      Hash: 4805cd3b6ff415f7beefadb14969abc9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StatusModSkill
@@ -1590,12 +2933,6 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 6f882cc212b6499d0f145c15b802c129
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: StealHealtModSkill
-  - hash:
-      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1740,7 +3077,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 5b3a0401949046c2f356288b2f7ccd2b
+      Hash: 1e56467c35f7902c2f3456c8e935963c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HealthYStatusModSkill
@@ -1842,7 +3179,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 8d6141d79a19241e487729c00c6dd0b2
+      Hash: a0120f7a9f5cac77c93224993d24d197
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AyudaController
@@ -2083,16 +3420,30 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Inicio.unity
-  - Assets/Scenes/Mapa1.unity
-  - Assets/Scenes/Nivel 1 fase 1.unity
-  - Assets/Scenes/Nivel 1 fase 2.unity
-  - Assets/Scenes/Nivel 1 fase 3.unity
-  - Assets/Scenes/Mapa2.unity
-  - Assets/Scenes/Nivel 2 fase 1.unity
-  - Assets/Scenes/Nivel 2 fase 2.unity
-  - Assets/Scenes/Nivel 2 fase 3.unity
-  - Assets/Scenes/Mapa3.unity
-  - Assets/Scenes/Nivel 3 fase 1.unity
-  - Assets/Scenes/Nivel 3 fase 2.unity
-  - Assets/Scenes/Nivel 3 fase 3.unity
+  - Assets/Scenes/Tablero 1.unity
+  - Assets/Scenes/Mansion Abandonada/Mapa1.unity
+  - Assets/Scenes/Mansion Abandonada/Nivel 1 fase 1.unity
+  - Assets/Scenes/Mansion Abandonada/Nivel 1 fase 2.unity
+  - Assets/Scenes/Mansion Abandonada/Nivel 1 fase 3.unity
+  - Assets/Scenes/Mansion Abandonada/Mapa2.unity
+  - Assets/Scenes/Mansion Abandonada/Nivel 2 fase 1.unity
+  - Assets/Scenes/Mansion Abandonada/Nivel 2 fase 2.unity
+  - Assets/Scenes/Mansion Abandonada/Nivel 2 fase 3.unity
+  - Assets/Scenes/Mansion Abandonada/Mapa3.unity
+  - Assets/Scenes/Mansion Abandonada/Nivel 3 fase 1.unity
+  - Assets/Scenes/Mansion Abandonada/Nivel 3 fase 2.unity
+  - Assets/Scenes/Mansion Abandonada/Nivel 3 fase 3.unity
+  - Assets/Scenes/Tablero 2.unity
+  - Assets/Scenes/Selva/Selva mapa 1.unity
+  - Assets/Scenes/Selva/Selva nivel 1 fase 1.unity
+  - Assets/Scenes/Selva/Selva nivel 1 fase 2.unity
+  - Assets/Scenes/Selva/Selva nivel 1 fase 3.unity
+  - Assets/Scenes/Selva/Selva mapa 2.unity
+  - Assets/Scenes/Selva/Selva nivel 2 fase 1.unity
+  - Assets/Scenes/Selva/Selva nivel 2 fase 2.unity
+  - Assets/Scenes/Selva/Selva nivel 2 fase 3.unity
+  - Assets/Scenes/Selva/Selva mapa 3.unity
+  - Assets/Scenes/Selva/Selva nivel 3 fase 1.unity
+  - Assets/Scenes/Selva/Selva nivel 3 fase 2.unity
+  - Assets/Scenes/Selva/Selva nivel 3 fase 3.unity
   playerPath: C:/Users/Jose Angel/Desktop/Demo/Endless Dungeon.exe
