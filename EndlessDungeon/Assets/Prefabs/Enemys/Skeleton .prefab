@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Regenerar
   FondoCarta: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 6235638373d0e7849841a1e1934169e5, type: 3}
   skillDescription: 
   animationDuration: 1.5
   targeting: 0
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: golpe con hacha
   FondoCarta: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: ecb642c8078cb814fb9efb6b2b223cf6, type: 3}
   skillDescription: 
   animationDuration: 1.5
   targeting: 4
@@ -150,11 +152,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Rompe escudos
   FondoCarta: {fileID: 0}
+  soundEffect: {fileID: 0}
   skillDescription: 
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 4935495943547224871, guid: 4642a3248b4f72f47b2c6eaf1b473471, type: 3}
   message: '{receiver} pierde defensa!'
+  message2: 
 --- !u!114 &3189909208729912886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +279,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
-  isHited: 0
+  isHit: 0
   isDead: 0
   Foto: {fileID: 6236675656088661469, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 20

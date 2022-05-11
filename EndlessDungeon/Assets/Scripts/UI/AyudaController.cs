@@ -32,13 +32,13 @@ public class AyudaController : MonoBehaviour
         //pag1
         if (Input.GetKeyDown(KeyCode.RightArrow)||Input.GetKeyDown("d"))
         {
-            Debug.Log("right");
+      
             cargarSiguiente();
         }
         //pag 2
         if (Input.GetKeyDown(KeyCode.LeftArrow)||Input.GetKeyDown("a"))
         {
-            Debug.Log("left");
+           
             cargarAnterior();
         }
 

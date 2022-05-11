@@ -104,6 +104,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  isHit: 0
   isDead: 0
   Foto: {fileID: -8561962239914680989, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 4
@@ -177,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Gancho
   FondoCarta: {fileID: 21300000, guid: ea46cae05732b60429d16acc2df7ac6d, type: 3}
+  soundEffect: {fileID: 8300000, guid: db649e55b5516ea4d8de8f24202cbe9e, type: 3}
   skillDescription: 
   animationDuration: 2
   targeting: 4

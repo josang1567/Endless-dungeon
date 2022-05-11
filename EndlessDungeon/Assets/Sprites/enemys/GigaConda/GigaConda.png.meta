@@ -130,12 +130,12 @@ TextureImporter:
       name: GigaConda_0
       rect:
         serializedVersion: 2
-        x: 844
-        y: 609
-        width: 1547
-        height: 1644
+        x: 242
+        y: 607
+        width: 2154
+        height: 1783
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,12 +151,12 @@ TextureImporter:
       name: GigaConda_1
       rect:
         serializedVersion: 2
-        x: 3244
-        y: 609
-        width: 1547
-        height: 1644
+        x: 2637
+        y: 615
+        width: 2154
+        height: 1783
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: GigaConda_2
       rect:
         serializedVersion: 2
-        x: 5644
+        x: 5037
         y: 609
-        width: 1547
-        height: 1644
+        width: 2154
+        height: 1783
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: GigaConda_3
       rect:
         serializedVersion: 2
-        x: 8044
-        y: 609
-        width: 1547
-        height: 1644
+        x: 7437
+        y: 616
+        width: 2154
+        height: 1783
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

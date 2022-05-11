@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Daga envenenada
   FondoCarta: {fileID: 1948013581542784641, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
+  soundEffect: {fileID: 8300000, guid: 0e5c0660c541c5a4eae4e8ac10d82718, type: 3}
   skillDescription: Paraliza al enemigo 1 turno
   animationDuration: 2
   targeting: 4
@@ -95,6 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: golpe
   FondoCarta: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 3005c2aee967e624ea1e0101b4b37f32, type: 3}
   skillDescription: 
   animationDuration: 1
   targeting: 4
@@ -177,7 +179,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 614922c4e9c9ab2439e4e1713deff037, type: 3}
+  m_Sprite: {fileID: -8283104925926421738, guid: a112db97ac53a854297280a297a21377, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -226,7 +228,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
-  isHited: 0
+  isHit: 0
   isDead: 0
   Foto: {fileID: 5219528537255451192, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 20
@@ -285,6 +287,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido envenenado'
   applyMessage: "{receiver} sufre da\xF1o por el veneno"
   expireMessage: '{receiver} ha superado el veneno'
+  soundEffect: {fileID: 8300000, guid: b650a97d5bfbffe459c1942b2464cc6f, type: 3}
   turnDuration: 2
   efecto: {fileID: -6062168761353031166, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: -0.03

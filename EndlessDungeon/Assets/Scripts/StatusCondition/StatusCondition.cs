@@ -10,7 +10,7 @@ public abstract class StatusCondition : MonoBehaviour
     public string receptionMessage;
     public string applyMessage;
     public string expireMessage;
-
+         public AudioClip soundEffect;
     public int turnDuration;
 
     public bool hasExpired { get { return this.turnDuration <= 0; } }
@@ -34,7 +34,7 @@ public abstract class StatusCondition : MonoBehaviour
     {
 
       
-
+     Camera.main.GetComponent<AudioSource>().PlayOneShot(soundEffect);
         var go = Instantiate(this.effectPrfb, this.receiver.transform.position, Quaternion.identity);
         Destroy(go, this.animationDuration);
     }

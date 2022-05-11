@@ -49,6 +49,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido envenenado'
   applyMessage: '{receiver} Esta envenenado'
   expireMessage: '{receiver} se ha curado del veneno'
+  soundEffect: {fileID: 8300000, guid: b650a97d5bfbffe459c1942b2464cc6f, type: 3}
   turnDuration: 3
   efecto: {fileID: -6062168761353031166, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: -0.08
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Bendicion de luz
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  soundEffect: {fileID: 8300000, guid: c48a972d3d024c2408a3331750786a29, type: 3}
   skillDescription: Cura 30 puntos de salud
   animationDuration: 1
   targeting: 1
@@ -153,6 +155,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido bendecido'
   applyMessage: '{receiver} cura sus heridas'
   expireMessage: '{receiver} ha dejado de curarse'
+  soundEffect: {fileID: 8300000, guid: c48a972d3d024c2408a3331750786a29, type: 3}
   turnDuration: 3
   efecto: {fileID: 455369222770000106, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: 0.15
@@ -202,6 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Hipnosis
   FondoCarta: {fileID: 21300000, guid: 49fedee658be6e341a99ecfd2e0c108c, type: 3}
+  soundEffect: {fileID: 8300000, guid: a58e438b7cfa445498120af0e6169082, type: 3}
   skillDescription: Paraliza 2 turnos a un enemigo
   animationDuration: 2
   targeting: 4
@@ -255,6 +259,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido bendecido'
   applyMessage: '{receiver} cura sus heridas'
   expireMessage: '{receiver} ha dejado de curarse'
+  soundEffect: {fileID: 8300000, guid: 6235638373d0e7849841a1e1934169e5, type: 3}
   turnDuration: 3
   efecto: {fileID: 455369222770000106, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: 0.1
@@ -304,6 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Aura Sagrada
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  soundEffect: {fileID: 8300000, guid: 6235638373d0e7849841a1e1934169e5, type: 3}
   skillDescription: Cura el 15% de la  vida  durante 3 turnos a si mismo
   animationDuration: 2
   targeting: 0
@@ -388,7 +394,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 10e59ae43e31ef745b9e56cca6b4c971, type: 3}
+  m_Sprite: {fileID: -7734011699427388745, guid: 8cf70e6093dc55c4b8ceb019c621f347, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -437,6 +443,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  isHit: 0
   isDead: 0
   Foto: {fileID: -8891590945244770283, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   skillPanel: {fileID: 0}
@@ -493,6 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Bendicion Grupal
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  soundEffect: {fileID: 8300000, guid: 6235638373d0e7849841a1e1934169e5, type: 3}
   skillDescription: Cura un 10% de la vida durante 3 turnos a los heroes
   animationDuration: 2
   targeting: 1
@@ -546,6 +554,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido hipnotizado'
   applyMessage: '{receiver} esta hipnotizado'
   expireMessage: '{receiver} se ha librado de la hipnosis'
+  soundEffect: {fileID: 8300000, guid: c06c2fc7df08d4847aa815b4f3a86288, type: 3}
   turnDuration: 2
   efecto: {fileID: 3075340195537066266, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   blockChance: 1
@@ -595,6 +604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Nube toxica
   FondoCarta: {fileID: 21300000, guid: 49fedee658be6e341a99ecfd2e0c108c, type: 3}
+  soundEffect: {fileID: 8300000, guid: b1b9c1f0ea1fcae439ed1a4d44ff05fd, type: 3}
   skillDescription: Envenena 3 turnos a un enemigo
   animationDuration: 2
   targeting: 4
@@ -644,6 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Bola magica
   FondoCarta: {fileID: 21300000, guid: 5d1b53453aae76b48a0560edca542e7b, type: 3}
+  soundEffect: {fileID: 8300000, guid: 5e1a9f876d3dafd47bc6b3dde25135fa, type: 3}
   skillDescription: "Hace 20 de da\xF1o a un enemigo"
   animationDuration: 1
   targeting: 4
@@ -696,6 +707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Llamarada
   FondoCarta: {fileID: 21300000, guid: 5d1b53453aae76b48a0560edca542e7b, type: 3}
+  soundEffect: {fileID: 8300000, guid: 5e1a9f876d3dafd47bc6b3dde25135fa, type: 3}
   skillDescription: "Hace 35 de da\xF1o a un enemigo"
   animationDuration: 1
   targeting: 4

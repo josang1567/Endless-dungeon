@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Mordisco
   FondoCarta: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: ed04712e4f136f44584e492a29887275, type: 3}
   skillDescription: 
   animationDuration: 0
   targeting: 4
@@ -156,6 +157,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  isHit: 0
   isDead: 0
   Foto: {fileID: 8539454709898421426, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 4

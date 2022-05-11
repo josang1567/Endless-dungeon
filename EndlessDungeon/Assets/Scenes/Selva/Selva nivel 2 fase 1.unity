@@ -815,7 +815,7 @@ PrefabInstance:
     - target: {fileID: 4727717541295638094, guid: c4e1fa4199efcd84cab9de9b5aa9d156, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 5e26b1903b234374cb0fa0682ebf71fa, type: 3}
+      objectReference: {fileID: 8300000, guid: 73e800617cbae8843909627cf37f3b01, type: 3}
     - target: {fileID: 4727717541295638095, guid: c4e1fa4199efcd84cab9de9b5aa9d156, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

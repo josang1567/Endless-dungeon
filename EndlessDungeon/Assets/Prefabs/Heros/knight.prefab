@@ -46,11 +46,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Escudo Magico
   FondoCarta: {fileID: 21300000, guid: fa51ede296e5f8845bdbf0ca096b8fc0, type: 3}
+  soundEffect: {fileID: 8300000, guid: db649e55b5516ea4d8de8f24202cbe9e, type: 3}
   skillDescription: Aumenta la defensa ligeramente a todos los heroes
   animationDuration: 2
   targeting: 1
   effectPrfb: {fileID: 4935495943547224871, guid: 9f7a3ae2bf5b48b439f7a877c85603e0, type: 3}
   message: '{receiver} gana Defensa'
+  message2: 
 --- !u!114 &2245975798853426149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,6 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Espada Magica
   FondoCarta: {fileID: 21300000, guid: fceb0904fed781e40b1d2b256e7aa16c, type: 3}
+  soundEffect: {fileID: 8300000, guid: c37e5156ffcc4b345ad763ce9d2c4824, type: 3}
   skillDescription: "Aplica 15 de da\xF1o a todos los enemigos"
   animationDuration: 2
   targeting: 2
@@ -162,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: curar
   FondoCarta: {fileID: 21300000, guid: fceb0904fed781e40b1d2b256e7aa16c, type: 3}
+  soundEffect: {fileID: 8300000, guid: 6235638373d0e7849841a1e1934169e5, type: 3}
   skillDescription: Cura un 20% de salud a si mismo
   animationDuration: 1
   targeting: 0
@@ -218,6 +222,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido paralizado'
   applyMessage: '{receiver} esta paralizado'
   expireMessage: '{receiver} se ha librado de la paralisis'
+  soundEffect: {fileID: 0}
   turnDuration: 2
   efecto: {fileID: -7683140835982611127, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   blockChance: 0.64
@@ -266,6 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Corte Rapido
   FondoCarta: {fileID: 21300000, guid: 67d5ad9930c6da34b862a38c8f3f048b, type: 3}
+  soundEffect: {fileID: 8300000, guid: ed27823a6a2e08f49bfcdfd8132e5993, type: 3}
   skillDescription: "Aplica 22 de da\xF1o a un enemigo Mas prob de critico"
   animationDuration: 2
   targeting: 4
@@ -319,11 +325,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Escudo
   FondoCarta: {fileID: 21300000, guid: fa51ede296e5f8845bdbf0ca096b8fc0, type: 3}
+  soundEffect: {fileID: 8300000, guid: db649e55b5516ea4d8de8f24202cbe9e, type: 3}
   skillDescription: Se aumenta  la defensa ligeramente
   animationDuration: 2
   targeting: 0
   effectPrfb: {fileID: 4935495943547224871, guid: 9f7a3ae2bf5b48b439f7a877c85603e0, type: 3}
   message: '{receiver} gana Defensa'
+  message2: 
 --- !u!114 &6696595417147089279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Paralizar
   FondoCarta: {fileID: 21300000, guid: fceb0904fed781e40b1d2b256e7aa16c, type: 3}
+  soundEffect: {fileID: 0}
   skillDescription: Paraliza 2  turnos a un enemigo
   animationDuration: 2
   targeting: 4
@@ -468,12 +477,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 5c97ec9bad39e3e44847456d455bd495, type: 3}
+  m_Sprite: {fileID: -7302974245388534112, guid: a1eb76bb8734bfd438076720606f9917, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.9, y: 4.5}
+  m_Size: {x: 4.37, y: 3.1965554}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -517,6 +526,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  isHit: 0
   isDead: 0
   Foto: {fileID: -8999417144695169524, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   skillPanel: {fileID: 0}
@@ -572,6 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Espada
   FondoCarta: {fileID: 21300000, guid: 67d5ad9930c6da34b862a38c8f3f048b, type: 3}
+  soundEffect: {fileID: 8300000, guid: 0e5c0660c541c5a4eae4e8ac10d82718, type: 3}
   skillDescription: "Hace 20 de da\xF1o a un enemigo"
   animationDuration: 1
   targeting: 4

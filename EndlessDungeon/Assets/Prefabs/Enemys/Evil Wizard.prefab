@@ -49,6 +49,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido Hipnotizadodo'
   applyMessage: '{receiver} Esta hipnotizado, quiza no pueda atacar'
   expireMessage: '{receiver} se ha librado de la paralizis'
+  soundEffect: {fileID: 8300000, guid: c06c2fc7df08d4847aa815b4f3a86288, type: 3}
   turnDuration: 2
   efecto: {fileID: 3075340195537066266, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   blockChance: 0.15
@@ -98,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Hipnosis
   FondoCarta: {fileID: 21300000, guid: 49fedee658be6e341a99ecfd2e0c108c, type: 3}
+  soundEffect: {fileID: 8300000, guid: a58e438b7cfa445498120af0e6169082, type: 3}
   skillDescription: Paraliza al enemigo 1 turno
   animationDuration: 2
   targeting: 4
@@ -147,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Revivificar
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  soundEffect: {fileID: 8300000, guid: 6235638373d0e7849841a1e1934169e5, type: 3}
   skillDescription: Cura 30 puntos a todos los aliados
   animationDuration: 1
   targeting: 1
@@ -199,6 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Bola magica
   FondoCarta: {fileID: 21300000, guid: 5d1b53453aae76b48a0560edca542e7b, type: 3}
+  soundEffect: {fileID: 8300000, guid: 5e1a9f876d3dafd47bc6b3dde25135fa, type: 3}
   skillDescription: "+50 da\xF1o"
   animationDuration: 1
   targeting: 4
@@ -282,7 +286,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2529557032686201399, guid: f8e819ad37fdc27499f8dc49acb7a727, type: 3}
+  m_Sprite: {fileID: 4477266199721478081, guid: bb9640bb622586e42938cd77c10f0eab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -331,7 +335,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
-  isHited: 0
+  isHit: 0
   isDead: 0
   Foto: {fileID: -5285785097126754818, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 3

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Mansion Abandonada/Mapa2.unity
+- path: Assets/Scenes/Mansion Abandonada/Nivel 1 fase 1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

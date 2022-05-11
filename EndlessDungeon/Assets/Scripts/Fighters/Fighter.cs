@@ -17,7 +17,7 @@ public abstract class Fighter : MonoBehaviour
     protected Skill[] skills;
     public StatusCondition statusCondition;
     public bool isAttacking;
-
+    public bool isHit;
     public bool isDead;
     private Animator anim;
     [Header("FavIcon")]
@@ -45,6 +45,7 @@ public abstract class Fighter : MonoBehaviour
         anim.SetBool("isAttacking", isAttacking);
 
         anim.SetBool("isDead", isDead);
+         anim.SetBool("isHit", isHit);
     }
     protected void AutoConfigureSkillTargeting(Skill skill)
     {
@@ -135,7 +136,7 @@ public abstract class Fighter : MonoBehaviour
                 }
 
             }
-             if (modedStats.deffense >= 30)
+            if (modedStats.deffense >= 30)
             {
                 Debug.Log("GetCurrentStats: " + modedStats.deffense);
                 if (modedStats.deffense == 140)
@@ -153,7 +154,7 @@ public abstract class Fighter : MonoBehaviour
         return modedStats;
     }
 
-   
+
     public StatusCondition GetCurrentStatusCondition()
     {
         if (this.statusCondition != null && this.statusCondition.hasExpired)

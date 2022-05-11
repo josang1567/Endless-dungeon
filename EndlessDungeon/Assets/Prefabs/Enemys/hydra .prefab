@@ -77,15 +77,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 677582547450296343, guid: 83d91ade87ccaf344a4891741fc95c6e, type: 3}
+  m_Sprite: {fileID: 2464860325303755392, guid: 86f049314b2844d49a2c4531187060b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 17.44, y: 6.8199997}
+  m_Size: {x: 21.14, y: 8.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4250317560210484126
@@ -107,6 +107,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  isHit: 0
   isDead: 0
   Foto: {fileID: 502081670595932546, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 10
@@ -180,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Aliento electrico
   FondoCarta: {fileID: 21300000, guid: ea46cae05732b60429d16acc2df7ac6d, type: 3}
+  soundEffect: {fileID: 8300000, guid: ab297b593498a6e47ba84de770477cbe, type: 3}
   skillDescription: 
   animationDuration: 2
   targeting: 4
@@ -233,6 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: ALiento de fuego
   FondoCarta: {fileID: 1948013581542784641, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
+  soundEffect: {fileID: 8300000, guid: 5e1a9f876d3dafd47bc6b3dde25135fa, type: 3}
   skillDescription: Envenena al enemigo 1 turno
   animationDuration: 2
   targeting: 4
@@ -283,6 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Regeneracion
   FondoCarta: {fileID: 21300000, guid: ea46cae05732b60429d16acc2df7ac6d, type: 3}
+  soundEffect: {fileID: 8300000, guid: 6235638373d0e7849841a1e1934169e5, type: 3}
   skillDescription: 
   animationDuration: 1
   targeting: 0
@@ -358,6 +362,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido Quemado'
   applyMessage: "{receiver} sufre da\xF1o por el fuego"
   expireMessage: '{receiver} ha apagado el fuego'
+  soundEffect: {fileID: 8300000, guid: 5e1a9f876d3dafd47bc6b3dde25135fa, type: 3}
   turnDuration: 2
   efecto: {fileID: -6774237412147299964, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: -0.1
@@ -407,6 +412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Nube de veneno
   FondoCarta: {fileID: 1948013581542784641, guid: 162f98077012cc049a9541cdc31c457b, type: 3}
+  soundEffect: {fileID: 8300000, guid: b650a97d5bfbffe459c1942b2464cc6f, type: 3}
   skillDescription: Envenena al enemigo 1 turno
   animationDuration: 2
   targeting: 4
@@ -460,6 +466,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido envenenado'
   applyMessage: "{receiver} sufre da\xF1o por el veneno"
   expireMessage: '{receiver} ha superado el veneno'
+  soundEffect: {fileID: 8300000, guid: b650a97d5bfbffe459c1942b2464cc6f, type: 3}
   turnDuration: 2
   efecto: {fileID: -6062168761353031166, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: -0.1

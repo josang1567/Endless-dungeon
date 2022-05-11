@@ -49,6 +49,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido quemado'
   applyMessage: '{receiver} se quema'
   expireMessage: '{receiver} ha apagado el fuego'
+  soundEffect: {fileID: 8300000, guid: 5e1a9f876d3dafd47bc6b3dde25135fa, type: 3}
   turnDuration: 3
   efecto: {fileID: -6774237412147299964, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: -0.08
@@ -97,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Barrido
   FondoCarta: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}
   skillDescription: 
   animationDuration: 2
   targeting: 2
@@ -150,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Quemadura
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  soundEffect: {fileID: 8300000, guid: 5e1a9f876d3dafd47bc6b3dde25135fa, type: 3}
   skillDescription: quema 3 turnos
   animationDuration: 2
   targeting: 4
@@ -200,6 +203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Intimidacion del demonio
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  soundEffect: {fileID: 8300000, guid: bc5cb5eba24e05049b0ebc1bbbfe7b19, type: 3}
   skillDescription: pierde 1 turno
   animationDuration: 2
   targeting: 4
@@ -253,6 +257,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido intimidado por el demonio'
   applyMessage: '{receiver} puede que no pueda  actuar por culpa de la intimidacion'
   expireMessage: '{receiver} ha superado la intimidacion'
+  soundEffect: {fileID: 8300000, guid: c06c2fc7df08d4847aa815b4f3a86288, type: 3}
   turnDuration: 2
   efecto: {fileID: 2409756819314735386, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   blockChance: 0.25
@@ -302,6 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Regeneracion
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  soundEffect: {fileID: 8300000, guid: 6235638373d0e7849841a1e1934169e5, type: 3}
   skillDescription: Cura vida 3 turnos
   animationDuration: 2
   targeting: 0
@@ -355,6 +361,7 @@ MonoBehaviour:
   receptionMessage: El {receiver} se esta curando
   applyMessage: 'El {receiver} esta regenerandose '
   expireMessage: El {receiver} ha finalizado su regeneracion
+  soundEffect: {fileID: 8300000, guid: 6235638373d0e7849841a1e1934169e5, type: 3}
   turnDuration: 3
   efecto: {fileID: 455369222770000106, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   percentage: 0.08
@@ -369,7 +376,7 @@ GameObject:
   - component: {fileID: 1238434672598305065}
   - component: {fileID: 2988782373055255235}
   m_Layer: 0
-  m_Name: Hacha
+  m_Name: Golpe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,8 +408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99e3b27e627ad469f6d07c32343e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillName: Hachazo
+  skillName: Golpe
   FondoCarta: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: db649e55b5516ea4d8de8f24202cbe9e, type: 3}
   skillDescription: 
   animationDuration: 2
   targeting: 4
@@ -488,7 +496,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 747f336cdfa454440bf1cfd74ced1193, type: 3}
+  m_Sprite: {fileID: -1704672722791883887, guid: 4b9f2092d29bf1048ba552d5cf048bcd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -518,6 +526,7 @@ MonoBehaviour:
   statusMods: []
   statusCondition: {fileID: 0}
   isAttacking: 0
+  isHit: 0
   isDead: 0
   Foto: {fileID: -2352396353401391747, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 20

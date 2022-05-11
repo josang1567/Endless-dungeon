@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: "Ira del se\xF1or del bosque"
   FondoCarta: {fileID: 21300000, guid: ec739adee84edc44eb588cfa1e3bdbe2, type: 3}
+  soundEffect: {fileID: 8300000, guid: 78419f98379502c4dbfb2774bc94e7c1, type: 3}
   skillDescription: "Se aumenta el da\xF1o en 10"
   animationDuration: 2
   targeting: 0
@@ -171,7 +172,8 @@ MonoBehaviour:
   combatManager: {fileID: 0}
   statusMods: []
   statusCondition: {fileID: 0}
-  isAttacking: 1
+  isAttacking: 0
+  isHit: 0
   isDead: 0
   Foto: {fileID: 7525088576457538674, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
   level: 10
@@ -246,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Presion
   FondoCarta: {fileID: 21300000, guid: 0ef8c0d6ce9bbb247b8c0ba0b03a1b20, type: 3}
+  soundEffect: {fileID: 8300000, guid: bc5cb5eba24e05049b0ebc1bbbfe7b19, type: 3}
   skillDescription: pierde 1 turno
   animationDuration: 2
   targeting: 4
@@ -299,6 +302,7 @@ MonoBehaviour:
   receptionMessage: '{receiver} ha sido intimidado por GigaConda'
   applyMessage: '{receiver} puede que no pueda  actuar por culpa de la intimidacion'
   expireMessage: '{receiver} ha superado la intimidacion'
+  soundEffect: {fileID: 8300000, guid: c06c2fc7df08d4847aa815b4f3a86288, type: 3}
   turnDuration: 2
   efecto: {fileID: 2409756819314735386, guid: b4db9f5d300448544a6dd31aa459aeff, type: 3}
   blockChance: 0.25
@@ -347,10 +351,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: "Guada\xF1a Osea"
   FondoCarta: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: 0e5c0660c541c5a4eae4e8ac10d82718, type: 3}
   skillDescription: 
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
-  amount: -0.08
-  modType: 2
+  amount: -70
+  modType: 0
   critChance: 0.349
