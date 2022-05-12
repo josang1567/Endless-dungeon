@@ -453,6 +453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transiciones
       objectReference: {fileID: 0}
+    - target: {fileID: 6196849152607841699, guid: c1186c70a6d775046822613ecbeecd11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1186c70a6d775046822613ecbeecd11, type: 3}
 --- !u!114 &1019869230 stripped
@@ -525,6 +529,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6042642552538972052, guid: 1489b96c2c67b4341b4e00b49af14cee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3427443288308981933, guid: 00a9352e42dc8b9469edd27826e34597, type: 3}
     - target: {fileID: 6042642552538972058, guid: 1489b96c2c67b4341b4e00b49af14cee, type: 3}
       propertyPath: m_Controller
       value: 
