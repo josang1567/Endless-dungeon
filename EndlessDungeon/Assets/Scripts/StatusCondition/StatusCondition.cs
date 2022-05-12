@@ -10,7 +10,8 @@ public abstract class StatusCondition : MonoBehaviour
     public string receptionMessage;
     public string applyMessage;
     public string expireMessage;
-         public AudioClip soundEffect;
+    
+    public AudioSource soundEffect;
     public int turnDuration;
 
     public bool hasExpired { get { return this.turnDuration <= 0; } }
@@ -22,7 +23,7 @@ public abstract class StatusCondition : MonoBehaviour
     public void Awake()
     {
         this.messages = new Queue<string>();
-        
+
     }
 
     public void SetReceiver(Fighter recv)
@@ -33,8 +34,8 @@ public abstract class StatusCondition : MonoBehaviour
     private void Animate()
     {
 
-      
-     Camera.main.GetComponent<AudioSource>().PlayOneShot(soundEffect);
+
+        soundEffect.Play();
         var go = Instantiate(this.effectPrfb, this.receiver.transform.position, Quaternion.identity);
         Destroy(go, this.animationDuration);
     }
@@ -48,7 +49,7 @@ public abstract class StatusCondition : MonoBehaviour
 
         if (this.OnApply())
         {
-            
+
             this.Animate();
         }
 
@@ -71,8 +72,8 @@ public abstract class StatusCondition : MonoBehaviour
 
     public string GetReceptionMessage()
     {
-         this.receiver.statusPanel.statuscondition.gameObject.SetActive(true);
-            this.receiver.statusPanel.statuscondition.sprite=this.efecto;
+        this.receiver.statusPanel.statuscondition.gameObject.SetActive(true);
+        this.receiver.statusPanel.statuscondition.sprite = this.efecto;
         return this.receptionMessage.Replace("{receiver}", this.receiver.idName);
     }
 

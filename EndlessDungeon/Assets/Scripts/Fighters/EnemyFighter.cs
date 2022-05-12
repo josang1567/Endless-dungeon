@@ -50,7 +50,7 @@ public class EnemyFighter : Fighter
     }
        public void ExecuteSound(){
             
-             Camera.main.GetComponent<AudioSource>().PlayOneShot(this.skillToBeExecuted.soundEffect);
+           this.skillToBeExecuted.Run();
         }
 
 }

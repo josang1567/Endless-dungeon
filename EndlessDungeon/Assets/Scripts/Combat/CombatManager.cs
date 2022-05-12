@@ -139,7 +139,7 @@ public class CombatManager : MonoBehaviour
                     yield return null;
 
                     // Executing fighter skill
-                    currentFighterSkill.Run();
+                    //currentFighterSkill.Run();
 
                     // Wait for fighter skill animation
                     yield return new WaitForSeconds(currentFighterSkill.animationDuration);

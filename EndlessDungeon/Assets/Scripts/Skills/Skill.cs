@@ -7,7 +7,8 @@ public abstract class Skill : MonoBehaviour
     [Header("Base Skill")]
     public string skillName;
     public Sprite FondoCarta;
-     public AudioClip soundEffect;
+    
+     public AudioSource soundEffect;
     public string skillDescription;
     public float animationDuration;
 
@@ -42,8 +43,10 @@ public abstract class Skill : MonoBehaviour
         this.receivers = new List<Fighter>();
     }
 
-    private void Animate(Fighter receiver)
+    public void Animate(Fighter receiver)
     {
+           // Camera.main.GetComponent<AudioSource>().PlayOneShot(soundEffect);
+           soundEffect.Play();
         var go = Instantiate(this.effectPrfb, receiver.transform.position, Quaternion.identity);
         Destroy(go, this.animationDuration);
     }
@@ -52,7 +55,6 @@ public abstract class Skill : MonoBehaviour
     {
         foreach (var receiver in this.receivers)
         {
-           // Camera.main.GetComponent<AudioSource>().PlayOneShot(soundEffect);
             this.Animate(receiver);
             this.OnRun(receiver);
         }

@@ -17,6 +17,7 @@ public class PlayerFighter : Fighter
     public float deffense;
     public float spirit;
     public float speed;
+    private Fighter[] objetivos;
     void Awake()
     {
         this.stats = new Stats(level, maxHealth, attack, deffense, spirit, speed);
@@ -83,10 +84,12 @@ public class PlayerFighter : Fighter
         if (this.skillToBeExecuted.needsManualTargeting)
         {
             Fighter[] receivers = this.GetSkillTargets(this.skillToBeExecuted);
+            objetivos=receivers;
             this.enemiesPanel.Show(this, receivers);
         }
         else
         {
+            objetivos= this.combatManager.GetOpposingTeam();
             this.AutoConfigureSkillTargeting(this.skillToBeExecuted);
 
             this.combatManager.OnFighterSkill(this.skillToBeExecuted);
@@ -97,8 +100,14 @@ public class PlayerFighter : Fighter
         }
         public void ExecuteSound(){
             
-             Camera.main.GetComponent<AudioSource>().PlayOneShot(this.skillToBeExecuted.soundEffect);
+             //Camera.main.GetComponent<AudioSource>().PlayOneShot(this.skillToBeExecuted.soundEffect);
+            // for (int i = 0; i < objetivos.Length; i++)
+            // {
+                  this.skillToBeExecuted.Run();
+            // }
+            
         }
+        
 
     public void SetTargetAndAttack(Fighter enemyFigther)
     {
