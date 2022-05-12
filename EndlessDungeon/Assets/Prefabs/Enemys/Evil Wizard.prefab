@@ -338,6 +338,8 @@ MonoBehaviour:
   isHit: 0
   isDead: 0
   Foto: {fileID: -5285785097126754818, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
+  deathTime: 4
+  Cadaver: 1
   level: 3
   maxHealth: 100
   attack: 70

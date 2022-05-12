@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &392972332045256451
 Transform:
   m_ObjectHideFlags: 0
@@ -176,6 +176,8 @@ MonoBehaviour:
   isHit: 0
   isDead: 0
   Foto: {fileID: 7525088576457538674, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
+  deathTime: 5
+  Cadaver: 1
   level: 10
   maxHealth: 500
   attack: 100
@@ -218,7 +220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1120322314063452446
 Transform:
   m_ObjectHideFlags: 0
@@ -352,10 +354,10 @@ MonoBehaviour:
   skillName: "Guada\xF1a Osea"
   FondoCarta: {fileID: 0}
   soundEffect: {fileID: 8300000, guid: 0e5c0660c541c5a4eae4e8ac10d82718, type: 3}
-  skillDescription: 
+  skillDescription: -70
   animationDuration: 2
   targeting: 4
   effectPrfb: {fileID: 2297502948686414365, guid: ff61d01611a5f8f47b4a73ee48ef8d79, type: 3}
-  amount: -70
+  amount: 0
   modType: 0
   critChance: 0.349

@@ -37,7 +37,7 @@ public class CombatManager : MonoBehaviour
 
     void Start()
     {
-       
+
 
 
         this.returnBuffer = new List<Fighter>();
@@ -184,12 +184,13 @@ public class CombatManager : MonoBehaviour
                     if (victory)
                     {
                         LogPanel.Write("Victoria!");
-                         this.panel.StartAnim();
+
                         if (!NextScene.Equals(""))
                         {
-                          
-                            StartCoroutine(NextLevel());
+
                             this.isCombatActive = false;
+                            StartCoroutine(NextLevel());
+
                         }
                         else if (NextScene.Equals(""))
                         {
@@ -202,7 +203,7 @@ public class CombatManager : MonoBehaviour
                     if (defeat)
                     {
                         LogPanel.Write("Derrota!");
-                       this.panel.StartAnim();
+
                         this.isCombatActive = false;
                         StartCoroutine(waitToLoad());
 
@@ -355,7 +356,7 @@ public class CombatManager : MonoBehaviour
 
     public void OnFighterSkill(Skill skill)
     {
-        
+
         this.currentFighterSkill = skill;
         this.combatStatus = CombatStatus.FIGHTER_ACTION;
     }
@@ -365,6 +366,7 @@ public class CombatManager : MonoBehaviour
         LogPanel.Write("Reiniciando nivel...");
         yield return new WaitForSeconds(2);
         this.panel.StartAnim();
+          yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     IEnumerator NextLevel()
@@ -373,6 +375,8 @@ public class CombatManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         LogPanel.Write("Adentrandose en la mazmorra...");
         yield return new WaitForSeconds(1);
+         this.panel.StartAnim();
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(this.NextScene);
 
         PlayerPrefs.SetString("NivelActual", this.NextScene);

@@ -214,6 +214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: huntress
       objectReference: {fileID: 0}
+    - target: {fileID: 7929844888596105297, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: animationDuration
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
 --- !u!4 &210270652 stripped
@@ -254,6 +258,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377757530 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6753350222499902734, guid: 1fd2bd17ec80095449eac1235ad1ffb7, type: 3}
+  m_PrefabInstance: {fileID: 6753350222836981818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74541e0f00d1a17488927cc5e6c8ef46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &701306441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -309,6 +324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CombatManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2771087461258763287, guid: 8e2da063f00865646a66570adae749d7, type: 3}
+      propertyPath: Contador
+      value: 
+      objectReference: {fileID: 377757530}
     - target: {fileID: 2771087461258763287, guid: 8e2da063f00865646a66570adae749d7, type: 3}
       propertyPath: NextScene
       value: Inicio
@@ -465,6 +484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wizard
       objectReference: {fileID: 0}
+    - target: {fileID: 437259757141941395, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 437259757141941407, guid: f35de9c458b550e45b7c311ac7e04a48, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -596,6 +619,10 @@ PrefabInstance:
     - target: {fileID: 6696595417359632897, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: m_Name
       value: knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696595417359632897, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6696595417359632901, guid: 5a994ae398a3ee1498ce04241da9f1cb, type: 3}
       propertyPath: level
@@ -1083,7 +1110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6753350222499902729, guid: 1fd2bd17ec80095449eac1235ad1ffb7, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6753350222499902729, guid: 1fd2bd17ec80095449eac1235ad1ffb7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1126,8 +1153,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6753350222499902734, guid: 1fd2bd17ec80095449eac1235ad1ffb7, type: 3}
+      propertyPath: deathTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6753350222499902734, guid: 1fd2bd17ec80095449eac1235ad1ffb7, type: 3}
       propertyPath: maxHealth
-      value: 400
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6753350222499902734, guid: 1fd2bd17ec80095449eac1235ad1ffb7, type: 3}
       propertyPath: statusPanel

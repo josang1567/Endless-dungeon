@@ -22,8 +22,9 @@ public abstract class Fighter : MonoBehaviour
     private Animator anim;
     [Header("FavIcon")]
     public Sprite Foto;
-
-
+    
+    [Header("Dejar Cadaver")]
+    public bool Cadaver;
     public bool isAlive
     {
         get => this.stats.health > 0;
@@ -45,7 +46,7 @@ public abstract class Fighter : MonoBehaviour
         anim.SetBool("isAttacking", isAttacking);
 
         anim.SetBool("isDead", isDead);
-         anim.SetBool("isHit", isHit);
+        anim.SetBool("isHit", isHit);
     }
     protected void AutoConfigureSkillTargeting(Skill skill)
     {
@@ -98,7 +99,11 @@ public abstract class Fighter : MonoBehaviour
     protected void Die()
     {
         this.statusPanel.gameObject.SetActive(false);
-        this.gameObject.SetActive(false);
+        if (Cadaver == false)
+        {
+            this.gameObject.SetActive(false);
+        }
+
 
     }
 
@@ -179,6 +184,7 @@ public abstract class Fighter : MonoBehaviour
 
     IEnumerator death()
     {
+        
         yield return new WaitForSeconds(3f);
     }
 }

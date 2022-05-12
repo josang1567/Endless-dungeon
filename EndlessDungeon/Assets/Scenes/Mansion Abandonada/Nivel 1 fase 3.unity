@@ -1099,6 +1099,10 @@ PrefabInstance:
       value: Esqueleto Rojo
       objectReference: {fileID: 0}
     - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
+      propertyPath: Cadaver
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189909209420251669, guid: 40d7f024e4f53ef4c979702b97c8d1c1, type: 3}
       propertyPath: deffense
       value: 40
       objectReference: {fileID: 0}

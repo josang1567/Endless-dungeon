@@ -909,6 +909,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1626103618}
     m_Modifications:
+    - target: {fileID: 5258018662189487832, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7929844886566069495, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: level
       value: 3
@@ -992,6 +996,26 @@ PrefabInstance:
     - target: {fileID: 7929844886566069498, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
       propertyPath: m_Name
       value: huntress
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844887918949146, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844888000073985, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: amount
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844888363485292, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844888520500002, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929844888596105299, guid: 85ee686499050264996e42ee62af9d0b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85ee686499050264996e42ee62af9d0b, type: 3}

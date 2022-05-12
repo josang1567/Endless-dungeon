@@ -217,6 +217,8 @@ MonoBehaviour:
   isHit: 0
   isDead: 0
   Foto: {fileID: 3010951858511213517, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
+  deathTime: 0
+  Cadaver: 1
   skillPanel: {fileID: 0}
   enemiesPanel: {fileID: 0}
   level: 20
