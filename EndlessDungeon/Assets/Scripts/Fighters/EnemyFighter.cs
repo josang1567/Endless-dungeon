@@ -10,6 +10,7 @@ public class EnemyFighter : Fighter
     public float deffense;
     public float spirit;
     public float speed;
+    private Skill skillToBeExecuted;
 
     public GameObject startPosition;
     void Awake()
@@ -27,6 +28,7 @@ public class EnemyFighter : Fighter
         yield return new WaitForSeconds(1f);
 
         Skill skill = this.skills[Random.Range(0, this.skills.Length)];
+        skillToBeExecuted=skill;
         skill.SetEmitter(this);
         
         if (skill.needsManualTargeting)
@@ -46,4 +48,9 @@ public class EnemyFighter : Fighter
         this.combatManager.OnFighterSkill(skill);
     this.isAttacking = true;
     }
+       public void ExecuteSound(){
+            
+             Camera.main.GetComponent<AudioSource>().PlayOneShot(this.skillToBeExecuted.soundEffect);
+        }
+
 }

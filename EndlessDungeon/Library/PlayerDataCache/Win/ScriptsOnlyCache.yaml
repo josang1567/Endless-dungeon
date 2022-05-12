@@ -31,9 +31,9 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -2866,7 +2866,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: e9dc2b70b892dd6fe609881c83b8445e
+      Hash: 71c4438dee5c3b1fdc5c0edae72f0839
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerFighter
@@ -3088,7 +3088,7 @@ ScriptsOnlyBuild:
     className: HealthYStatusModSkill
   - hash:
       serializedVersion: 2
-      Hash: efc581d964229deddd97b3f3cbdcf2db
+      Hash: 205b89fcb08dce1511115913d7f1c01c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyFighter

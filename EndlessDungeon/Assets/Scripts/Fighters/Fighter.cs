@@ -131,7 +131,7 @@ public abstract class Fighter : MonoBehaviour
         {
             if (modedStats.deffense >= 10)
             {
-                Debug.Log("GetCurrentStats: " + modedStats.deffense);
+               
                 if (modedStats.deffense == 10)
                 { }
                 else
@@ -143,7 +143,7 @@ public abstract class Fighter : MonoBehaviour
             }
             if (modedStats.deffense >= 30)
             {
-                Debug.Log("GetCurrentStats: " + modedStats.deffense);
+               
                 if (modedStats.deffense == 140)
                 { }
                 else

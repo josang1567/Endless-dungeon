@@ -529,7 +529,6 @@ MonoBehaviour:
   isHit: 0
   isDead: 0
   Foto: {fileID: -8999417144695169524, guid: 405630ce2b74bcf4aaae760ff0759dd6, type: 3}
-  deathTime: 0
   Cadaver: 1
   skillPanel: {fileID: 0}
   enemiesPanel: {fileID: 0}
@@ -584,7 +583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Espada
   FondoCarta: {fileID: 21300000, guid: 67d5ad9930c6da34b862a38c8f3f048b, type: 3}
-  soundEffect: {fileID: 8300000, guid: 0e5c0660c541c5a4eae4e8ac10d82718, type: 3}
+  soundEffect: {fileID: 8300000, guid: ed27823a6a2e08f49bfcdfd8132e5993, type: 3}
   skillDescription: "Hace 20 de da\xF1o a un enemigo"
   animationDuration: 1
   targeting: 4

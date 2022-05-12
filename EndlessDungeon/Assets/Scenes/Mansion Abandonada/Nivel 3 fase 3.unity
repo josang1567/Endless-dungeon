@@ -829,6 +829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CombatManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2771087461258763286, guid: 8e2da063f00865646a66570adae749d7, type: 3}
+      propertyPath: m_TagString
+      value: Boss
+      objectReference: {fileID: 0}
     - target: {fileID: 2771087461258763287, guid: 8e2da063f00865646a66570adae749d7, type: 3}
       propertyPath: NextScene
       value: Tablero 2

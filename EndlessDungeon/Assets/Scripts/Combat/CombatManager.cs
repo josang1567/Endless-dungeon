@@ -397,6 +397,24 @@ public class CombatManager : MonoBehaviour
                 PlayerPrefs.SetFloat("KnightVida", this.playerTeam[i].GetStats().health);
             }
         }
+        if(this.gameObject.tag=="Boss"){
+
+             for (int i = 0; i < playerTeam.Length; i++)
+        {
+            if (playerTeam[i].idName == "Cazadora")
+            {
+                PlayerPrefs.SetFloat("HuntressVida", this.playerTeam[i].GetStats().maxHealth);
+            }
+            if (playerTeam[i].idName == "Mago")
+            {
+                PlayerPrefs.SetFloat("MagoVida", this.playerTeam[i].GetStats().maxHealth);
+            }
+            if (playerTeam[i].idName == "Caballero")
+            {
+                PlayerPrefs.SetFloat("KnightVida", this.playerTeam[i].GetStats().maxHealth);
+            }
+        }
+        }
 
     }
 
@@ -485,7 +503,7 @@ public class CombatManager : MonoBehaviour
             }
         }
 
-
+    
 
     }
 

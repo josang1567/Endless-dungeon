@@ -95,7 +95,10 @@ public class PlayerFighter : Fighter
              this.isAttacking = true;
     }
         }
-        
+        public void ExecuteSound(){
+            
+             Camera.main.GetComponent<AudioSource>().PlayOneShot(this.skillToBeExecuted.soundEffect);
+        }
 
     public void SetTargetAndAttack(Fighter enemyFigther)
     {

@@ -52,7 +52,7 @@ public abstract class Skill : MonoBehaviour
     {
         foreach (var receiver in this.receivers)
         {
-            Camera.main.GetComponent<AudioSource>().PlayOneShot(soundEffect);
+           // Camera.main.GetComponent<AudioSource>().PlayOneShot(soundEffect);
             this.Animate(receiver);
             this.OnRun(receiver);
         }
