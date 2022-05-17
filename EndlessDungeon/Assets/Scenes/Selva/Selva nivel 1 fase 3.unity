@@ -1161,6 +1161,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5301669349149100826, guid: 91c7f8a89102432458090d378d473729, type: 3}
+      propertyPath: amount
+      value: -70
+      objectReference: {fileID: 0}
     - target: {fileID: 8142006663057045493, guid: 91c7f8a89102432458090d378d473729, type: 3}
       propertyPath: statusPanel
       value: 
