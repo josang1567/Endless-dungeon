@@ -9,20 +9,16 @@ public class StatusModSkill : Skill
     public string message;
     public string message2;
     protected StatusMod mod;
-
+//Esta funcion se encarga de añadir efectos de estado a los objetivos
     protected override void OnRun(Fighter receiver)
     {
         if (this.mod == null)
         {
-
-
             this.mod = this.GetComponent<StatusMod>();
-
-
         }
 
 
-        if (receiver.GetCurrentStats().deffense == 10 ||receiver.GetCurrentStats().attack>130)
+        if (receiver.GetCurrentStats().deffense == 10 || receiver.GetCurrentStats().attack > 130)
         {
             this.messages.Enqueue(this.message2.Replace("{receiver}", receiver.idName));
         }

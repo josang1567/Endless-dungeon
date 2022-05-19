@@ -25,17 +25,18 @@ public class AyudaController : MonoBehaviour
 
     void Update()
     {
+        // si se pulsa escape se cierra el menu
         if (Input.GetKeyDown("escape") )
         {
             ocultarPantallaAll();
         }
-        //pag1
+        //si se pulsan las teclas se pasa a la pagina siguiente
         if (Input.GetKeyDown(KeyCode.RightArrow)||Input.GetKeyDown("d"))
         {
       
             cargarSiguiente();
         }
-        //pag 2
+        //si se pulsan las teclas se retrocede una pagina
         if (Input.GetKeyDown(KeyCode.LeftArrow)||Input.GetKeyDown("a"))
         {
            
@@ -45,7 +46,7 @@ public class AyudaController : MonoBehaviour
 
 
     }
-
+//Funcion encargada de cargar la pagina siguiente
     public void cargarSiguiente()
     {
         bool encontrado = false;
@@ -104,7 +105,7 @@ public class AyudaController : MonoBehaviour
             }
         }
     }
-
+//Funcion encarfa de cargar la pagina anterior
 public void cargarAnterior()
     {
         bool encontrado = false;
@@ -284,6 +285,7 @@ public void cargarAnterior()
         Glosario.SetActive(false);
         Pag9.SetActive(true);
     }
+    //Funcion encargada de volver al glosario
     public void volverGlosario()
     {
         Glosario.SetActive(true);
@@ -342,7 +344,7 @@ public void cargarAnterior()
         Pag8.SetActive(true);
     }
 
-
+//Funcion encargada de ocultar el menu de glosario
     public void ocultarPantallaAll()
     {
 

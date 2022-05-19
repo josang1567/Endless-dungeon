@@ -18,7 +18,7 @@ public class EnemiesPanel : MonoBehaviour
 
         this.targets = new Fighter[this.btns.Length];
     }
-
+//Configura los botones visibles del panel de objetivos 
     public void ConfigureButton(Fighter fighter, int index)
     {
         this.btns[index].SetActive(true);
@@ -26,14 +26,14 @@ public class EnemiesPanel : MonoBehaviour
 
         this.targets[index] = fighter;
     }
-
+//Funcion encargada de ejecutar la habilidad clicada
     public void OnTargetButtonClick(int index)
     {
         Fighter enemy = this.targets[index];
 
         this.targetFigther.SetTargetAndAttack(enemy);
     }
-
+//Funcion encargada de mostrar el panel de objetivos
     public void Show(PlayerFighter playerTarget, Fighter[] enemies)
     {
         this.gameObject.SetActive(true);

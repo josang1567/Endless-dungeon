@@ -25,7 +25,7 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(NextLevel());
     }
       
-
+    //Funcion encargada de cambiar de nivel e iniciar las transicciones
     IEnumerator NextLevel()
     {
         yield return new WaitForSeconds(0.2f);

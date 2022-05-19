@@ -58,7 +58,7 @@ public class CombatManager : MonoBehaviour
         this.isCombatActive = true;
         StartCoroutine(this.CombatLoop());
     }
-
+    //Funcion que se encarga de generar el orden de activacion de los peleadores
     private void SortFightersBySpeed()
     {
         bool sorted = false;
@@ -84,7 +84,7 @@ public class CombatManager : MonoBehaviour
             }
         }
     }
-
+    // funcion encargada de asignar los iconos al orden de batalla
     private void MakeOrder()
     {
         List<Sprite> listado = new List<Sprite>();
@@ -100,6 +100,7 @@ public class CombatManager : MonoBehaviour
         TurnPanel.Mostrar(listado);
 
     }
+    //funcion encargada de agrupar los peleadores segun sean jugadores o enemigos
     private void MakeTeams()
     {
         List<Fighter> playersBuffer = new List<Fighter>();
@@ -123,16 +124,18 @@ public class CombatManager : MonoBehaviour
         this.enemyTeam = enemiesBuffer.ToArray();
     }
 
+    //funcion encargada de administrar el combate
     IEnumerator CombatLoop()
     {
         while (this.isCombatActive)
         {
             switch (this.combatStatus)
             {
+
                 case CombatStatus.WAITING_FOR_FIGHTER:
                     yield return null;
                     break;
-
+                //muestra por pantalla el ataque que esta realizando el peleador
                 case CombatStatus.FIGHTER_ACTION:
                     LogPanel.Write($"{this.fighters[this.fighterIndex].idName} usa {currentFighterSkill.skillName}.");
 
@@ -141,11 +144,12 @@ public class CombatManager : MonoBehaviour
                     // Executing fighter skill
                     //currentFighterSkill.Run();
 
-                    // Wait for fighter skill animation
+                    // Espera tantos segundos como dure la animacion de ataque antes de pasar al siguiente turno
                     yield return new WaitForSeconds(currentFighterSkill.animationDuration);
                     this.combatStatus = CombatStatus.CHECK_ACTION_MESSAGES;
 
                     break;
+                //Muestra por pantalla el mensaje de la habilidad usada
                 case CombatStatus.CHECK_ACTION_MESSAGES:
                     string nextMessage = this.currentFighterSkill.GetNextMessage();
 
@@ -161,9 +165,11 @@ public class CombatManager : MonoBehaviour
                         yield return null;
                     }
                     break;
-
+                //Comprueba si se cumplen los requisitos para la victoria o derrota del jugador y pone el mensaje adecuado para el momento
                 case CombatStatus.CHECK_FOR_VICTORY:
+
                     bool arePlayersAlive = false;
+                    //En caso de que todos los jugadores esten muertos se declara derrota
                     foreach (var figther in this.playerTeam)
                     {
                         arePlayersAlive |= figther.isAlive;
@@ -172,6 +178,7 @@ public class CombatManager : MonoBehaviour
 
 
                     bool areEnemiesAlive = false;
+                    //En caso de que todos los enemigos esten muertos se declara victoria
                     foreach (var figther in this.enemyTeam)
                     {
                         areEnemiesAlive |= figther.isAlive;
@@ -180,7 +187,7 @@ public class CombatManager : MonoBehaviour
 
                     bool victory = areEnemiesAlive == false;
                     bool defeat = arePlayersAlive == false;
-
+                    //en caso de victoria se pasa a la siguiente pantalla
                     if (victory)
                     {
                         LogPanel.Write("Victoria!");
@@ -199,7 +206,7 @@ public class CombatManager : MonoBehaviour
 
 
                     }
-
+                    // en caso de derrota se reinicia el nivel
                     if (defeat)
                     {
                         LogPanel.Write("Derrota!");
@@ -209,7 +216,7 @@ public class CombatManager : MonoBehaviour
 
 
                     }
-
+                    //en caso de que no se cumplan los requisitos de victoria o derrota se pasa al siguiente turno
                     if (this.isCombatActive)
                     {
                         this.combatStatus = CombatStatus.NEXT_TURN;
@@ -217,8 +224,10 @@ public class CombatManager : MonoBehaviour
 
                     yield return null;
                     break;
+                //Se inicia el siguiente turno
                 case CombatStatus.NEXT_TURN:
                     yield return new WaitForSeconds(1f);
+                    //se llama a la funcion de MakeOrder para actualizar el orden de batalla
                     MakeOrder();
                     Fighter current = null;
 
@@ -233,6 +242,7 @@ public class CombatManager : MonoBehaviour
 
                     break;
 
+                //Se comprueba si el peleador activo tiene algun efecto de estado, en caso de tener se aplican sus efectos
                 case CombatStatus.CHECK_FIGHTER_STATUS_CONDITION:
                     var currentFighter = this.fighters[this.fighterIndex];
 
@@ -262,7 +272,7 @@ public class CombatManager : MonoBehaviour
                     }
 
                     string mensaje = "";
-
+                    //se muestra en pantalla las estadisticas del jugador y si tiene algun efecto de estado durante de un jugador
                     if (currentFighter.team.ToString().Equals("PLAYERS"))
                     {
                         if (currentFighter.statusCondition == null)
@@ -289,6 +299,7 @@ public class CombatManager : MonoBehaviour
 
 
                     }
+                    //Durante del turno de un enemigo no se muestran sus estadisticas
                     else
                     if (currentFighter.team.ToString().Equals("ENEMIES"))
                     {
@@ -304,7 +315,7 @@ public class CombatManager : MonoBehaviour
             }
         }
     }
-
+    //funcion encargada en filtrar solo los peleadores vivos que pueden ser objetivo de ataques o beneficios
     public Fighter[] FilterJustAlive(Fighter[] team)
     {
         this.returnBuffer.Clear();
@@ -320,6 +331,7 @@ public class CombatManager : MonoBehaviour
         return this.returnBuffer.ToArray();
     }
 
+    //Funcion encargada de mostrar solo los peleadores del equipo contrario para aplicar las habilidades agresivas
     public Fighter[] GetOpposingTeam()
     {
         Fighter currentFighter = this.fighters[this.fighterIndex];
@@ -337,6 +349,7 @@ public class CombatManager : MonoBehaviour
         return this.FilterJustAlive(team);
     }
 
+    //Funcion encargada de mostrar los aliados objetivos de beneficios
     public Fighter[] GetAllyTeam()
     {
         Fighter currentFighter = this.fighters[this.fighterIndex];
@@ -353,29 +366,32 @@ public class CombatManager : MonoBehaviour
 
         return this.FilterJustAlive(team);
     }
-
+    //funcion que modifica el estado de combate cuanndo un peleador usa una habilidad
     public void OnFighterSkill(Skill skill)
     {
 
         this.currentFighterSkill = skill;
         this.combatStatus = CombatStatus.FIGHTER_ACTION;
     }
+    //Funcion encarcagada de manejar las transiciones de reinicio de nivel y reiniciar el nivel
     IEnumerator waitToLoad()
     {
         yield return new WaitForSeconds(1);
         LogPanel.Write("Reiniciando nivel...");
         yield return new WaitForSeconds(2);
         this.panel.StartAnim();
-          yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    //Funcion encargada de manejar las animaciones de cambio de nivel, pasar de nivel y guardar el progreso del jugador
     IEnumerator NextLevel()
     {
 
         yield return new WaitForSeconds(1);
         LogPanel.Write("Adentrandose en la mazmorra...");
         yield return new WaitForSeconds(1);
-         this.panel.StartAnim();
+        this.panel.StartAnim();
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(this.NextScene);
 
@@ -397,32 +413,35 @@ public class CombatManager : MonoBehaviour
                 PlayerPrefs.SetFloat("KnightVida", this.playerTeam[i].GetStats().health);
             }
         }
-        if(this.gameObject.tag=="Boss"){
-
-             for (int i = 0; i < playerTeam.Length; i++)
+        //En caso de enfrentarse a un enemigo con la etiquieta Boss y salir victorioso se guarda la vida segun la caracteristica maxima de vida que tiene en ese momento cada heroe
+        //Ejemplo: Si el Caballero tiene 80 de vida maxima se cura su vida para que se ajueste a 80 y se guarda esa cantidad para que al empezar el siguiente nivel tenga toda la vida
+        if (this.gameObject.tag == "Boss")
         {
-            if (playerTeam[i].idName == "Cazadora")
+
+            for (int i = 0; i < playerTeam.Length; i++)
             {
-                PlayerPrefs.SetFloat("HuntressVida", this.playerTeam[i].GetStats().maxHealth);
+                if (playerTeam[i].idName == "Cazadora")
+                {
+                    PlayerPrefs.SetFloat("HuntressVida", this.playerTeam[i].GetStats().maxHealth);
+                }
+                if (playerTeam[i].idName == "Mago")
+                {
+                    PlayerPrefs.SetFloat("MagoVida", this.playerTeam[i].GetStats().maxHealth);
+                }
+                if (playerTeam[i].idName == "Caballero")
+                {
+                    PlayerPrefs.SetFloat("KnightVida", this.playerTeam[i].GetStats().maxHealth);
+                }
             }
-            if (playerTeam[i].idName == "Mago")
-            {
-                PlayerPrefs.SetFloat("MagoVida", this.playerTeam[i].GetStats().maxHealth);
-            }
-            if (playerTeam[i].idName == "Caballero")
-            {
-                PlayerPrefs.SetFloat("KnightVida", this.playerTeam[i].GetStats().maxHealth);
-            }
-        }
         }
 
     }
-
+// funcion encargada de poner las estadisticas de los jugadores al pasar de nivel
     public void initStats()
     {
-
-
         // en caso de haber datos se comprueban quienes tienen vida mayor que 0
+
+        //En caso de que algun heroe tenga vida igual a 0 se le da una decima parte de su vida maxima al inicio de ronda
         if (PlayerPrefs.GetFloat("HuntressVida", 0) <= 0)
         {
             for (int i = 0; i < playerTeam.Length; i++)
@@ -465,7 +484,7 @@ public class CombatManager : MonoBehaviour
         }
 
 
-        // en caso de estar alguno vivo se actualiza la tablas de vida
+        // en caso de que algun peleador jugable tenga mas de 1 de vida se actualiza la tablas de vida con la vida anteriormente guardada
 
         if (PlayerPrefs.GetFloat("HuntressVida", 0) >= 1)
         {
@@ -503,7 +522,7 @@ public class CombatManager : MonoBehaviour
             }
         }
 
-    
+
 
     }
 

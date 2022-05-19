@@ -7,6 +7,7 @@ public class TurnBlockStatusCondition : StatusCondition
 
     private bool blocks;
 
+//Cuando se ejecuta el afectado pierde un turno
     public override bool OnApply()
     {
         this.blocks = false;

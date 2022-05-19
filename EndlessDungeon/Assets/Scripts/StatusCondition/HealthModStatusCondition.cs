@@ -7,15 +7,17 @@ public class HealthModStatusCondition : StatusCondition
     [Header("Health mod")]
     public float percentage;
 
+
      IEnumerator pausa()
     {
         yield return new WaitForSeconds(1.2f);
     }
+    //Cuando se aplica reduce o aumenta la vida del afectado
     public override bool OnApply()
     {
         Stats rStats = receiver.GetCurrentStats();
 
-            
+            //Se evita que el objetivo pierda toda la vida porque sino se buggea el juego al intentar ejecutar el turno del peleador
         if (rStats.health - Mathf.Abs(rStats.maxHealth * this.percentage) <= 0.9f)
         {
             

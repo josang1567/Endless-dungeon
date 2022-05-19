@@ -10,7 +10,7 @@ public abstract class StatusCondition : MonoBehaviour
     public string receptionMessage;
     public string applyMessage;
     public string expireMessage;
-    
+
     public AudioSource soundEffect;
     public int turnDuration;
 
@@ -39,7 +39,7 @@ public abstract class StatusCondition : MonoBehaviour
         var go = Instantiate(this.effectPrfb, this.receiver.transform.position, Quaternion.identity);
         Destroy(go, this.animationDuration);
     }
-
+    //Maneja la activacion del efecto de estado
     public void Apply()
     {
         if (this.receiver == null)
@@ -52,7 +52,7 @@ public abstract class StatusCondition : MonoBehaviour
 
             this.Animate();
         }
-
+        //resta un turno a la duracion
         turnDuration--;
 
         if (this.hasExpired)
@@ -69,7 +69,7 @@ public abstract class StatusCondition : MonoBehaviour
         else
             return null;
     }
-
+    //Muestra por pantalla un mensaje
     public string GetReceptionMessage()
     {
         this.receiver.statusPanel.statuscondition.gameObject.SetActive(true);

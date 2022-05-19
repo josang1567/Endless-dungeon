@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ControllerPlayerPrefs : MonoBehaviour
 {
-    // Start is called before the first frame update
+//Se encarga de controlar el guardado del progreso
     void Start()
     {
         if ((PlayerPrefs.GetString("NivelActual", "Nivel") != "Nueva"))

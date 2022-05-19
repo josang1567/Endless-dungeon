@@ -22,7 +22,7 @@ public abstract class Fighter : MonoBehaviour
     private Animator anim;
     [Header("FavIcon")]
     public Sprite Foto;
-    
+
     [Header("Dejar Cadaver")]
     public bool Cadaver;
     public bool isAlive
@@ -48,6 +48,7 @@ public abstract class Fighter : MonoBehaviour
         anim.SetBool("isDead", isDead);
         anim.SetBool("isHit", isHit);
     }
+    //funcion encargada de asignar los objetivos en caso de que no se necesite seleccionar un objetivo
     protected void AutoConfigureSkillTargeting(Skill skill)
     {
         skill.SetEmitter(this);
@@ -78,6 +79,7 @@ public abstract class Fighter : MonoBehaviour
                 throw new System.InvalidOperationException("Unimplemented! This skill needs manual targeting.");
         }
     }
+    //Funcion encargada de mostrar los objetivos disponibles en caso de que la habilidad solo pueda usar un solo objetivo
     protected Fighter[] GetSkillTargets(Skill skill)
     {
         switch (skill.targeting)
@@ -96,6 +98,7 @@ public abstract class Fighter : MonoBehaviour
         // Esto no debería ejecutarse nunca pero hay que ponerlo para hacer al compilador feliz.
         throw new System.InvalidOperationException("Fighter::GetSkillTargets. Unreachable!");
     }
+    //funcion encargada de eliminar los paneles y peleadores muertos
     protected void Die()
     {
         this.statusPanel.gameObject.SetActive(false);
@@ -106,7 +109,7 @@ public abstract class Fighter : MonoBehaviour
 
 
     }
-
+    //Funcion encargada de actualizar la vida cuando un peleador recibe  daño o se cura
     public void ModifyHealth(float amount)
     {
         this.stats.health = Mathf.Clamp(this.stats.health + amount, 0f, this.stats.maxHealth);
@@ -122,7 +125,7 @@ public abstract class Fighter : MonoBehaviour
         }
 
     }
-
+    //funcion que devuelve los stats actuales
     public Stats GetCurrentStats()
     {
         Stats modedStats = this.stats;
@@ -131,7 +134,7 @@ public abstract class Fighter : MonoBehaviour
         {
             if (modedStats.deffense >= 10)
             {
-               
+
                 if (modedStats.deffense == 10)
                 { }
                 else
@@ -143,7 +146,7 @@ public abstract class Fighter : MonoBehaviour
             }
             if (modedStats.deffense >= 30)
             {
-               
+
                 if (modedStats.deffense == 140)
                 { }
                 else
@@ -159,7 +162,7 @@ public abstract class Fighter : MonoBehaviour
         return modedStats;
     }
 
-
+    //Funcion  que  devuelve el efecto de estado en caso de que no se haya agotado y exista
     public StatusCondition GetCurrentStatusCondition()
     {
         if (this.statusCondition != null && this.statusCondition.hasExpired)
@@ -170,11 +173,12 @@ public abstract class Fighter : MonoBehaviour
 
         return this.statusCondition;
     }
-
+    //Funcion encargada de detener la animacion de ataque
     public void EndAttack()
     {
         isAttacking = false;
     }
+    //Funcion que devuelve los stats iniciales
     public Stats GetStats()
     {
         return this.stats;
@@ -184,7 +188,7 @@ public abstract class Fighter : MonoBehaviour
 
     IEnumerator death()
     {
-        
+
         yield return new WaitForSeconds(3f);
     }
 }

@@ -12,7 +12,7 @@ public class TurnPanel : MonoBehaviour
     {
         current = this;
     }
-
+//Funcion encargada de actualizar el panel de turnos segun la cantidad de peleadores vivos
     public static void Mostrar(List<Sprite> iconos)
     {
         switch (iconos.Count)

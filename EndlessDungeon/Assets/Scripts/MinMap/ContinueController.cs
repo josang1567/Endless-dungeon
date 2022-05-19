@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+//Script encargado de pasar la pantalla & guardar la partida en los mini mapas
 public class ContinueController : MonoBehaviour
 {
     private string nivel;
@@ -15,9 +16,10 @@ public class ContinueController : MonoBehaviour
             this.nivel=PlayerPrefs.GetString("NivelActual","Nivel");
         }
     }
+    //Funcion encargada de pasar de pantalla e iniciar las transiciones
   public void onclick()
     {
-        
+        //En caso de que nivel ==0 significa que no hay datos que cargar o que se ha terminado todo el juego
        
         if(this.nivel=="0"){
             return;

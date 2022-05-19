@@ -23,7 +23,7 @@ public class HealthYStatusModSkill : Skill
     public string message2;
     protected StatusMod mod;
 
-
+//Funciona igual que los scripts HealthModSkill y StatusMod pero combinando sus efectos
     protected override void OnRun(Fighter receiver)
     {
         float amount = this.GetModification(receiver);

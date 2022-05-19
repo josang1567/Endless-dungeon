@@ -13,6 +13,7 @@ public class NewGame : MonoBehaviour
     [SerializeField] private Button BotonPause;
     [SerializeField] private GameObject MenuNewGame;
 
+    //Muestra el panel de confirmacion
     public void cargarPantalla()
     {
 
@@ -23,6 +24,8 @@ public class NewGame : MonoBehaviour
 
         MenuNewGame.SetActive(true);
     }
+   
+   //Oculta el panel de confirmacion
     public void CancelNewGame()
     {
 
@@ -32,12 +35,14 @@ public class NewGame : MonoBehaviour
         BotonPause.interactable = true;
         MenuNewGame.SetActive(false);
     }
+    //Carga la nueva partida
     public void onclick()
     {
 
         StartCoroutine(NextLevel());
     }
 
+// funcion de cargado, se controla la animaciones y se sobrescriben los datos previos
     IEnumerator NextLevel()
     {
         yield return new WaitForSeconds(0);

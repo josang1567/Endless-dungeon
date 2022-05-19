@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 
-
+//tipos de objetivo
 public enum SkillTargeting
 {
-    // Automatic targeting
+    // Asignacion automatica
     AUTO,
     ALL_ALLIES,
     ALL_OPPONENTS,
 
-    // Manual targeting
+    // Asignacion manual
     SINGLE_ALLY,
     SINGLE_OPPONENT
 }

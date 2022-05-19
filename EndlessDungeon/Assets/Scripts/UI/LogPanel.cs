@@ -10,7 +10,7 @@ public class LogPanel : MonoBehaviour
     void Awake(){
         current=this;
     }
-
+//Escribe el mensaje en la pantalla
     public static void Write(string message)
     {
         current.logLabel.text = message;

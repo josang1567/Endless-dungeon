@@ -10,7 +10,7 @@ public class FasesIconsController : MonoBehaviour
     [SerializeField] private Button botonEliminacion;
 
     public GameObject[] videos;
-    // Start is called before the first frame update
+    // Controlador de las pantallas de tutorial 
     public void mostrarOrden()
     {
         Time.timeScale = 1f;

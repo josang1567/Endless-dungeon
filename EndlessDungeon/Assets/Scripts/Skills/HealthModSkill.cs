@@ -22,7 +22,7 @@ public class HealthModSkill : Skill
         float amount = this.GetModification(receiver);
 
         float dice = Random.Range(0f, 1f);
-
+        //En caso de que el ataque sea critico se duplica el daño
         if (dice <= this.critChance)
         {
             amount *= 2f;
@@ -32,8 +32,10 @@ public class HealthModSkill : Skill
         receiver.ModifyHealth(amount);
     }
 
+
     public float GetModification(Fighter receiver)
     {
+        //Segun el metodo de daño se aplica de distinta forma
         switch (this.modType)
         {
             case HealthModType.STAT_BASED:
@@ -41,7 +43,7 @@ public class HealthModSkill : Skill
                 Stats receiverStats = receiver.GetCurrentStats();
 
                 float rawDamage = (((2 * emitterStats.level) / 5) + 2) * this.amount * (emitterStats.attack / receiverStats.deffense);
-       
+
                 return (rawDamage / 50) + 2;
             case HealthModType.FIXED:
                 return this.amount;

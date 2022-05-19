@@ -5,9 +5,10 @@ using UnityEngine;
 /// </summary>
 public class ApplySCSkill : Skill
 {
-    
+
     private StatusCondition condition;
 
+    //Aplica el efecto de estado que tiene el peleador activo
     protected override void OnRun(Fighter receiver)
     {
         if (this.condition == null)

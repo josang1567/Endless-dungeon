@@ -19,10 +19,11 @@ public class PlayerFighter : Fighter
     public float speed;
     private Fighter[] objetivos;
     void Awake()
-    {
+    {//Asignacion de los stats del jugador
         this.stats = new Stats(level, maxHealth, attack, deffense, spirit, speed);
     }
 
+    //funcion encargada de barajar el mazo de habilidades del jugador
     public override async void InitTurn()
     {
         this.skillPanel.ShowForPlayer(this);
@@ -71,44 +72,40 @@ public class PlayerFighter : Fighter
         }
     }
 
-
+    //Funcion que se encarga de ejecutar la habilidad seleccionada
     public void ExecuteSkill(int index)
     {
 
         this.skillToBeExecuted = this.baraja[index];
 
-         
+
 
         this.skillToBeExecuted.SetEmitter(this);
 
         if (this.skillToBeExecuted.needsManualTargeting)
         {
             Fighter[] receivers = this.GetSkillTargets(this.skillToBeExecuted);
-            objetivos=receivers;
+            objetivos = receivers;
             this.enemiesPanel.Show(this, receivers);
         }
         else
         {
-            objetivos= this.combatManager.GetOpposingTeam();
+            objetivos = this.combatManager.GetOpposingTeam();
             this.AutoConfigureSkillTargeting(this.skillToBeExecuted);
 
             this.combatManager.OnFighterSkill(this.skillToBeExecuted);
             this.skillPanel.Hide();
-             this.enemiesPanel.HidePlayer(this);
-             this.isAttacking = true;
+            this.enemiesPanel.HidePlayer(this);
+            this.isAttacking = true;
+        }
     }
-        }
-        public void ExecuteSound(){
-            
-             //Camera.main.GetComponent<AudioSource>().PlayOneShot(this.skillToBeExecuted.soundEffect);
-            // for (int i = 0; i < objetivos.Length; i++)
-            // {
-                  this.skillToBeExecuted.Run();
-            // }
-            
-        }
-        
+    //Funcion que ejecuta el sonido y animacion del ataque
+    public void ExecuteSound()
+    {
+        this.skillToBeExecuted.Run();
+    }
 
+    //Funcion encargada de asignar el objetivo del ataque 
     public void SetTargetAndAttack(Fighter enemyFigther)
     {
         this.skillToBeExecuted.AddReceiver(enemyFigther);
