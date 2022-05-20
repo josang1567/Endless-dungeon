@@ -65,7 +65,6 @@
      <Compile Include="Assets\Scripts\UI\NewGame.cs" />
      <Compile Include="Assets\Scripts\UI\EnemiesPanel.cs" />
      <Compile Include="Assets\Scripts\UI\StatusPanel.cs" />
-     <Compile Include="Assets\Sprites\enemys\Skeleton\enemy_behaviour.cs" />
      <Compile Include="Assets\Scripts\UI\TurnPanel.cs" />
      <Compile Include="Assets\Scripts\MinMap\LevelLoader.cs" />
      <Compile Include="Assets\Scripts\Skills\StatusMod.cs" />
